@@ -58,14 +58,35 @@ def cmd_import(args):
     print(export(Path(args.evidence), Path(args.spec), args.quarter))
 
 
+def _crossref_title(doi: str) -> str:
+    """Polite-pool request with backoff on 429/5xx."""
+    import time
+    import urllib.error
+
+    from .config import config
+    from .sources import UA
+
+    req = urllib.request.Request(f"https://api.crossref.org/works/{doi}?mailto={config()['scan']['mailto']}", headers={"User-Agent": UA})
+    for attempt in range(5):
+        try:
+            with urllib.request.urlopen(req, timeout=30) as resp:
+                return json.load(resp)["message"]["title"][0]
+        except urllib.error.HTTPError as exc:
+            if exc.code not in (429, 500, 502, 503) or attempt == 4:
+                raise
+            time.sleep(2 ** attempt * 2)
+        finally:
+            time.sleep(0.3)
+    raise RuntimeError("unreachable")
+
+
 def cmd_verify_refs(args):
     bad = 0
     for r in load("references"):
         if "doi" not in r:
             continue
         try:
-            with urllib.request.urlopen(f"https://api.crossref.org/works/{r['doi']}", timeout=30) as resp:
-                title = json.load(resp)["message"]["title"][0]
+            title = _crossref_title(r["doi"])
         except Exception as exc:
             print(f"FAIL {r['id']}: {exc}")
             bad += 1
