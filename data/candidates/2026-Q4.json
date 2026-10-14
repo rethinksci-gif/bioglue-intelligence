@@ -5,12 +5,12 @@
     "2026-11-30"
   ],
   "scanned_through": "2026-10-14",
-  "updated": "2026-10-14T18:39:21+00:00",
+  "updated": "2026-10-14T20:10:00+00:00",
   "model": "deepseek-flash",
-  "llm_calls": 45,
+  "llm_calls": 0,
   "usage": {
-    "prompt_tokens": 102608,
-    "completion_tokens": 138097
+    "prompt_tokens": 0,
+    "completion_tokens": 0
   },
   "note": "Machine-triaged discovery leads (DeepSeek flash). Not verified evidence: each needs primary-source review before it enters a quarterly issue.",
   "candidates": [
