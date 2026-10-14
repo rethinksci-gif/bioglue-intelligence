@@ -40,6 +40,13 @@ export const routes = readYaml<Route[]>('routes.yaml');
 export const structures = readYaml<Structure[]>('structures.yaml');
 export const references = readYaml<Reference[]>('references.yaml');
 export const challenges = readYaml<Challenge[]>('challenges.yaml');
+export interface Newsletter { id: string; title: string; window: [string, string]; cutoff: string; status: string; pdf: string; web: string; cover: string; summary: string;
+  leads: { n: number; headline: string; route: string; doi: string; note: string }[]; watch: { label: string; text: string }[] }
+const nlDir = path.join(DATA, 'newsletter');
+const fmtD = (d: unknown) => (d instanceof Date ? d.toISOString().slice(0, 10) : String(d));
+export const newsletters: Newsletter[] = (fs.existsSync(nlDir) ? fs.readdirSync(nlDir).filter((f) => f.endsWith('.yaml')).sort().reverse() : [])
+  .map((f) => readYaml<any>(`newsletter/${f}`))
+  .map((n) => ({ ...n, id: String(n.id), cutoff: fmtD(n.cutoff), window: [fmtD(n.window[0]), fmtD(n.window[1])] }));
 export const glossary = readYaml<{ term: string; kind: string; text: string }[]>('glossary.yaml');
 
 const jsonDir = <T>(dir: string): T[] => {

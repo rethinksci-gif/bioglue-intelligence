@@ -7,8 +7,8 @@ const { title, description = 'Bio-based and formaldehyde-free wood adhesives: te
 const fullTitle = title ? `${title} · ${SITE_NAME}` : SITE_NAME;
 const path = Astro.url.pathname;
 const nav: [string, string][] = [
-  ['', 'Overview'], ['routes/', 'Technology routes'], ['chemistry/', 'Chemistry'], ['challenges/', 'Challenges'],
-  ['tracker/', 'Quarterly tracker'], ['references/', 'Literature'], ['methods/', 'Methods'],
+  ['', 'Overview'], ['routes/', 'Routes'], ['chemistry/', 'Chemistry'], ['challenges/', 'Challenges'],
+  ['tracker/', 'Tracker'], ['newsletter/', 'Newsletter'], ['references/', 'Literature'], ['methods/', 'Methods'],
 ];
 const isCurrent = (p: string) => (p === '' ? path === url('') || path === url('') + '/' : path.startsWith(url(p)));
 ---
@@ -77,7 +77,7 @@ const isCurrent = (p: string) => (p === '' ? path === url('') || path === url(''
         </div>
         <div>
           <h4>Track</h4>
-          <ul><li><a href={url('tracker/')}>Quarterly tracker</a></li><li><a href={url('references/')}>Literature</a></li><li><a href={url('rss.xml')}>RSS feed</a></li><li><a href={url('data/')}>Open data</a></li></ul>
+          <ul><li><a href={url('tracker/')}>Quarterly tracker</a></li><li><a href={url('newsletter/')}>Newsletter</a></li><li><a href={url('references/')}>Literature</a></li><li><a href={url('rss.xml')}>RSS feed</a></li><li><a href={url('data/')}>Open data</a></li></ul>
         </div>
         <div>
           <h4>Contribute</h4>

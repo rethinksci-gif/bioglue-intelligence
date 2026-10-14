@@ -1,0 +1,28 @@
+---
+import Base from '../../layouts/Base.astro';
+import { newsletters, routeById, url, fmtDate } from '../../lib/data';
+---
+<Base title="Quarterly newsletter" description="BIOGLUE QUARTERLY: a four-page evidence-checked newsletter on bio-based wood adhesives for MID, MIM and MTE.">
+  <p class="crumbs"><a href={url('')}>Overview</a> / Newsletter</p>
+  <h1>BIOGLUE QUARTERLY</h1>
+  <p class="lede muted narrow">A four-page A4 newsletter each quarter (March, June, September, December), benchmarked against UF. Every number traces to a verbatim source passage. Issues are drafts until a named technical reviewer signs off.</p>
+  {newsletters.map((n) => (
+    <article class="card" style="margin:18px 0">
+      <div style="display:grid;grid-template-columns:minmax(0,220px) minmax(0,1fr);gap:22px" class="nl-grid">
+        <a href={url(n.pdf)}><img src={url(n.cover)} alt={`Page 1 of ${n.title}`} style="width:100%;border:1px solid var(--line);border-radius:6px;background:#fff" /></a>
+        <div>
+          <div class="meta"><span class="badge warn">{n.status}</span></div>
+          <h2 style="margin-top:6px">{n.title}</h2>
+          <p class="small muted">Window {fmtDate(n.window[0])} – {fmtDate(n.window[1])} · research cutoff {fmtDate(n.cutoff)}</p>
+          <p>{n.summary}</p>
+          <div class="cta"><a class="btn primary" href={url(n.pdf)}>Download PDF (4 pages + references)</a><a class="btn" href={url(n.web)}>Web version</a></div>
+        </div>
+      </div>
+      <h3>Lead stories</h3>
+      <ol>{n.leads.map((l) => <li><strong>{l.headline}</strong> <a class="chip" href={url(`routes/${l.route}/`)}>{routeById(l.route)?.name}</a><br /><span class="small muted">{l.note} <a href={`https://doi.org/${l.doi}`}>doi:{l.doi}</a></span></li>)}</ol>
+      <h3>Watchlist</h3>
+      <ul class="small">{n.watch.map((w) => <li><span class="badge">{w.label}</span> {w.text}</li>)}</ul>
+    </article>
+  ))}
+  <style>@media (max-width: 640px) { .nl-grid { grid-template-columns: 1fr !important; } }</style>
+</Base>

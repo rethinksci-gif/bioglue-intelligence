@@ -1,0 +1,23 @@
+id: 2026-12
+title: BIOGLUE QUARTERLY — December 2026
+window: [2026-09-01, 2026-11-30]
+cutoff: 2026-10-14
+status: Trial / partial-window draft — not yet technically reviewed (reviewer open)
+pdf: newsletter/BIOGLUE_QUARTERLY_2026-12.pdf
+web: newsletter/BIOGLUE_QUARTERLY_2026-12.html
+cover: newsletter/BIOGLUE_QUARTERLY_2026-12-p1.png
+summary: >-
+  Four laboratory papers moved formaldehyde-free binders closer to panel conditions: a cysteine-lignin plywood
+  glue, a starch–citric acid MDF binder, a lignin–tannin NIPU curing at 130 °C and a veneer-faced spent-grain
+  particleboard. None ran a UF control. No verified industrial bio-binder or bio-acrylic milestone appeared before
+  the cutoff.
+leads:
+  - {n: 1, headline: Cysteine-grafted lignin bonds plywood without formaldehyde, route: lignin, doi: 10.1126/sciadv.aee5160, note: "Its 'beats commercial resin' claim uses PF diluted to 20 % solids, not UF."}
+  - {n: 2, headline: Citric acid and urea upgrade starch binder for MDF, route: carbohydrates, doi: 10.3390/polym18192400, note: "Lab MDF, IB 0.59–0.86 MPa; no UF control; hybrid because of urea."}
+  - {n: 3, headline: Lignin–tannin NIPU cures birch plywood at 130 °C, route: nipu, doi: 10.1016/j.ijbiomac.2026.154455, note: "Isocyanate-free urethane links; amine (HMDA) is fossil-typical."}
+  - {n: 4, headline: Veneer faces lift spent-grain board to P2 bending, route: proteins, doi: 10.3390/polym18182303, note: "Meets P2/H1 bending only with veneer faces; 25 min press."}
+watch:
+  - {label: Crosslinker, text: "Reprocessable imine-bonded wood-particle composite pressed at 120 °C (abstract only)."}
+  - {label: Crosslinker, text: "Soybean meal + PAE + MUG + blocked PU plywood at 105 °C, 4 min: a hybrid."}
+  - {label: Acrylic acid, text: "No verified renewable acrylic-acid supply milestone 1 Sep – 14 Oct."}
+  - {label: Regulation, text: "US EPA Section 610 review of TSCA Title VI: comments closed 13 Oct."}
