@@ -1,0 +1,13 @@
+---
+import Base from '../layouts/Base.astro';
+import { glossary, url } from '../lib/data';
+const groups = [['term', 'Terms'], ['label', 'Evidence labels used on this site'], ['standard', 'Test standards'], ['regulation', 'Regulation']];
+---
+<Base title="Glossary & standards" description="Terms, evidence labels and test standards used in wood-adhesive evaluation.">
+  <p class="crumbs"><a href={url('')}>Overview</a> / Glossary &amp; standards</p>
+  <h1>Glossary &amp; standards</h1>
+  <p class="muted narrow">Standard descriptions give the scope only; consult the published standard for requirements.</p>
+  {groups.map(([k, label]) => (
+    <section><h2>{label}</h2><dl class="facts">{glossary.filter((g) => g.kind === k).map((g) => <><dt id={g.term.toLowerCase().replace(/[^a-z0-9]+/g, '-')}>{g.term}</dt><dd>{g.text}</dd></>)}</dl></section>
+  ))}
+</Base>

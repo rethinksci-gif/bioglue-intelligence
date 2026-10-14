@@ -1,0 +1,41 @@
+name: Monthly scan (DeepSeek flash)
+on:
+  schedule:
+    - cron: "0 6 1 * *"   # 06:00 UTC on the 1st of each month
+  workflow_dispatch:
+    inputs:
+      quarter:
+        description: "Quarter to scan (YYYY-QN); blank = current"
+        required: false
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+concurrency:
+  group: scan
+  cancel-in-progress: false
+jobs:
+  scan:
+    runs-on: ubuntu-latest
+    env:
+      DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
+      DEEPSEEK_MODEL: ${{ vars.DEEPSEEK_MODEL || 'deepseek-flash' }}
+      MAX_LLM_CALLS_PER_RUN: ${{ vars.MAX_LLM_CALLS_PER_RUN || '80' }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12" }
+      - run: pip install -e .
+      - name: Check secret
+        run: test -n "$DEEPSEEK_API_KEY" || { echo "::error::Add the DEEPSEEK_API_KEY repository secret"; exit 1; }
+      - name: Scan
+        run: python -m scanner scan ${{ inputs.quarter && format('--quarter {0}', inputs.quarter) || '' }}
+      - name: Commit new leads
+        run: |
+          git config user.name "bioglue-bot"
+          git config user.email "bioglue-bot@users.noreply.github.com"
+          git add data/candidates
+          git diff --cached --quiet && echo "No changes" || git commit -m "Scan: update machine-triaged leads" && git push
+  deploy:
+    needs: scan
+    uses: ./.github/workflows/pages.yml

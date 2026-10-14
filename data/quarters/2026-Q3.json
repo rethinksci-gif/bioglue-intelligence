@@ -1,0 +1,620 @@
+{
+  "quarter": "2026-Q3",
+  "status": "RESEARCHING",
+  "version": 4,
+  "review": "Evidence-checked research draft: every fact is a verbatim quote from a retained source snapshot. Not yet signed off by a technical reviewer.",
+  "items": [
+    {
+      "id": "E2-audit-v2",
+      "technology": "BG-circular-c-lignin-thermoset",
+      "routes": [
+        "lignin"
+      ],
+      "route_note": null,
+      "headline": "Circular-C reports progress; qualification remains unverified",
+      "organization": "Circular-C consortium",
+      "date": "2026-07-06",
+      "date_basis": "first-publication",
+      "evidence_type": "announcement",
+      "confidence": "low",
+      "what_changed": "A July 6 project-partner disclosure reports lignin adhesive progress. June 10 dates the consortium meeting, not the underlying tests. Named standards and numerical results remain unavailable in this source. [S2]",
+      "why_it_matters": "Editorial interpretation: this warrants technical follow-up, not an assumption of commercial readiness.",
+      "limitation": "Exact wood-product classes, industrial trials and independent validation are not established by this announcement.",
+      "next": "Request named standards, exact panel types, formulation and test reports; monitor larger-scale validation.",
+      "uncertainty": "July disclosure date, not experimental milestone date. June 10 was a consortium meeting. Standards, test results and exact product qualifications remain unverified.",
+      "scores": [
+        2,
+        1,
+        1,
+        1,
+        0,
+        2
+      ],
+      "facts": [
+        {
+          "field": "milestone",
+          "label": "Milestone",
+          "value": "lignin-based thermoset adhesives meeting relevant performance standards",
+          "quote": "lignin-based thermoset adhesives meeting relevant performance standards",
+          "source": "S2",
+          "locator": "First results"
+        },
+        {
+          "field": "chemistry",
+          "label": "Chemistry",
+          "value": "lignin-based thermoset adhesives",
+          "quote": "lignin-based thermoset adhesives",
+          "source": "S2",
+          "locator": "First results"
+        },
+        {
+          "field": "binder",
+          "label": "Binder",
+          "value": "lignin",
+          "quote": "lignin",
+          "source": "S2",
+          "locator": "First results"
+        },
+        {
+          "field": "application",
+          "label": "Application",
+          "value": "wood and fibre panels",
+          "quote": "wood and fibre panels",
+          "source": "S2",
+          "locator": "Opening description"
+        },
+        {
+          "field": "scale",
+          "label": "Demonstrated scale",
+          "value": "early material development",
+          "quote": "early material development",
+          "source": "S2",
+          "locator": "First results"
+        },
+        {
+          "field": "status",
+          "label": "Status",
+          "value": "early material development",
+          "quote": "early material development",
+          "source": "S2",
+          "locator": "First results"
+        }
+      ],
+      "not_assessed": [
+        "Geography",
+        "Crosslinker",
+        "Renewable basis",
+        "Fossil components",
+        "Capacity",
+        "Performance",
+        "Manufacturing",
+        "Incumbent comparison"
+      ]
+    },
+    {
+      "id": "E3-bindethics-v1",
+      "technology": "BG-bindethics-ecohesive",
+      "routes": [
+        "proteins"
+      ],
+      "route_note": "Route assigned editorially: the release names brewing by-products but does not disclose the binder chemistry.",
+      "headline": "BindEthics moves Ecohesive to 40 L production batches",
+      "organization": "BindEthics",
+      "date": "2026-07-10",
+      "date_basis": "first-publication",
+      "evidence_type": "supplier",
+      "confidence": "low",
+      "what_changed": "A July 10 company release says the brewing-waste adhesive has moved from laboratory testing to 40-litre production-grade batches, made with Chemique Adhesives, with initial batches earmarked for trials at European Tier 1 and eco-plywood manufacturers. [S4-bindethics-v1]",
+      "why_it_matters": "Editorial interpretation: a contract manufacturer and named trial route make this worth a sample request. The 2,000 L figure is a stated pathway and the 6,000 t figure is customer interest; neither is production.",
+      "limitation": "No recipe, solids, dosage, press cycle, panel test or independent qualification is published. \"100% bio-based\" and drop-in compatibility are supplier claims.",
+      "next": "Request batch records, product type, press cycle, dosage and independent (Bangor or third-party) EN test reports from the announced Tier 1 trials.",
+      "uncertainty": "Supplier-authored claims only: recipe, solids, dosage, press cycle, panel tests and independent qualification are absent. \"Industrial-scale\" describes 40 L batches; the 6,000 t figure is customer interest, not output.",
+      "scores": [
+        2,
+        2,
+        0,
+        2,
+        1,
+        2
+      ],
+      "facts": [
+        {
+          "field": "country",
+          "label": "Geography",
+          "value": "UNITED KINGDOM",
+          "quote": "LONDON, UNITED KINGDOM",
+          "source": "S4-bindethics-v1",
+          "locator": "Dateline"
+        },
+        {
+          "field": "milestone",
+          "label": "Milestone",
+          "value": "producing 40-litre production-grade batches",
+          "quote": "progressing from laboratory testing to producing 40-litre production-grade batches",
+          "source": "S4-bindethics-v1",
+          "locator": "Paragraph 3"
+        },
+        {
+          "field": "chemistry",
+          "label": "Chemistry",
+          "value": "100% bio-based, formaldehyde-free adhesive",
+          "quote": "Ecohesive™ is a 100% bio-based, formaldehyde-free adhesive",
+          "source": "S4-bindethics-v1",
+          "locator": "Sustainable alternative section",
+          "basis": "Supplier claim; not certified"
+        },
+        {
+          "field": "feedstock",
+          "label": "Renewable basis",
+          "value": "by-products from the brewing industry",
+          "quote": "including by-products from the brewing industry",
+          "source": "S4-bindethics-v1",
+          "locator": "Sustainable alternative section",
+          "basis": "Supplier-described feedstock; renewable fraction of the whole formulation not certified"
+        },
+        {
+          "field": "application",
+          "label": "Application",
+          "value": "engineered wood applications",
+          "quote": "developed specifically for engineered wood applications",
+          "source": "S4-bindethics-v1",
+          "locator": "Sustainable alternative section"
+        },
+        {
+          "field": "scale",
+          "label": "Demonstrated scale",
+          "value": "40-litre production-grade batches",
+          "quote": "40-litre production-grade batches",
+          "source": "S4-bindethics-v1",
+          "locator": "Paragraph 3"
+        },
+        {
+          "field": "status",
+          "label": "Status",
+          "value": "commencement of commercial customer trials",
+          "quote": "commencement of commercial customer trials",
+          "source": "S4-bindethics-v1",
+          "locator": "Milestones list"
+        },
+        {
+          "field": "capacity",
+          "label": "Capacity",
+          "value": "2,000",
+          "quote": "a validated pathway to 2,000-litre manufacturing volumes",
+          "source": "S4-bindethics-v1",
+          "locator": "Paragraph 3",
+          "unit": "litres per batch",
+          "basis": "Supplier-stated pathway; not achieved",
+          "status": "target",
+          "product": "Ecohesive adhesive (per batch)"
+        },
+        {
+          "field": "manufacturing",
+          "label": "Manufacturing",
+          "value": "compatible with existing industrial mixing and pressing equipment",
+          "quote": "compatible with existing industrial mixing and pressing equipment",
+          "source": "S4-bindethics-v1",
+          "locator": "Sustainable alternative section",
+          "basis": "Supplier claim; no press trial data"
+        }
+      ],
+      "not_assessed": [
+        "Binder",
+        "Crosslinker",
+        "Fossil components",
+        "Performance",
+        "Incumbent comparison"
+      ]
+    },
+    {
+      "id": "E4-resicare-5hmf-v1",
+      "technology": "BG-resicare-5hmf",
+      "routes": [
+        "crosslinkers"
+      ],
+      "route_note": null,
+      "headline": "5-HMF supply: ResiCare and Axens enter exclusive talks",
+      "organization": "Michelin ResiCare",
+      "date": "2026-07-08",
+      "date_basis": "first-publication",
+      "evidence_type": "announcement",
+      "confidence": "moderate",
+      "what_changed": "Michelin ResiCare announced exclusive negotiations with Axens on 8 July to license and deploy its 5-HMF technology, developed with IFPEN. A first unit of about 3,000 t/year at Péage-de-Roussillon is scheduled to start in early 2027. [S5-resicare-v1]",
+      "why_it_matters": "Editorial interpretation: a dedicated 5-HMF supply would matter for aldehyde-type resins that avoid formaldehyde. The capacity is for a chemical intermediate, not adhesive.",
+      "limitation": "Talks, not a concluded deal; plant not yet operating. No wood-panel formulation, emissions, cost or LCA data in this release.",
+      "next": "Watch for a signed agreement, commissioning, 5-HMF specification and any third-party panel results for HMF-based resins.",
+      "uncertainty": "Negotiations, not a concluded partnership. The plant is announced, not operating. No wood-adhesive formulation, emissions, cost or LCA data in the release.",
+      "scores": [
+        1,
+        2,
+        1,
+        1,
+        1,
+        1
+      ],
+      "facts": [
+        {
+          "field": "country",
+          "label": "Geography",
+          "value": "France",
+          "quote": "located in Péage-de-Roussillon, France",
+          "source": "S5-resicare-v1",
+          "locator": "Paragraph 5"
+        },
+        {
+          "field": "milestone",
+          "label": "Milestone",
+          "value": "entered into exclusive negotiations",
+          "quote": "have entered into exclusive negotiations for a partnership",
+          "source": "S5-resicare-v1",
+          "locator": "Summary bullet 1"
+        },
+        {
+          "field": "chemistry",
+          "label": "Chemistry",
+          "value": "5-hydroxymethylfurfural (5-HMF)",
+          "quote": "5-hydroxymethylfurfural (5-HMF)",
+          "source": "S5-resicare-v1",
+          "locator": "Paragraph 1"
+        },
+        {
+          "field": "feedstock",
+          "label": "Renewable basis",
+          "value": "derived from plant-based resources",
+          "quote": "renewable alternatives derived from plant-based resources",
+          "source": "S5-resicare-v1",
+          "locator": "Paragraph 4",
+          "basis": "Supplier statement; feedstock not specified"
+        },
+        {
+          "field": "application",
+          "label": "Application",
+          "value": "resins and adhesives",
+          "quote": "can be used to develop resins and adhesives as well as bio-based polymers",
+          "source": "S5-resicare-v1",
+          "locator": "Paragraph 2",
+          "basis": "General use; no wood product named"
+        },
+        {
+          "field": "status",
+          "label": "Status",
+          "value": "Start-up is scheduled for early 2027",
+          "quote": "Start-up is scheduled for early 2027",
+          "source": "S5-resicare-v1",
+          "locator": "Paragraph 5"
+        },
+        {
+          "field": "capacity",
+          "label": "Capacity",
+          "value": "3,000",
+          "quote": "with a capacity of approximately 3,000 tonnes per year",
+          "source": "S5-resicare-v1",
+          "locator": "Paragraph 5",
+          "unit": "tonnes per year",
+          "basis": "First planned unit; start-up early 2027",
+          "status": "announced",
+          "product": "5-HMF (chemical intermediate, not adhesive)"
+        }
+      ],
+      "not_assessed": [
+        "Binder",
+        "Crosslinker",
+        "Fossil components",
+        "Demonstrated scale",
+        "Performance",
+        "Manufacturing",
+        "Incumbent comparison"
+      ]
+    },
+    {
+      "id": "E6-plos-lf-v1",
+      "technology": "BG-pk-lignin-formaldehyde",
+      "routes": [
+        "lignin"
+      ],
+      "route_note": null,
+      "headline": "Residue lignins fully replace phenol in lab LF resins",
+      "organization": "University of Haripur",
+      "date": "2026-07-08",
+      "date_basis": "first-publication",
+      "evidence_type": "peer-reviewed",
+      "confidence": "moderate",
+      "what_changed": "A July 8 PLOS One study made resol resins with lignin from chir-pine needles, eucalyptus sawdust or bagasse as the only phenolic component. Chir-pine lignin performed best (3.12 MPa dry lap shear) but stayed below the laboratory PF control (3.40 MPa). [S7-plos-lf-v1]",
+      "why_it_matters": "Editorial interpretation: useful feedstock learning for phenolic substitution; it shows lignin structure, not total hydroxyl content, drives bond strength. Formaldehyde is still a reactant.",
+      "limitation": "Three replicates, lap-shear joints only, laboratory rather than commercial PF benchmark; panel emissions not measured.",
+      "next": "Seek panel-level tests (EN 314 / EN 319), free-formaldehyde and emission data, and a commercial PF comparison.",
+      "uncertainty": "Three replicates per condition; laboratory PF rather than commercial benchmark; lap-shear joints, not panels; residual carbohydrates and panel formaldehyde emissions not measured.",
+      "scores": [
+        2,
+        1,
+        2,
+        1,
+        1,
+        1
+      ],
+      "facts": [
+        {
+          "field": "country",
+          "label": "Geography",
+          "value": "Pakistan",
+          "quote": "collected from Khyber Pakhtunkhwa province of Pakistan",
+          "source": "S7-plos-lf-v1",
+          "locator": "Materials",
+          "basis": "Feedstock and lead-author location"
+        },
+        {
+          "field": "milestone",
+          "label": "Milestone",
+          "value": "resol-type lignin-formaldehyde resins under a complete phenol-replacement system",
+          "quote": "resol-type lignin-formaldehyde resins under a complete phenol-replacement system",
+          "source": "S7-plos-lf-v1",
+          "locator": "Abstract"
+        },
+        {
+          "field": "chemistry",
+          "label": "Chemistry",
+          "value": "resol-type lignin-formaldehyde resins",
+          "quote": "resol-type lignin-formaldehyde resins",
+          "source": "S7-plos-lf-v1",
+          "locator": "Abstract"
+        },
+        {
+          "field": "binder",
+          "label": "Binder",
+          "value": "alkaline lignins",
+          "quote": "synthesized from alkaline lignins isolated from three locally available biomasses",
+          "source": "S7-plos-lf-v1",
+          "locator": "Abstract"
+        },
+        {
+          "field": "crosslinker",
+          "label": "Crosslinker",
+          "value": "formaldehyde",
+          "quote": "each lignin was reacted with formaldehyde under alkaline conditions",
+          "source": "S7-plos-lf-v1",
+          "locator": "Abstract"
+        },
+        {
+          "field": "feedstock",
+          "label": "Renewable basis",
+          "value": "chir pine needles (CP), eucalyptus sawdust (ESD), and sugarcane bagasse (SB)",
+          "quote": "chir pine needles (CP), eucalyptus sawdust (ESD), and sugarcane bagasse (SB)",
+          "source": "S7-plos-lf-v1",
+          "locator": "Abstract",
+          "basis": "Lignin source only; formaldehyde, NaOH, wheat flour and bark filler also present"
+        },
+        {
+          "field": "fossil_remaining",
+          "label": "Fossil components",
+          "value": "formaldehyde (37%)",
+          "quote": "then added to formaldehyde (37%)",
+          "source": "S7-plos-lf-v1",
+          "locator": "Methods: LF synthesis",
+          "basis": "Formaldehyde reactant retained; origin not stated"
+        },
+        {
+          "field": "application",
+          "label": "Application",
+          "value": "single-lap joints prepared from poplar wood veneers",
+          "quote": "single-lap joints prepared from poplar wood veneers",
+          "source": "S7-plos-lf-v1",
+          "locator": "Methods: bonding"
+        },
+        {
+          "field": "scale",
+          "label": "Demonstrated scale",
+          "value": "lab-scale prototype",
+          "quote": "A lab-scale prototype development",
+          "source": "S7-plos-lf-v1",
+          "locator": "Title"
+        },
+        {
+          "field": "performance",
+          "label": "Performance",
+          "value": "3.12 ± 0.01 MPa",
+          "quote": "dry strength decreased in the order CP (3.12 ± 0.01 MPa)",
+          "source": "S7-plos-lf-v1",
+          "locator": "Results, Table 7",
+          "unit": "MPa",
+          "conditions": "Dry; poplar veneer; approx. 1400 kPa, 180 °C, 3–4 min",
+          "basis": "Chir-pine lignin LF adhesive",
+          "method": "Lap shear, ASTM D906 / ISO 4587 principles, n=3",
+          "comparator": "Laboratory PF control"
+        },
+        {
+          "field": "benchmark",
+          "label": "Incumbent comparison",
+          "value": "3.40 ± 0.03 MPa",
+          "quote": "The laboratory PF control showed dry and wet strengths of 3.40 ± 0.03 MPa",
+          "source": "S7-plos-lf-v1",
+          "locator": "Results, Table 7",
+          "basis": "Laboratory PF, dry; not a commercial adhesive"
+        }
+      ],
+      "not_assessed": [
+        "Status",
+        "Capacity",
+        "Manufacturing"
+      ]
+    },
+    {
+      "id": "E5-maap-acrylic-v1",
+      "technology": "BG-maap-acrylic-acid",
+      "routes": [
+        "acrylics"
+      ],
+      "route_note": null,
+      "headline": "Acrylic-acid watch: enzyme cascade from methanol",
+      "organization": "Tianjin Institute of Industrial Biotechnology, CAS",
+      "date": "2026-07-21",
+      "date_basis": "first-publication",
+      "evidence_type": "peer-reviewed",
+      "confidence": "moderate",
+      "what_changed": "A July 21 Nature Communications paper reports an engineered acrylic acid synthase in a cell-free methanol-to-acrylic-acid cascade, reaching 4.3 g/L in 16 hours in a 1 mL reaction. [S6-nature-maap-v1]",
+      "why_it_matters": "Editorial interpretation: a route to acrylic monomers from one-carbon feedstock, relevant to the acrylic dispersion watch. It is upstream chemistry, not an adhesive result.",
+      "limitation": "Methanol origin not stated, so renewable carbon is not shown. Cost figures are modelled scenarios. Formaldehyde is a pathway intermediate.",
+      "next": "Look for isolated-product purity, enzyme productivity and reuse at larger volume, and a renewable-methanol chain of custody.",
+      "uncertainty": "Millilitre-scale cell-free reaction; methanol origin of tested material not stated; product isolation, enzyme cost and scale-up are modelled or open. Formaldehyde is a pathway intermediate.",
+      "scores": [
+        0,
+        2,
+        2,
+        0,
+        1,
+        1
+      ],
+      "facts": [
+        {
+          "field": "milestone",
+          "label": "Milestone",
+          "value": "We establish an enzymatic methanol-to-acrylic acid (MAAP) pathway",
+          "quote": "We establish an enzymatic methanol-to-acrylic acid (MAAP) pathway",
+          "source": "S6-nature-maap-v1",
+          "locator": "Abstract"
+        },
+        {
+          "field": "chemistry",
+          "label": "Chemistry",
+          "value": "acrylic acid synthase (AAS)",
+          "quote": "designated acrylic acid synthase (AAS)",
+          "source": "S6-nature-maap-v1",
+          "locator": "Abstract"
+        },
+        {
+          "field": "feedstock",
+          "label": "Renewable basis",
+          "value": "methanol",
+          "quote": "biosynthesis of acrylic acid from methanol within 16 hours",
+          "source": "S6-nature-maap-v1",
+          "locator": "Results: in vitro biosynthesis",
+          "basis": "Methanol origin of tested material not stated; renewable carbon not demonstrated"
+        },
+        {
+          "field": "application",
+          "label": "Application",
+          "value": "adhesives",
+          "quote": "the primary precursor for manufacturing diapers, coatings, paints, and adhesives",
+          "source": "S6-nature-maap-v1",
+          "locator": "Introduction",
+          "basis": "Acrylic acid end use in general; no wood adhesive tested"
+        },
+        {
+          "field": "scale",
+          "label": "Demonstrated scale",
+          "value": "total volume of 1 mL",
+          "quote": "with a total volume of 1 mL",
+          "source": "S6-nature-maap-v1",
+          "locator": "Methods: biosynthesis from methanol"
+        },
+        {
+          "field": "performance",
+          "label": "Performance",
+          "value": "4.3 g L−1",
+          "quote": "with a titer of 4.3 g L−1 (59.7 mM)",
+          "source": "S6-nature-maap-v1",
+          "locator": "Results: in vitro biosynthesis",
+          "unit": "g/L titre",
+          "conditions": "16 h cell-free cascade from methanol, 1 mL reaction",
+          "basis": "Acrylic acid in reaction mixture; isolated purity not reported here",
+          "method": "HPLC",
+          "comparator": "Microbial routes below 3% yield (authors, Table 1)"
+        }
+      ],
+      "not_assessed": [
+        "Geography",
+        "Binder",
+        "Crosslinker",
+        "Fossil components",
+        "Status",
+        "Capacity",
+        "Manufacturing",
+        "Incumbent comparison"
+      ]
+    }
+  ],
+  "holds": [
+    {
+      "id": "hold-lignin-zein",
+      "routes": [
+        "lignin",
+        "proteins"
+      ],
+      "title": "Lignin-zein debondable plywood adhesive",
+      "date": "2026-06-24",
+      "doi": "10.1039/d6gc02129h",
+      "reason": "Author manuscript recovered, but veneer thickness (1.5 vs 1 mm) and dry spread (83 vs ~76 g/m²) differ between its sections; publisher version not yet compared."
+    },
+    {
+      "id": "hold-casein-beech",
+      "routes": [
+        "proteins"
+      ],
+      "title": "Casein adhesive on beech compared with PVAc",
+      "date": "2026-08-16",
+      "doi": "10.3390/f17080972",
+      "reason": "Retained HTML was revised on 4 September, after the quarter cutoff; comparison withheld until the original August version is recovered."
+    },
+    {
+      "id": "hold-pulp-residue",
+      "routes": [
+        "lignin"
+      ],
+      "title": "Flame-retardant wood adhesive prepared from pulp mill residues",
+      "date": null,
+      "doi": "10.1039/d6gc02014c",
+      "reason": "Repository access blocked (HTTP 403); only Crossref metadata retrieved, so no methods or results are reported."
+    }
+  ],
+  "sources": [
+    {
+      "id": "S2",
+      "title": "Circular-C project marks first year progress",
+      "url": "https://www.steinbeis-europa.de/de/aktuelles/beitrag/developing-biobased-solutions-for-circular-construction-materials-circular-c-project-marks-first-year-progress",
+      "doi": null,
+      "published": "2026-07-06",
+      "version_date": null,
+      "kind": "announcement",
+      "access": "Original project-partner announcement inspected; a project claim, not independent industrial validation. Exact panel type and qualification details absent from retained source."
+    },
+    {
+      "id": "S4-bindethics-v1",
+      "title": "BindEthics: Commercial scale-up begins for formaldehyde-free adhesive alternative",
+      "url": "https://natlawreview.com/press-releases/commercial-scale-begins-formaldehyde-free-adhesive-alternative",
+      "doi": null,
+      "published": "2026-07-10",
+      "version_date": null,
+      "kind": "supplier",
+      "access": "Company-authored release via EIN Presswire syndication; company site not inspected. Supplier claims, no independent test data."
+    },
+    {
+      "id": "S5-resicare-v1",
+      "title": "Michelin and Axens enter exclusive discussions on 5-HMF, developed with IFPEN",
+      "url": "https://resicare.michelin.com/news/michelin-axens-in-exclusive-talks-on-bio-based-molecule-for-green-chemistry",
+      "doi": null,
+      "published": "2026-07-08",
+      "version_date": "2026-08-05",
+      "kind": "announcement",
+      "access": "Company page retrieved directly; page metadata shows July 8 publication and August 5 modification (within cutoff). Earlier July wording not compared."
+    },
+    {
+      "id": "S6-nature-maap-v1",
+      "title": "Towards an enzyme cascade synthesis of the bulk chemical acrylic acid (Nature Communications)",
+      "url": "https://www.nature.com/articles/s41467-026-75484-w",
+      "doi": "10.1038/s41467-026-75484-w",
+      "published": "2026-07-21",
+      "version_date": null,
+      "kind": "peer-reviewed",
+      "access": "Open-access article HTML retrieved directly (CC BY-NC-ND 4.0); supplementary files not inspected."
+    },
+    {
+      "id": "S7-plos-lf-v1",
+      "title": "A lab-scale prototype development of lignin-formaldehyde (LF) resin (PLOS One)",
+      "url": "https://journals.plos.org/plosone/article/file?id=10.1371/journal.pone.0352893&type=manuscript",
+      "doi": "10.1371/journal.pone.0352893",
+      "published": "2026-07-08",
+      "version_date": null,
+      "kind": "peer-reviewed",
+      "access": "Open-access JATS XML retrieved directly (CC BY 4.0); includes published peer-review history."
+    }
+  ]
+}

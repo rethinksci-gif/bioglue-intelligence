@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+message: "If you use this knowledge base or its data, please cite it as below."
+title: "BIOGLUE Intelligence: an open knowledge base and quarterly tracker for bio-based wood adhesives"
+type: dataset
+authors:
+  - name: "rethinksci-gif"
+repository-code: "https://github.com/rethinksci-gif/bioglue-intelligence"
+url: "https://rethinksci-gif.github.io/bioglue-intelligence/"
+license: CC-BY-4.0
+keywords: [bio-based adhesives, wood adhesives, formaldehyde-free, lignin, soy protein, tannin, particleboard, plywood]

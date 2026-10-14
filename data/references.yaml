@@ -1,0 +1,250 @@
+# Every DOI below was resolved against Crossref on 2026-10-14 (title, first author, journal, year).
+# `python -m scanner verify-refs` re-checks them. Do not add a reference without a resolvable DOI.
+- id: pizzi2006
+  authors: Pizzi A.
+  year: 2006
+  title: "Recent developments in eco-efficient bio-based adhesives for wood bonding: opportunities and issues"
+  journal: Journal of Adhesion Science and Technology
+  doi: 10.1163/156856106777638635
+  kind: review
+  routes: [lignin, tannins, proteins, carbohydrates]
+- id: hemmila2017
+  authors: Hemmilä V., Adamopoulos S., Karlsson O., Kumar A.
+  year: 2017
+  title: "Development of sustainable bio-adhesives for engineered wood panels – A Review"
+  journal: RSC Advances
+  doi: 10.1039/C7RA06598A
+  kind: review
+  routes: [lignin, tannins, proteins, carbohydrates]
+- id: heinrich2019
+  authors: Heinrich L.A.
+  year: 2019
+  title: "Future opportunities for bio-based adhesives – advantages beyond renewability"
+  journal: Green Chemistry
+  doi: 10.1039/C8GC03746A
+  kind: review
+  routes: [general]
+- id: solt2019
+  authors: Solt P., Konnerth J., Gindl-Altmutter W., Kantner W., Moser J., et al.
+  year: 2019
+  title: "Technological performance of formaldehyde-free adhesive alternatives for particleboard industry"
+  journal: International Journal of Adhesion and Adhesives
+  doi: 10.1016/j.ijadhadh.2019.04.007
+  kind: review
+  routes: [general, crosslinkers, carboxylic-acids, proteins]
+- id: arias2021
+  authors: Arias A., González-Rodríguez S., Vetroni Barros M., Salvador R., de Francisco A.C., et al.
+  year: 2021
+  title: "Recent developments in bio-based adhesives from renewable natural resources"
+  journal: Journal of Cleaner Production
+  doi: 10.1016/j.jclepro.2021.127892
+  kind: review
+  routes: [general]
+- id: pizzi2020
+  authors: Pizzi A., Papadopoulos A.N., Policardi F.
+  year: 2020
+  title: "Wood composites and their polymer binders"
+  journal: Polymers
+  doi: 10.3390/polym12051115
+  kind: review
+  routes: [general, incumbents]
+- id: ferdosian2017
+  authors: Ferdosian F., Pan Z., Gao G., Zhao B.
+  year: 2017
+  title: "Bio-based adhesives and evaluation for wood composites application"
+  journal: Polymers
+  doi: 10.3390/polym9020070
+  kind: review
+  routes: [general]
+- id: dunky1998
+  authors: Dunky M.
+  year: 1998
+  title: "Urea–formaldehyde (UF) adhesive resins for wood"
+  journal: International Journal of Adhesion and Adhesives
+  doi: 10.1016/s0143-7496(97)00054-7
+  kind: review
+  routes: [incumbents]
+- id: dunky2020a
+  authors: Dunky M.
+  year: 2020
+  title: "Wood adhesives based on natural resources: a critical review Part I. Protein-based adhesives"
+  journal: Reviews of Adhesion and Adhesives
+  doi: 10.7569/raa.2020.097309
+  kind: review
+  routes: [proteins]
+- id: dunky2020b
+  authors: Dunky M.
+  year: 2020
+  title: "Wood adhesives based on natural resources: a critical review Part II. Carbohydrate-based adhesives"
+  journal: Reviews of Adhesion and Adhesives
+  doi: 10.7569/raa.2020.097310
+  kind: review
+  routes: [carbohydrates]
+- id: dunky2021
+  authors: Dunky M.
+  year: 2021
+  title: "Wood adhesives based on natural resources: a critical review Part IV. Special topics"
+  journal: Reviews of Adhesion and Adhesives
+  doi: 10.7569/raa.2021.097307
+  kind: review
+  routes: [general]
+- id: hunt2018
+  authors: Hunt C.G., Frihart C.R., Dunky M., Rohumaa A.
+  year: 2018
+  title: "Understanding wood bonds – going beyond what meets the eye: a critical review"
+  journal: Reviews of Adhesion and Adhesives
+  doi: 10.7569/raa.2018.097312
+  kind: review
+  routes: [general]
+- id: ang2019
+  authors: Ang A.F., Ashaari Z., Lee S.H., Md Tahir P., Halis R.
+  year: 2019
+  title: "Lignin-based copolymer adhesives for composite wood panels – A review"
+  journal: International Journal of Adhesion and Adhesives
+  doi: 10.1016/j.ijadhadh.2019.102408
+  kind: review
+  routes: [lignin]
+- id: kalami2017
+  authors: Kalami S., Arefmanesh M., Master E., Nejad M.
+  year: 2017
+  title: "Replacing 100% of phenol in phenolic adhesive formulations with lignin"
+  journal: Journal of Applied Polymer Science
+  doi: 10.1002/app.45124
+  kind: research
+  routes: [lignin]
+- id: mansouri2010
+  authors: Mansouri H.R., Navarrete P., Pizzi A., Tapin-Lingua S., Benjelloun-Mlayah B., et al.
+  year: 2010
+  title: "Synthetic-resin-free wood panel adhesives from mixed low molecular mass lignin and tannin"
+  journal: European Journal of Wood and Wood Products
+  doi: 10.1007/s00107-010-0423-0
+  kind: research
+  routes: [lignin, tannins]
+- id: pizzi2019
+  authors: Pizzi A.
+  year: 2019
+  title: "Tannins: prospectives and actual industrial applications"
+  journal: Biomolecules
+  doi: 10.3390/biom9080344
+  kind: review
+  routes: [tannins]
+- id: oktay2024
+  authors: Oktay S., Pizzi A., Köken N., Bengü B.
+  year: 2024
+  title: "Tannin-based wood panel adhesives"
+  journal: International Journal of Adhesion and Adhesives
+  doi: 10.1016/j.ijadhadh.2024.103621
+  kind: review
+  routes: [tannins]
+- id: abdullah2012
+  authors: Abdullah U.H.B., Pizzi A.
+  year: 2012
+  title: "Tannin-furfuryl alcohol wood panel adhesives without formaldehyde"
+  journal: European Journal of Wood and Wood Products
+  doi: 10.1007/s00107-012-0629-4
+  kind: research
+  routes: [tannins, crosslinkers]
+- id: kumar2002
+  authors: Kumar R., Choudhary V., Mishra S., Varma I.K., Mattiason B.
+  year: 2002
+  title: "Adhesives and plastics based on soy protein products"
+  journal: Industrial Crops and Products
+  doi: 10.1016/S0926-6690(02)00007-9
+  kind: review
+  routes: [proteins]
+- id: vnucec2017
+  authors: Vnučec D., Kutnar A., Goršek A.
+  year: 2016
+  title: "Soy-based adhesives for wood-bonding – a review"
+  journal: Journal of Adhesion Science and Technology
+  doi: 10.1080/01694243.2016.1237278
+  kind: review
+  routes: [proteins]
+- id: liu2007
+  authors: Liu Y., Li K.
+  year: 2007
+  title: "Development and characterization of adhesives from soy protein for bonding wood"
+  journal: International Journal of Adhesion and Adhesives
+  doi: 10.1016/j.ijadhadh.2005.12.004
+  kind: research
+  routes: [proteins]
+- id: huang2007
+  authors: Huang J., Li K.
+  year: 2007
+  title: "A new soy flour-based adhesive for making interior type II plywood"
+  journal: Journal of the American Oil Chemists' Society
+  doi: 10.1007/s11746-007-1162-1
+  kind: research
+  routes: [proteins, crosslinkers]
+- id: gui2013
+  authors: Gui C., Wang G., Wu D., Zhu J., Liu X.
+  year: 2013
+  title: "Synthesis of a bio-based polyamidoamine-epichlorohydrin resin and its application for soy-based adhesives"
+  journal: International Journal of Adhesion and Adhesives
+  doi: 10.1016/j.ijadhadh.2013.03.011
+  kind: research
+  routes: [proteins, crosslinkers]
+- id: ji2018
+  authors: Ji X., Guo M.
+  year: 2018
+  title: "Preparation and properties of a chitosan-lignin wood adhesive"
+  journal: International Journal of Adhesion and Adhesives
+  doi: 10.1016/j.ijadhadh.2017.12.005
+  kind: research
+  routes: [carbohydrates, lignin]
+- id: umemura2013
+  authors: Umemura K., Sugihara O., Kawai S.
+  year: 2013
+  title: "Investigation of a new natural adhesive composed of citric acid and sucrose for particleboard"
+  journal: Journal of Wood Science
+  doi: 10.1007/s10086-013-1326-6
+  kind: research
+  routes: [carboxylic-acids]
+- id: sun2019
+  authors: Sun S., Zhao Z., Umemura K.
+  year: 2019
+  title: "Further exploration of sucrose-citric acid adhesive: synthesis and application on plywood"
+  journal: Polymers
+  doi: 10.3390/polym11111875
+  kind: research
+  routes: [carboxylic-acids]
+- id: despres2010
+  authors: Despres A., Pizzi A., Vu C., Delmotte L.
+  year: 2009
+  title: "Colourless formaldehyde-free urea resin adhesives for wood panels"
+  journal: European Journal of Wood and Wood Products
+  doi: 10.1007/s00107-009-0344-y
+  kind: research
+  routes: [crosslinkers]
+- id: xi2019
+  authors: Xi X., Wu Z., Pizzi A., Gerardin C., Lei H., et al.
+  year: 2019
+  title: "Non-isocyanate polyurethane adhesive from sucrose used for particleboard"
+  journal: Wood Science and Technology
+  doi: 10.1007/s00226-019-01083-2
+  kind: research
+  routes: [nipu]
+- id: sarazin2021
+  authors: Saražin J., Pizzi A., Amirou S., Schmiedl D., Šernek M.
+  year: 2021
+  title: "Organosolv lignin for non-isocyanate based polyurethanes (NIPU) as wood adhesive"
+  journal: Journal of Renewable Materials
+  doi: 10.32604/jrm.2021.015047
+  kind: research
+  routes: [nipu, lignin]
+- id: iswanto2023
+  authors: Iswanto A.H., Lubis M.A.R., Sutiawan J., Al-Edrus S.S.O., Lee S.H., et al.
+  year: 2023
+  title: "Latest advancements in the development of high-performance lignin- and tannin-based non-isocyanate polyurethane adhesive for wood composites"
+  journal: Polymers
+  doi: 10.3390/polym15193864
+  kind: review
+  routes: [nipu, lignin, tannins]
+- id: eu2023-1464
+  authors: European Commission
+  year: 2023
+  title: "Commission Regulation (EU) 2023/1464 amending Annex XVII to REACH as regards formaldehyde and formaldehyde releasers"
+  journal: Official Journal of the European Union
+  url: https://publications.europa.eu/resource/celex/32023R1464
+  kind: regulation
+  routes: [general, incumbents]

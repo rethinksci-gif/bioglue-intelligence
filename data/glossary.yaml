@@ -1,0 +1,64 @@
+# Terms and standards. Standard descriptions are scope summaries, not substitutes for the documents.
+- term: UF / MUF / PF
+  kind: term
+  text: Urea-formaldehyde, melamine-urea-formaldehyde and phenol-formaldehyde resins, the incumbent wood-panel binders. UF dominates interior particleboard and MDF; PF and MUF are used where moisture resistance is needed.
+- term: pMDI
+  kind: term
+  text: Polymeric methylene diphenyl diisocyanate. A formaldehyde-free but fossil-based binder widely used for OSB and some particleboard and MDF.
+- term: PAE
+  kind: term
+  text: Polyamidoamine-epichlorohydrin resin. A wet-strength agent from papermaking, used as the crosslinker in commercial soy adhesives.
+- term: PVAc / EPI
+  kind: term
+  text: Polyvinyl acetate dispersions (assembly and furniture glue) and emulsion polymer isocyanate (a crosslinked dispersion used for some load-bearing uses).
+- term: NIPU
+  kind: term
+  text: Non-isocyanate polyurethane, made from cyclic carbonates and amines instead of isocyanates.
+- term: Track A / Track B crosslinker
+  kind: term
+  text: Tracker classification. A is renewable feedstock substitution for an established crosslinking chemistry; B is new reactive chemistry whose functional role must be demonstrated.
+- term: Press factor
+  kind: term
+  text: Press time per millimetre of board thickness (s/mm) at a stated temperature, the usual way to compare cure speed on a panel line.
+- term: Mass balance
+  kind: term
+  text: An accounting method that attributes renewable feedstock input to selected outputs. It does not mean the product contains measurably more bio-based carbon.
+- term: Supplier-reported
+  kind: label
+  text: A claim made by the company that sells the product, without independent test data in the inspected source.
+- term: Announced / target capacity
+  kind: label
+  text: Capacity a company says it plans or aims to have. It is not operating output and is never shown as such.
+- term: Hold
+  kind: label
+  text: A relevant lead whose source is not yet cleared (version after the cutoff, internal discrepancies, or no access). Its results are not reported until resolved.
+- term: Machine-triaged lead
+  kind: label
+  text: A discovery record screened by DeepSeek flash. The route and summary are provisional; the quote is checked by code against the record's title or abstract. It is not verified evidence.
+- term: EN 312
+  kind: standard
+  text: European specification for particleboards, defining board types P1–P7 by load-bearing and humidity conditions.
+- term: EN 319
+  kind: standard
+  text: Particleboards and fibreboards — determination of tensile strength perpendicular to the plane of the board (internal bond).
+- term: EN 317
+  kind: standard
+  text: Particleboards and fibreboards — determination of swelling in thickness after immersion in water.
+- term: EN 314-1 / EN 314-2
+  kind: standard
+  text: Plywood bonding quality, covering test methods with pretreatments (part 1) and requirements by bonding class (part 2).
+- term: EN 622
+  kind: standard
+  text: European specification series for fibreboards, including MDF.
+- term: EN 717-1
+  kind: standard
+  text: Wood-based panels — determination of formaldehyde release by the chamber method.
+- term: EN 16516
+  kind: standard
+  text: Construction products — assessment of release of dangerous substances, including VOC emissions into indoor air.
+- term: ASTM E1333
+  kind: standard
+  text: Large-chamber test method for formaldehyde concentrations from wood products, used for US CARB and TSCA Title VI compliance.
+- term: REACH Annex XVII entry 77
+  kind: regulation
+  text: EU restriction on formaldehyde and formaldehyde releasers (Regulation (EU) 2023/1464). From 6 August 2026 it limits release from furniture and wood-based articles to 0.062 mg/m³ under its test conditions; road vehicles follow from 6 August 2027.

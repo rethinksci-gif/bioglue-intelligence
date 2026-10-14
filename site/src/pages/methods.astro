@@ -1,0 +1,29 @@
+---
+import Base from '../layouts/Base.astro';
+import { REPO, url } from '../lib/data';
+---
+<Base title="Methods" description="How BIOGLUE Intelligence discovers, screens and verifies developments, and how DeepSeek flash is used.">
+  <p class="crumbs"><a href={url('')}>Overview</a> / Methods</p>
+  <div class="narrow">
+    <h1>How we verify</h1>
+    <p class="lede muted">Each stage has a different evidence level, and the site labels which one an item has reached.</p>
+    <h2>1 · Discovery</h2>
+    <p>A monthly GitHub Actions job queries Crossref (journal articles, filtered by publication date) and date-bounded Google News RSS with route-specific queries from <code>data/routes.yaml</code>. Discovery records are not evidence. Absence from a search is not absence of progress.</p>
+    <h2>2 · Machine triage (DeepSeek flash)</h2>
+    <p>Records are sent in batches to <strong>DeepSeek flash</strong> (<code>deepseek-flash</code>), which assigns a route, a relevance score, a signal type, a one-sentence summary and a supporting quote. The code then enforces three rules:</p>
+    <ul>
+      <li>The quote must appear verbatim in the record's title or abstract, or the summary is discarded.</li>
+      <li>The route must be one of the defined route ids.</li>
+      <li>Leads below a relevance of 0.6 are kept in the data file but not shown.</li>
+    </ul>
+    <p>Each run has a call budget (<code>MAX_LLM_CALLS_PER_RUN</code>). Records already triaged are never re-sent. A full quarter scan used about 45 calls. Only flash is used; no larger model is called.</p>
+    <h2>3 · Evidence check</h2>
+    <p>A human editor selects a lead for a quarterly issue and retains a snapshot of the primary source. Each fact is extracted as a verbatim quote with a locator. Code rejects values not found in the quote, numbers that match only as substrings, and sources dated after the quarter cutoff. Supplier and announcement claims stay labelled as such. Announced or target capacity is never shown as output.</p>
+    <h2>4 · Technical review</h2>
+    <p>Only a named reviewer's signature can approve an issue. The 2026-Q3 edition is evidence-checked but <strong>not yet signed</strong>, and the site says so on every item. Full-text source snapshots stay in a private research workspace; only quotes and metadata are published.</p>
+    <h2>Labels</h2>
+    <p><span class="badge ok">peer-reviewed</span> <span class="badge warn">supplier</span> <span class="badge warn">announcement</span> <span class="badge hold">hold</span> <span class="badge warn">machine-triaged</span>. See the <a href={url('glossary/')}>glossary</a>.</p>
+    <h2>Contribute</h2>
+    <p>Submit a lead or a correction through <a href={`${REPO}/issues/new/choose`}>GitHub issues</a>. Route content lives in plain YAML under <code>data/</code>, and pull requests are welcome; every new reference needs a resolvable DOI.</p>
+  </div>
+</Base>

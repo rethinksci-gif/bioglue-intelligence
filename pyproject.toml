@@ -1,0 +1,20 @@
+[project]
+name = "bioglue-intelligence"
+version = "0.1.0"
+description = "Discovery, DeepSeek-flash triage and data builds for the BIOGLUE Intelligence site"
+requires-python = ">=3.11"
+dependencies = ["pyyaml>=6", "pydantic>=2", "openai>=1.40"]
+
+[project.optional-dependencies]
+structures = ["rdkit>=2024.3"]
+dev = ["pytest>=8"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+packages = ["scanner"]

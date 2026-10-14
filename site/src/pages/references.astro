@@ -1,0 +1,23 @@
+---
+import Base from '../layouts/Base.astro';
+import { references, routes, routeById, refLink, url } from '../lib/data';
+const kinds = [['review', 'Critical reviews'], ['research', 'Key research papers'], ['regulation', 'Regulation']];
+---
+<Base title="Literature" description="Verified literature on bio-based wood adhesives, organised by technology route.">
+  <p class="crumbs"><a href={url('')}>Overview</a> / Literature</p>
+  <h1>Literature</h1>
+  <p class="lede muted narrow">Reviews and key papers that the route pages draw on. Every DOI is checked against Crossref by <code>python -m scanner verify-refs</code> in CI. Download as <a href={url('references.bib')}>BibTeX</a> or <a href={url('data/references.json')}>JSON</a>.</p>
+  <div class="notice info">Start with Hemmilä et al. (2017) and Solt et al. (2019) for panel binders. Then read Dunky's critical reviews (2020–2021) on protein and carbohydrate adhesives, and Pizzi (2019) on tannins.</div>
+  {kinds.map(([k, label]) => (
+    <section>
+      <h2>{label}</h2>
+      <ol class="refs">
+        {references.filter((r) => r.kind === k).sort((a, b) => b.year - a.year).map((r) => (
+          <li id={r.id}>{r.authors} ({r.year}). <strong>{r.title}</strong>. <em>{r.journal}</em>. <a href={refLink(r)}>{r.doi ? `doi:${r.doi}` : 'source'}</a>
+            <div class="meta">{r.routes.map((x) => x === 'general' ? <span class="badge">general</span> : x === 'incumbents' ? <span class="badge">incumbents</span> : <a class="chip" href={url(`routes/${x}/`)}>{routeById(x)?.name}</a>)}</div>
+          </li>
+        ))}
+      </ol>
+    </section>
+  ))}
+</Base>

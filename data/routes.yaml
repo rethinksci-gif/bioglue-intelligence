@@ -1,0 +1,213 @@
+# Technology routes for bio-based wood adhesives.
+# Statements here are general background drawn from the cited reviews, not new evidence.
+# Quarterly evidence lives in data/quarters/; machine-triaged leads in data/candidates/.
+# `scan` holds the literature/news queries the scanner runs for each route.
+
+- id: lignin
+  name: Lignin
+  family: Phenolic biopolymer
+  tagline: The most abundant aromatic biopolymer, used mainly to replace phenol in PF-type resins.
+  overview:
+    - Lignin is the phenolic polymer that binds cellulose fibres in wood. Pulp mills and biorefineries produce it as kraft lignin, lignosulfonate, soda lignin or organosolv lignin. Each type differs in molecular weight, purity, sulfur content and how many reactive phenolic sites it has.
+    - The most mature use is partial replacement of phenol in phenol-formaldehyde (PF) resins for plywood and OSB. Full phenol replacement has been shown in the laboratory. Formaldehyde-free lignin systems, which combine lignin with glyoxal, tannin, proteins or carbonate chemistry, are still at research stage.
+  chemistry:
+    - Lignin is built from three monolignols, which give H, G and S units. Aldehydes can only crosslink at a free ring position next to the phenolic OH. G units have one such position and S units have none, so softwood (G-rich) lignin is usually more reactive than hardwood (S-rich) lignin.
+    - "Common activation routes: methylolation, phenolation, demethylation, depolymerisation to lower molecular weight, and fractionation. Without activation, lignin reacts much more slowly than phenol, so press times get longer or bond strength drops."
+  structures: [p-coumaryl-alcohol, coniferyl-alcohol, sinapyl-alcohol, phenol, formaldehyde, glyoxal]
+  applications: [plywood, OSB, particleboard, "laminated veneer lumber"]
+  incumbent: PF for exterior plywood and OSB; UF or MUF for interior panels.
+  maturity: Partial phenol substitution is in industrial use; full replacement and formaldehyde-free lignin binders are laboratory to pilot scale.
+  strengths:
+    - Large, low-cost side stream from pulping and biorefining.
+    - Aromatic structure matches PF chemistry, so it fits existing equipment.
+  challenges:
+    - Low and variable reactivity; batch-to-batch variation between mills and pulping processes.
+    - Lignin-PF systems still contain formaldehyde, so a renewable share is not the same as a formaldehyde-free product.
+    - Dark colour, odour from sulfur-containing grades, and solubility limits.
+  watch:
+    - Debondable and recyclable lignin binders (for example lignin-zein, lignin vitrimers).
+    - Lignin-based NIPU and lignin-glyoxal systems with panel-scale data.
+  refs: [ang2019, kalami2017, mansouri2010, hemmila2017, pizzi2006]
+  scan:
+    crossref: ["lignin wood adhesive", "lignin plywood resin", "lignin particleboard binder"]
+    news: ["lignin adhesive wood panel"]
+
+- id: proteins
+  name: Proteins
+  family: Polyamide biopolymers
+  tagline: Soy, casein, zein, gelatine and side-stream proteins; soy with PAE is the commercial reference.
+  overview:
+    - Protein glues such as casein, blood and soy are among the oldest wood adhesives. Synthetic resins displaced them in the 20th century because of poor water resistance.
+    - Soy flour crosslinked with polyamidoamine-epichlorohydrin (PAE) has been used commercially for interior hardwood plywood in North America since the mid-2000s. Research now targets other protein sources (zein, spent grain, rapeseed, insect and microbial proteins) and crosslinkers that do not need epichlorohydrin.
+  chemistry:
+    - Proteins must be unfolded (denatured) so their polar and reactive groups can reach the wood surface. Typical treatments are alkali, urea, sodium dodecyl sulfate or enzymes.
+    - Water resistance comes from crosslinking amine, carboxyl and hydroxyl groups. PAE azetidinium groups react with amines and carboxylates. Alternatives include epoxides, polyaldehydes, tannins and dopamine-inspired catechol chemistry.
+  structures: [l-lysine, epichlorohydrin]
+  applications: [plywood, "hardwood decorative panels", particleboard, "finger joints and assembly"]
+  incumbent: UF for interior plywood and panels; PVAc for assembly bonding.
+  maturity: Soy-PAE is commercial for interior plywood; most other proteins are laboratory to pilot scale.
+  strengths:
+    - Many functional groups; good dry strength on veneer.
+    - Uses side streams from food and feed processing.
+  challenges:
+    - Wet strength and boil resistance usually depend on a crosslinker, which is often fossil-based.
+    - High viscosity at useful solids content; short pot life; susceptibility to mould.
+    - Competes with food and feed for the same protein.
+  watch:
+    - Brewing and distilling side streams moving to production batches.
+    - Crosslinkers without epichlorohydrin, and wet-strength results under standard test methods.
+  refs: [dunky2020a, vnucec2017, kumar2002, liu2007, huang2007, gui2013]
+  scan:
+    crossref: ["soy protein wood adhesive", "protein adhesive plywood", "zein adhesive wood", "casein wood adhesive"]
+    news: ["soy adhesive plywood formaldehyde-free", "protein-based wood adhesive"]
+
+- id: tannins
+  name: Tannins
+  family: Polyphenolic extractives
+  tagline: Condensed tannins from bark and wood, the longest-running industrial bio-phenolic wood adhesive.
+  overview:
+    - Condensed (flavonoid) tannins are extracted from mimosa (wattle) and pine bark, quebracho wood and similar sources. They have been used industrially for wood adhesives in several countries since the 1970s.
+    - Classic systems harden tannin with formaldehyde or paraformaldehyde. Lower-emission variants use hexamine, glyoxal or furfuryl alcohol, or rely on autocondensation catalysed by silica or alkali.
+  chemistry:
+    - The A-ring of the flavan-3-ol unit (resorcinol or phloroglucinol type) is strongly nucleophilic and reacts with aldehydes faster than phenol does. The B-ring (catechol or pyrogallol type) mainly contributes metal chelation and oxidation reactions.
+    - Tannin extracts are viscous because they contain gums (carbohydrates). The reactive A-ring sites sit close together, so a crosslinked network can stall before it is complete; this is one reason tannin bonds are brittle.
+  structures: [catechin, formaldehyde, hexamine, furfuryl-alcohol]
+  applications: [particleboard, plywood, "exterior and marine grade panels", "finger joints"]
+  incumbent: PF and MUF for exterior and moisture-resistant panels.
+  maturity: Industrial in niche markets; formaldehyde-free tannin systems are mostly laboratory to pilot scale.
+  strengths:
+    - High reactivity and good moisture resistance once crosslinked.
+    - Established extraction industry in some regions.
+  challenges:
+    - Limited, regional supply, and price tied to the leather-tanning market.
+    - Hexamine hardeners release formaldehyde during cure, so they need emission testing rather than a "formaldehyde-free" label.
+    - Viscosity, short pot life, and variation in extract quality.
+  watch:
+    - Bark-extraction capacity at sawmills; tannin-furanic and tannin-NIPU systems with panel results.
+  refs: [pizzi2019, oktay2024, abdullah2012, mansouri2010, pizzi2006]
+  scan:
+    crossref: ["tannin adhesive wood panel", "tannin particleboard", "condensed tannin plywood"]
+    news: ["tannin wood adhesive"]
+
+- id: carbohydrates
+  name: Carbohydrates
+  family: Polysaccharides and sugars
+  tagline: Starch, cellulose derivatives, sugars and chitosan, used as binders, co-reactants or extenders.
+  overview:
+    - Carbohydrates are cheap and abundant, but plain starch and sugar bonds are destroyed by water. Wood-adhesive research therefore uses them modified (oxidised, grafted, dialdehyde) or as polyols reacting with acids, amines or carbonates.
+    - Chitosan is cationic, so it adheres well and forms films. Its cost and solubility in dilute acid restrict it to formulations and coatings rather than bulk panel binders.
+  chemistry:
+    - Main routes are oxidation to dialdehydes (dialdehyde starch or cellulose) that crosslink proteins or amines, esterification with polycarboxylic acids, Maillard-type sugar-amine reactions, and grafting with vinyl monomers.
+    - Hydroxyl-rich networks absorb water unless enough crosslinks or hydrophobic components are added.
+  structures: [alpha-d-glucose, sucrose, glucosamine]
+  applications: [particleboard, fibreboard, plywood, "paper and laminates"]
+  incumbent: UF for interior panels.
+  maturity: Starch and sugar co-binders and extenders are commercial; carbohydrate-only panel binders are laboratory to pilot scale.
+  strengths:
+    - Very low cost; food-grade supply chains; colourless.
+  challenges:
+    - Water resistance and susceptibility to mould.
+    - Competition with food use (starch, sugar) and variable degree of modification.
+  watch:
+    - Dialdehyde cellulose and starch crosslinkers; sugar-amine binders with standard panel data.
+  refs: [dunky2020b, ji2018, hemmila2017]
+  scan:
+    crossref: ["starch wood adhesive", "cellulose based wood adhesive", "chitosan wood adhesive", "sugar based wood binder"]
+    news: ["starch-based wood adhesive"]
+
+- id: carboxylic-acids
+  name: Polycarboxylic acid systems
+  family: Ester-forming binders
+  tagline: Citric acid with sucrose or other polyols forms ester crosslinks in the hot press without aldehydes.
+  overview:
+    - Citric acid combined with sucrose, or used alone, bonds particleboard and plywood through esterification with the polyol and with wood hydroxyls. The approach was developed in Japan in the 2010s and has since been studied in many countries.
+  chemistry:
+    - Heating forms anhydride intermediates from citric acid, which esterify hydroxyl groups. Sucrose partly dehydrates and caramelises under the same conditions. The resulting network is acidic and needs high press temperatures, around 200 °C in the original particleboard work.
+  structures: [citric-acid, sucrose]
+  applications: [particleboard, plywood, "binderless and low-binder boards"]
+  incumbent: UF for interior particleboard.
+  maturity: Laboratory to pilot scale.
+  strengths:
+    - Simple, food-grade ingredients; no aldehyde involved.
+  challenges:
+    - High press temperature and long press time compared with UF.
+    - The acidity of the bond line can weaken wood and corrode equipment.
+  watch:
+    - Lower-temperature catalysts; board results under EN 312 at industrial press cycles.
+  refs: [umemura2013, sun2019, solt2019]
+  scan:
+    crossref: ["citric acid sucrose adhesive", "citric acid wood binder particleboard"]
+    news: []
+
+- id: crosslinkers
+  name: Renewable crosslinkers and aldehyde substitutes
+  family: Reactive co-components
+  tagline: Glyoxal, 5-HMF, furanics and bio-based epoxides that replace formaldehyde or fossil crosslinkers.
+  overview:
+    - A binder is often bio-based while its crosslinker is not. This route tracks the crosslinker itself, under two tracks. Track A is renewable feedstock substitution for established isocyanate, epoxide or aldehyde chemistry. Track B is new reactive chemistry whose functional role must first be demonstrated.
+    - Glyoxal-based urea resins (UG), 5-HMF resins and furfuryl-alcohol systems are the main aldehyde alternatives. PAE and pMDI remain the incumbent fossil crosslinkers.
+  chemistry:
+    - Glyoxal is a non-volatile dialdehyde. It is less reactive than formaldehyde, so press times are longer and water resistance is usually lower unless it is combined with other components.
+    - 5-HMF carries an aldehyde on a furan ring that also bears a hydroxymethyl group. It can react with phenolics, amines and itself, but it is less stable and more expensive than formaldehyde.
+  structures: [glyoxal, hmf, furfuryl-alcohol, urea, epichlorohydrin, hexamine]
+  applications: [particleboard, plywood, fibreboard]
+  incumbent: Formaldehyde in UF, MUF and PF; pMDI for OSB and formaldehyde-free particleboard.
+  maturity: Glyoxal is industrial as a chemical; UG panel binders are laboratory to pilot. 5-HMF supply is approaching first dedicated plant scale.
+  strengths:
+    - Some systems are drop-in candidates for existing resin chemistry.
+  challenges:
+    - "Replacing formaldehyde with another aldehyde does not prove low toxicity or low emissions; each needs its own assessment."
+    - Cost and supply of new intermediates; slower cure.
+  watch:
+    - 5-HMF plant commissioning and product specifications; UG and lignin-glyoxal panel trials.
+  refs: [despres2010, abdullah2012, solt2019, gui2013, huang2007]
+  scan:
+    crossref: ["glyoxal wood adhesive", "5-hydroxymethylfurfural resin adhesive", "formaldehyde-free crosslinker wood"]
+    news: ["5-HMF resin adhesive", "formaldehyde-free resin wood panel"]
+
+- id: nipu
+  name: Non-isocyanate polyurethanes (NIPU)
+  family: Hydroxyurethane chemistry
+  tagline: Cyclic carbonates reacting with amines build polyurethanes without isocyanates or phosgene.
+  overview:
+    - NIPUs form when five-membered cyclic carbonates react with amines, producing hydroxyurethane links. Wood-adhesive NIPUs have been made from sucrose, tannin, lignin and vegetable-oil carbonates.
+  chemistry:
+    - Carbonates are introduced by reacting polyols with dimethyl carbonate, or by adding CO2 to epoxides. They then cure with diamines. The amine is often fossil-derived, such as hexamethylenediamine, so the whole formulation has to be checked before it is called bio-based.
+  structures: [glycerol-carbonate, sucrose]
+  applications: [particleboard, plywood, "wood coatings"]
+  incumbent: pMDI and PF.
+  maturity: Laboratory scale.
+  strengths:
+    - Avoids isocyanate exposure; hydroxyl groups formed in the cure aid adhesion.
+  challenges:
+    - Slow aminolysis means long cure times; amine cost and origin; synthesis steps.
+  watch:
+    - Bio-based amines; catalysed cure at industrial press cycles.
+  refs: [xi2019, sarazin2021, iswanto2023]
+  scan:
+    crossref: ["non-isocyanate polyurethane wood adhesive", "cyclic carbonate amine wood adhesive"]
+    news: []
+
+- id: acrylics
+  name: Bio-based acrylics and dispersions (watch)
+  family: Vinyl and acrylic polymers
+  tagline: Watch list for renewable acrylic acid and esters feeding dispersion and assembly adhesives.
+  overview:
+    - Polyvinyl acetate (PVAc) and acrylic dispersions dominate furniture assembly and edge bonding. Making their monomers from renewable feedstock would leave the polymer chemistry unchanged.
+    - This route tracks upstream monomer chemistry, such as acrylic acid from glycerol, 3-hydroxypropionic acid, lactic acid or one-carbon feedstocks, and its scale-up. It also tracks how bio-based content is accounted for (bio-derived content versus mass-balance attribution).
+  chemistry:
+    - The monomers are identical to fossil ones, so performance carries over. The questions are carbon origin, separation cost and purity.
+  structures: [acrylic-acid, vinyl-acetate]
+  applications: ["furniture assembly", "edge banding", "laminating"]
+  incumbent: Fossil PVAc and acrylic dispersions; EPI for some structural uses.
+  maturity: Mass-balance products are commercial; most direct bio-routes to acrylic acid are laboratory to pilot.
+  strengths:
+    - No reformulation needed if the monomer is chemically identical.
+  challenges:
+    - Product separation and purity; renewable carbon provenance; cost against fossil propylene.
+  watch:
+    - Pilot plants for bio-acrylic acid; certification of bio-based content.
+  refs: [heinrich2019, arias2021]
+  scan:
+    crossref: ["bio-based acrylic acid production", "renewable acrylic acid glycerol"]
+    news: ["bio-based acrylic acid plant"]

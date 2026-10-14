@@ -1,0 +1,15 @@
+---
+import Base from '../layouts/Base.astro';
+import { url } from '../lib/data';
+---
+<Base title="Search">
+  <h1>Search</h1>
+  <link href={url('pagefind/pagefind-ui.css')} rel="stylesheet" />
+  <div id="search"></div>
+  <script is:inline define:vars={{ base: url('') }}>
+    const s = document.createElement('script');
+    s.src = base + 'pagefind/pagefind-ui.js';
+    s.onload = () => new PagefindUI({ element: '#search', showSubResults: true, showImages: false });
+    document.head.appendChild(s);
+  </script>
+</Base>

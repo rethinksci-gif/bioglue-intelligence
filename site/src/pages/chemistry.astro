@@ -1,0 +1,35 @@
+---
+import Base from '../layouts/Base.astro';
+import Mol from '../components/Mol.astro';
+import { routes, structures, url } from '../lib/data';
+const groups = [
+  { id: 'incumbents', name: 'Incumbent resin chemistry', note: 'The formaldehyde-based and fossil systems that every alternative is measured against.' },
+  ...routes.map((r) => ({ id: r.id, name: r.name, note: r.tagline })),
+];
+---
+<Base title="Chemistry" description="Representative chemical structures of incumbent and bio-based wood-adhesive components.">
+  <p class="crumbs"><a href={url('')}>Overview</a> / Chemistry</p>
+  <h1>Basic chemical structures</h1>
+  <p class="lede muted narrow">Building blocks behind each route, drawn from SMILES with RDKit at build time. Stereochemistry is checked against InChIKeys. Polymers such as lignin, tannin, proteins and starch are shown by a representative monomer or model unit, never as an invented full structure.</p>
+
+  <h2>How a wood adhesive bonds</h2>
+  <div class="grid two">
+    <div class="card"><h3>1 · Wet and penetrate</h3><p class="small">The liquid adhesive must wet the wood surface and penetrate the cell structure. Viscosity, solids content and surface energy control this step.</p></div>
+    <div class="card"><h3>2 · Build cohesion</h3><p class="small">In the press, the binder forms a network through condensation (aldehydes with phenolics or amines), esterification (acids with polyols), addition (isocyanates, epoxides, carbonates with amines) or physical consolidation.</p></div>
+    <div class="card"><h3>3 · Resist water</h3><p class="small">Water resistance depends on how dense the crosslinking is and how few hydrophilic groups remain free. This is the step most bio-binders struggle with.</p></div>
+    <div class="card"><h3>4 · Stay inert</h3><p class="small">The cured bond should not release formaldehyde or VOCs, support mould growth, or hydrolyse over the product's life.</p></div>
+  </div>
+
+  {groups.map((g) => {
+    const mols = structures.filter((s) => s.routes.includes(g.id));
+    if (!mols.length) return null;
+    return (
+      <section>
+        <h2 id={g.id}>{g.id === 'incumbents' ? g.name : <a href={url(`routes/${g.id}/`)}>{g.name}</a>}</h2>
+        <p class="small muted">{g.note}</p>
+        <div class="grid">{mols.map((m) => <Mol m={m} />)}</div>
+      </section>
+    );
+  })}
+  <p class="small muted">Structure data: <a href={url('data/structures.json')}>structures.json</a>. Suggest a molecule via a GitHub issue; please include a SMILES and a citable source.</p>
+</Base>

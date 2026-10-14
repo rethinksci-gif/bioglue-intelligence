@@ -1,0 +1,41 @@
+---
+import Base from '../../layouts/Base.astro';
+import Evidence from '../../components/Evidence.astro';
+import Leads from '../../components/Leads.astro';
+import { routes, QUARTERS, quarterLabel, quarterData, candidateData, shownCandidates, fmtDate, url } from '../../lib/data';
+export function getStaticPaths() { return QUARTERS.map((q) => ({ params: { quarter: q } })); }
+const { quarter } = Astro.params as { quarter: string };
+const qd = quarterData(quarter);
+const cd = candidateData(quarter);
+const all = shownCandidates(quarter);
+const total = cd?.candidates.length ?? 0;
+---
+<Base title={`${quarter} tracker`} description={`Bio-based wood adhesive developments, ${quarterLabel(quarter)}.`}>
+  <p class="crumbs"><a href={url('')}>Overview</a> / <a href={url('tracker/')}>Quarterly tracker</a> / {quarter}</p>
+  <h1>{quarter} <span class="muted" style="font-weight:500">· {quarterLabel(quarter)}</span></h1>
+  <div class="chips">{QUARTERS.map((q) => <a class="chip" href={url(`tracker/${q}/`)} aria-current={q === quarter ? 'page' : undefined} style={q === quarter ? 'border-color:var(--accent);color:var(--accent)' : ''}>{q}</a>)}</div>
+
+  {qd && (
+    <section>
+      <h2>Evidence-checked developments</h2>
+      <div class="notice"><strong>Status: {qd.status}</strong> (issue version {qd.version}). {qd.review}</div>
+      {qd.items.map((it) => <Evidence item={it} sources={qd.sources} />)}
+      {qd.holds.length > 0 && <>
+        <h3>On hold</h3>
+        {qd.holds.map((h) => <div class="notice" style="border-color:var(--hold);background:var(--hold-soft)"><span class="badge hold">hold</span> <strong>{h.title}</strong> <span class="small muted">({fmtDate(h.date)}, <a href={`https://doi.org/${h.doi}`}>doi:{h.doi}</a>)</span><br /><span class="small">{h.reason}</span></div>)}
+      </>}
+      <h3>Sources</h3>
+      <ul class="small refs">{qd.sources.map((s) => <li><strong>{s.title}</strong> — <a href={s.doi ? `https://doi.org/${s.doi}` : s.url}>{s.doi ? `doi:${s.doi}` : 'link'}</a>. Published {fmtDate(s.published)}{s.version_date && `, version ${fmtDate(s.version_date)}`}. <span class="muted">{s.access}</span></li>)}</ul>
+    </section>
+  )}
+  {!qd && <p class="notice">No evidence-checked issue for this quarter yet. The leads below are discovery only.</p>}
+
+  <h2>Machine-triaged leads by route</h2>
+  {cd ? <>
+    <p class="small muted">{all.length} leads shown out of {total} discovery records (Crossref and Google News), scanned through {cd.scanned_through} with {cd.model} ({cd.llm_calls} calls). {cd.note}</p>
+    {routes.map((r) => {
+      const leads = all.filter((c) => c.route === r.id);
+      return leads.length ? <section><h3 id={r.id}><a href={url(`routes/${r.id}/`)}>{r.name}</a> <span class="badge warn">{leads.length}</span></h3><div class="card"><Leads leads={leads} showRoute={false} /></div></section> : null;
+    })}
+  </> : <p class="muted">Not yet scanned.</p>}
+</Base>

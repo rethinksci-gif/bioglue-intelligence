@@ -1,0 +1,112 @@
+# Representative molecules. SMILES are rendered to SVG by `python -m scanner structures`.
+# Polymers are shown as a representative unit, never as a full polymer structure.
+# `inchikey` (where given) is checked at build time so stereochemistry cannot drift silently.
+- id: formaldehyde
+  name: Formaldehyde
+  smiles: C=O
+  role: Incumbent crosslinker in UF, MUF and PF resins; the substance the new rules limit.
+  routes: [incumbents]
+- id: urea
+  name: Urea
+  smiles: NC(N)=O
+  role: Amino co-monomer of UF resins; also paired with glyoxal in UG resins.
+  routes: [incumbents, crosslinkers]
+- id: phenol
+  name: Phenol
+  smiles: Oc1ccccc1
+  role: Fossil phenolic monomer of PF resins; the component lignin and tannin aim to replace.
+  routes: [incumbents, lignin]
+- id: melamine
+  name: Melamine
+  smiles: Nc1nc(N)nc(N)n1
+  role: Raises moisture resistance of UF (MUF) resins.
+  routes: [incumbents]
+- id: p-coumaryl-alcohol
+  name: p-Coumaryl alcohol (H unit)
+  smiles: OC/C=C/c1ccc(O)cc1
+  role: Monolignol giving H units; abundant in grass lignins.
+  routes: [lignin]
+- id: coniferyl-alcohol
+  name: Coniferyl alcohol (G unit)
+  smiles: OC/C=C/c1ccc(O)c(OC)c1
+  role: Main monolignol of softwood lignin; one free ring position ortho to the phenol for crosslinking.
+  routes: [lignin]
+- id: sinapyl-alcohol
+  name: Sinapyl alcohol (S unit)
+  smiles: OC/C=C/c1cc(OC)c(O)c(OC)c1
+  role: Hardwood monolignol; both ortho positions methoxylated, so less reactive toward aldehydes.
+  routes: [lignin]
+- id: catechin
+  name: (+)-Catechin (flavan-3-ol unit)
+  smiles: O[C@H]1Cc2c(O)cc(O)cc2O[C@@H]1c1ccc(O)c(O)c1
+  inchikey: PFTAWBLQPZVEMU-DZGCQCFKSA-N
+  role: Representative monomer unit of condensed tannins; the A-ring is the nucleophilic site toward aldehydes.
+  routes: [tannins]
+- id: l-lysine
+  name: L-Lysine
+  smiles: NCCCC[C@H](N)C(O)=O
+  inchikey: KDXKERNSBIXSRK-YFKPBYRVSA-N
+  role: Amine-rich amino acid; lysine residues in proteins and polylysine react with crosslinkers.
+  routes: [proteins]
+- id: epichlorohydrin
+  name: Epichlorohydrin
+  smiles: ClCC1CO1
+  role: Precursor of the azetidinium groups in PAE resins, the common crosslinker for soy adhesives.
+  routes: [proteins, crosslinkers]
+- id: alpha-d-glucose
+  name: alpha-D-Glucopyranose
+  smiles: OC[C@H]1O[C@H](O)[C@H](O)[C@@H](O)[C@@H]1O
+  inchikey: WQZGKKKJIJFFOK-DVKNGEFBSA-N
+  role: Repeat unit of starch (amylose and amylopectin); also a sugar feedstock.
+  routes: [carbohydrates]
+- id: sucrose
+  name: Sucrose
+  smiles: OC[C@H]1O[C@@](CO)(O[C@H]2O[C@H](CO)[C@@H](O)[C@H](O)[C@H]2O)[C@@H](O)[C@@H]1O
+  inchikey: CZMRCDWAGMRECN-UGDNZRGBSA-N
+  role: Polyol in citric acid-sucrose adhesives and sugar-based NIPU.
+  routes: [carbohydrates, carboxylic-acids, nipu]
+- id: glucosamine
+  name: D-Glucosamine (stereochemistry omitted)
+  smiles: NC1C(O)OC(CO)C(O)C1O
+  role: Repeat unit of chitosan; the amine gives cationic, film-forming behaviour.
+  routes: [carbohydrates]
+- id: citric-acid
+  name: Citric acid
+  smiles: OC(=O)CC(O)(CC(O)=O)C(O)=O
+  role: Tricarboxylic acid that forms ester crosslinks with polyols and wood hydroxyls on hot pressing.
+  routes: [carboxylic-acids]
+- id: glyoxal
+  name: Glyoxal
+  smiles: O=CC=O
+  role: Non-volatile dialdehyde used as a formaldehyde substitute (UG, lignin-glyoxal, tannin-glyoxal).
+  routes: [crosslinkers]
+- id: hmf
+  name: 5-Hydroxymethylfurfural (5-HMF)
+  smiles: O=Cc1ccc(CO)o1
+  role: Sugar-derived furanic aldehyde; candidate aldehyde for formaldehyde-free phenolic and amino resins.
+  routes: [crosslinkers]
+- id: furfuryl-alcohol
+  name: Furfuryl alcohol
+  smiles: OCc1ccco1
+  role: Furanic co-reactant in tannin-furanic systems; self-condenses under acid.
+  routes: [crosslinkers, tannins]
+- id: hexamine
+  name: Hexamine (hexamethylenetetramine)
+  smiles: C1N2CN3CN1CN(C2)C3
+  role: Hardener for tannin and lignin resins; it is itself a formaldehyde-releasing compound.
+  routes: [tannins, crosslinkers]
+- id: glycerol-carbonate
+  name: Glycerol carbonate
+  smiles: O=C1OCC(CO)O1
+  role: Bio-derivable five-membered cyclic carbonate; reacts with amines to hydroxyurethanes (NIPU).
+  routes: [nipu]
+- id: acrylic-acid
+  name: Acrylic acid
+  smiles: C=CC(=O)O
+  role: Monomer for acrylic dispersions and polyacrylic acid; renewable routes are on the watch list.
+  routes: [acrylics]
+- id: vinyl-acetate
+  name: Vinyl acetate
+  smiles: C=COC(C)=O
+  role: Monomer of PVAc, the incumbent for many layer-glued and assembly bonds.
+  routes: [acrylics, incumbents]

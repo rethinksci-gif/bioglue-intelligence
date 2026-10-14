@@ -1,0 +1,15 @@
+Metadata-Version: 2.4
+Name: bioglue-intelligence
+Version: 0.1.0
+Summary: Discovery, DeepSeek-flash triage and data builds for the BIOGLUE Intelligence site
+Requires-Python: >=3.11
+License-File: LICENSE
+License-File: LICENSE-CONTENT.md
+Requires-Dist: pyyaml>=6
+Requires-Dist: pydantic>=2
+Requires-Dist: openai>=1.40
+Provides-Extra: structures
+Requires-Dist: rdkit>=2024.3; extra == "structures"
+Provides-Extra: dev
+Requires-Dist: pytest>=8; extra == "dev"
+Dynamic: license-file

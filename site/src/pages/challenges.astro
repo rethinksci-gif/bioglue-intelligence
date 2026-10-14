@@ -1,0 +1,19 @@
+---
+import Base from '../layouts/Base.astro';
+import { challenges, routeById, url } from '../lib/data';
+---
+<Base title="Technical challenges" description="Cross-cutting technical and commercial challenges for bio-based wood adhesives, with the questions to ask of any claim.">
+  <p class="crumbs"><a href={url('')}>Overview</a> / Challenges</p>
+  <h1>Technical challenges</h1>
+  <p class="lede muted narrow">Most bio-adhesive claims fail on the same few constraints. Each challenge below ends with the question we ask of any new result before it enters the tracker.</p>
+  <div class="chips">{challenges.map((c) => <a class="chip" href={`#${c.id}`}>{c.title}</a>)}</div>
+  {challenges.map((c) => (
+    <section class="card" style="margin:14px 0" id={c.id}>
+      <h2 style="margin-top:0;font-size:1.2rem">{c.title}</h2>
+      <p>{c.summary}</p>
+      {c.detail && <ul class="small">{c.detail.map((d) => <li>{d}</li>)}</ul>}
+      <p class="notice info" style="margin:10px 0"><strong>Ask:</strong> {c.ask}</p>
+      <div class="meta">Most acute for: {c.routes.map((r) => <a class="chip" href={url(`routes/${r}/`)}>{routeById(r)?.name}</a>)}</div>
+    </section>
+  ))}
+</Base>

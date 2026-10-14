@@ -1,0 +1,44 @@
+---
+import Base from '../../layouts/Base.astro';
+import { routes, QUARTERS, quarterLabel, quarterData, candidateData, evidenceFor, holdsFor, shownCandidates, url } from '../../lib/data';
+const order = QUARTERS.slice().reverse();
+---
+<Base title="Quarterly tracker" description="Technology route × quarter tracker for bio-based wood adhesives in 2026.">
+  <p class="crumbs"><a href={url('')}>Overview</a> / Quarterly tracker</p>
+  <h1>Quarterly tracker · 2026</h1>
+  <p class="lede muted narrow">Each technology route, quarter by quarter. Evidence-checked items have every fact quoted from a retained primary source. Machine-triaged leads are screened by DeepSeek flash and wait for review.</p>
+  <div class="table-wrap">
+    <table>
+      <thead><tr><th>Route</th>{order.map((q) => <th class="num"><a href={url(`tracker/${q}/`)}>{q}</a><br /><span style="text-transform:none;font-weight:400">{quarterLabel(q)}</span></th>)}</tr></thead>
+      <tbody>
+        {routes.map((r) => (
+          <tr>
+            <td><a href={url(`routes/${r.id}/#track`)}>{r.name}</a></td>
+            {order.map((q) => {
+              const e = evidenceFor(q, r.id).length, h = holdsFor(q, r.id).length, l = shownCandidates(q, r.id).length;
+              return <td class="num"><span class="cell">{e > 0 && <span class="badge ok">{e} checked</span>}{h > 0 && <span class="badge hold">{h} hold</span>}{candidateData(q) ? <span class="badge warn">{l} leads</span> : <span class="muted small">—</span>}</span></td>;
+            })}
+          </tr>
+        ))}
+      </tbody>
+    </table>
+  </div>
+  <h2>Quarters</h2>
+  <div class="grid">
+    {QUARTERS.map((q) => {
+      const qd = quarterData(q), cd = candidateData(q);
+      return (
+        <a class="card" href={url(`tracker/${q}/`)}>
+          <div class="family">{quarterLabel(q)}</div>
+          <h3>{q}</h3>
+          <div class="meta">
+            {qd ? <span class="badge ok">{qd.items.length} evidence-checked · {qd.status}</span> : <span class="badge">no reviewed issue</span>}
+            {cd && <span class="badge warn">{cd.candidates.filter((c) => c.shown).length} leads</span>}
+          </div>
+          {cd && <p class="small muted" style="margin:6px 0 0">Scanned through {cd.scanned_through}</p>}
+        </a>
+      );
+    })}
+  </div>
+  <p class="small muted">Q4 2026 runs September–November. The monthly scan keeps adding leads until the window closes on 30 November; the reviewed issue is due in December.</p>
+</Base>

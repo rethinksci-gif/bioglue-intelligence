@@ -1,0 +1,25 @@
+---
+import { fmtDate, routeById, url, type Candidate } from '../lib/data';
+interface Props { leads: Candidate[]; showRoute?: boolean; limit?: number }
+const { leads, showRoute = true, limit } = Astro.props;
+const shown = limit ? leads.slice(0, limit) : leads;
+---
+{shown.length === 0 ? <p class="muted small">No machine-triaged leads above the relevance threshold.</p> : (
+  <div>
+    {shown.map((c) => (
+      <div class="lead">
+        <div class="meta">
+          <span class="badge warn">machine-triaged</span>
+          <span class="badge">{c.signal}</span>
+          {showRoute && <a class="chip" href={url(`routes/${c.route}/`)}>{routeById(c.route)?.name}</a>}
+          <span>{c.date_precision === 'month' ? fmtDate(c.date).replace(/^\d+ /, '') : fmtDate(c.date)}</span>
+          {c.venue && <span>· {c.venue}</span>}
+          {c.flags.includes('title-only') && <span class="badge" title="No abstract in the discovery record">title only</span>}
+        </div>
+        <h4><a href={c.url} rel="noopener">{c.title}</a></h4>
+        <div class="small">{c.summary}</div>
+        {c.quote && c.quote !== c.title && <blockquote>“{c.quote}”</blockquote>}
+      </div>
+    ))}
+  </div>
+)}

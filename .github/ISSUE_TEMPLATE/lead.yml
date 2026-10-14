@@ -1,0 +1,27 @@
+name: Submit a lead
+description: Suggest a development (paper, patent, plant, trial) for the quarterly tracker
+labels: [lead]
+body:
+  - type: input
+    id: link
+    attributes: { label: Primary source link or DOI, description: "The original paper, company release or patent — not a news summary if avoidable." }
+    validations: { required: true }
+  - type: dropdown
+    id: route
+    attributes:
+      label: Technology route
+      options: [Lignin, Proteins, Tannins, Carbohydrates, Polycarboxylic acid systems, Renewable crosslinkers, NIPU, Bio-based acrylics, Not sure]
+    validations: { required: true }
+  - type: input
+    id: date
+    attributes: { label: First publication or event date }
+  - type: textarea
+    id: what
+    attributes: { label: What changed, description: "Quote the key sentence from the source if you can (product, test standard, scale)." }
+    validations: { required: true }
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Checks
+      options:
+        - label: I have read the evidence policy on the Methods page.

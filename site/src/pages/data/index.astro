@@ -1,0 +1,18 @@
+---
+import Base from '../../layouts/Base.astro';
+import { REPO, QUARTERS, quarterData, candidateData, url } from '../../lib/data';
+const files = [
+  ['routes.json', 'Technology routes (overview, chemistry, challenges, maturity)'],
+  ['structures.json', 'Representative molecules with SMILES and roles'],
+  ['challenges.json', 'Cross-cutting technical challenges'],
+  ['references.json', 'Verified literature'],
+  ...QUARTERS.filter((q) => quarterData(q)).map((q) => [`quarters/${q}.json`, `${q} evidence-checked items (quotes and source metadata)`]),
+  ...QUARTERS.filter((q) => candidateData(q)).map((q) => [`candidates/${q}.json`, `${q} machine-triaged leads`]),
+];
+---
+<Base title="Open data">
+  <p class="crumbs"><a href={url('')}>Overview</a> / Open data</p>
+  <h1>Open data</h1>
+  <p class="muted narrow">All site content is generated from version-controlled files in the <a href={`${REPO}/tree/main/data`}>repository</a>. JSON exports are available under CC BY 4.0.</p>
+  <ul>{files.map(([f, d]) => <li><a href={url(`data/${f}`)}><code>{f}</code></a> — {d}</li>)}</ul>
+</Base>

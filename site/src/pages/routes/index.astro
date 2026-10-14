@@ -1,0 +1,29 @@
+---
+import Base from '../../layouts/Base.astro';
+import { routes, evidenceFor, shownCandidates, holdsFor, QUARTERS, url } from '../../lib/data';
+---
+<Base title="Technology routes" description="Eight technology routes for bio-based wood adhesives, with maturity, incumbents and quarterly activity.">
+  <p class="crumbs"><a href={url('')}>Overview</a> / Technology routes</p>
+  <h1>Technology routes</h1>
+  <p class="lede muted narrow">Routes are grouped by the chemistry that does the bonding, following the main critical reviews. In practice formulations mix routes: a protein binder with a renewable crosslinker, or lignin in a PF resin. The taxonomy is an editorial tool, not proof that any route is renewable or safe.</p>
+  <div class="table-wrap">
+    <table>
+      <thead><tr><th>Route</th><th>Typical products</th><th>Incumbent</th><th>Maturity</th>{QUARTERS.slice().reverse().map((q) => <th class="num">{q}</th>)}</tr></thead>
+      <tbody>
+        {routes.map((r) => (
+          <tr>
+            <td><a href={url(`routes/${r.id}/`)}><strong>{r.name}</strong></a><br /><span class="small muted">{r.family}</span></td>
+            <td class="small">{r.applications.slice(0, 3).join(', ')}</td>
+            <td class="small">{r.incumbent}</td>
+            <td class="small">{r.maturity}</td>
+            {QUARTERS.slice().reverse().map((q) => {
+              const e = evidenceFor(q, r.id).length, h = holdsFor(q, r.id).length, l = shownCandidates(q, r.id).length;
+              return <td class="num"><span class="cell">{e > 0 && <span class="badge ok" title="evidence-checked">{e}</span>}{h > 0 && <span class="badge hold" title="on hold">{h}</span>}<span class="badge warn" title="machine-triaged leads">{l}</span></span></td>;
+            })}
+          </tr>
+        ))}
+      </tbody>
+    </table>
+  </div>
+  <p class="small muted">Badges per quarter: <span class="badge ok">evidence-checked</span> <span class="badge hold">on hold</span> <span class="badge warn">machine-triaged leads</span>. Quarters follow the publication-year convention (Q1 = Dec–Feb).</p>
+</Base>

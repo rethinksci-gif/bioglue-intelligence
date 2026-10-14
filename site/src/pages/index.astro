@@ -1,0 +1,59 @@
+---
+import Base from '../layouts/Base.astro';
+import Leads from '../components/Leads.astro';
+import { routes, challenges, references, quarterData, candidateData, shownCandidates, evidenceFor, QUARTERS, quarterLabel, url } from '../lib/data';
+const q3 = quarterData('2026-Q3');
+const q4 = candidateData('2026-Q4');
+const leadsQ4 = shownCandidates('2026-Q4');
+const totalLeads = QUARTERS.reduce((n, q) => n + shownCandidates(q).length, 0);
+---
+<Base>
+  <section class="hero">
+    <div class="kicker">Open knowledge base · Quarterly tracker</div>
+    <h1>Bio-based adhesives for wood products</h1>
+    <p class="lede">What replaces urea-, melamine- and phenol-formaldehyde in particleboard, MDF, plywood and assembly glues? We cover each technology route: its chemistry, its maturity and what holds it back. Every quarter we record what changed, with each fact quoted from its source.</p>
+    <div class="cta">
+      <a class="btn primary" href={url('routes/')}>Explore technology routes</a>
+      <a class="btn" href={url('tracker/')}>Quarterly tracker</a>
+      <a class="btn" href={url('chemistry/')}>Chemical structures</a>
+    </div>
+  </section>
+
+  <div class="stats">
+    <div class="stat"><b>{routes.length}</b><span>technology routes</span></div>
+    <div class="stat"><b>{q3?.items.length ?? 0}</b><span>evidence-checked developments, 2026-Q3</span></div>
+    <div class="stat"><b>{totalLeads}</b><span>machine-triaged leads, 2026 Q1–Q4</span></div>
+    <div class="stat"><b>{references.length}</b><span>verified references</span></div>
+  </div>
+
+  <h2>Why now</h2>
+  <div class="grid two">
+    <div class="card"><h3>Regulation</h3><p class="small">From <strong>6 August 2026</strong>, REACH Annex XVII entry 77 limits formaldehyde release from furniture and wood-based articles on the EU market to <strong>0.062 mg/m³</strong> under its test conditions (<a href="https://publications.europa.eu/resource/celex/32023R1464">Regulation (EU) 2023/1464</a>). Similar limits apply in North America through CARB and TSCA Title VI.</p></div>
+    <div class="card"><h3>Carbon and circularity</h3><p class="small">Binders are a small share of a panel's mass but a large share of its fossil content and embodied emissions. Debondable binders could also make panels recyclable. Any carbon claim still needs a defined functional unit and a comparison with the incumbent.</p></div>
+    <div class="card"><h3>The gap</h3><p class="small">Many bio-adhesives match UF in dry laboratory tests. Few match it on wet strength, press time, cost per qualified board and supply at the same time. This site tracks progress on those constraints rather than headline claims.</p></div>
+  </div>
+
+  <h2>Technology routes</h2>
+  <div class="grid">
+    {routes.map((r) => {
+      const n = evidenceFor('2026-Q3', r.id).length;
+      const m = shownCandidates('2026-Q4', r.id).length;
+      return (
+        <a class="card" href={url(`routes/${r.id}/`)}>
+          <div class="family">{r.family}</div>
+          <h3>{r.name}</h3>
+          <p class="small muted" style="margin:0 0 8px">{r.tagline}</p>
+          <div class="meta"><span class="badge ok">Q3: {n} checked</span><span class="badge warn">Q4: {m} leads</span></div>
+        </a>
+      );
+    })}
+  </div>
+
+  <h2>Latest leads · 2026-Q4 <span class="small muted">({quarterLabel('2026-Q4')}, scanned through {q4?.scanned_through})</span></h2>
+  <div class="notice">Leads are discovery records screened by DeepSeek flash. Their quotes are checked by code against the title or abstract, but they are not verified evidence.</div>
+  <div class="card"><Leads leads={leadsQ4} limit={8} /></div>
+  <p><a href={url('tracker/2026-Q4/')}>All 2026-Q4 leads →</a></p>
+
+  <h2>Cross-cutting challenges</h2>
+  <div class="chips">{challenges.map((c) => <a class="chip" href={url(`challenges/#${c.id}`)}>{c.title}</a>)}</div>
+</Base>

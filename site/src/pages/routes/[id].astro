@@ -1,0 +1,69 @@
+---
+import Base from '../../layouts/Base.astro';
+import Mol from '../../components/Mol.astro';
+import Evidence from '../../components/Evidence.astro';
+import Leads from '../../components/Leads.astro';
+import { routes, structures, challenges, refById, refLink, evidenceFor, holdsFor, shownCandidates, quarterData, candidateData, QUARTERS, quarterLabel, fmtDate, url, type Route } from '../../lib/data';
+export function getStaticPaths() { return routes.map((r) => ({ params: { id: r.id }, props: { route: r } })); }
+const { route } = Astro.props as { route: Route };
+const mols = route.structures.map((id) => structures.find((s) => s.id === id)!).filter(Boolean);
+const related = challenges.filter((c) => c.routes.includes(route.id));
+const refs = route.refs.map(refById).filter(Boolean);
+---
+<Base title={route.name} description={route.tagline}>
+  <p class="crumbs"><a href={url('')}>Overview</a> / <a href={url('routes/')}>Technology routes</a> / {route.name}</p>
+  <div class="layout">
+    <aside class="toc" aria-label="On this page">
+      <a href="#overview">Overview</a><a href="#chemistry">Chemistry</a><a href="#structures">Structures</a><a href="#position">Position &amp; maturity</a><a href="#challenges">Challenges</a><a href="#track">Quarterly track</a><a href="#literature">Key literature</a>
+    </aside>
+    <div>
+      <div class="family" style="margin-top:24px;color:var(--accent-2);font-weight:700;font-size:.8rem;letter-spacing:.06em;text-transform:uppercase">{route.family}</div>
+      <h1 style="margin-top:4px">{route.name}</h1>
+      <p class="lede muted">{route.tagline}</p>
+
+      <h2 id="overview">Overview</h2>
+      {route.overview.map((p) => <p>{p}</p>)}
+
+      <h2 id="chemistry">Chemistry and bonding mechanism</h2>
+      {route.chemistry.map((p) => <p>{p}</p>)}
+
+      <h2 id="structures">Representative structures</h2>
+      <p class="small muted">Monomers and model units, drawn from SMILES with RDKit. Polymers are shown by a representative unit, not a full structure.</p>
+      <div class="grid">{mols.map((m) => <Mol m={m} />)}</div>
+
+      <h2 id="position">Position and maturity</h2>
+      <dl class="facts">
+        <dt>Typical products</dt><dd>{route.applications.join(', ')}</dd>
+        <dt>Incumbent to beat</dt><dd>{route.incumbent}</dd>
+        <dt>Maturity</dt><dd>{route.maturity}</dd>
+      </dl>
+      <div class="grid two">
+        <div class="card"><h3>Strengths</h3><ul class="small">{route.strengths.map((s) => <li>{s}</li>)}</ul></div>
+        <div class="card"><h3>What to watch</h3><ul class="small">{route.watch.map((s) => <li>{s}</li>)}</ul></div>
+      </div>
+
+      <h2 id="challenges">Technical challenges</h2>
+      <ul>{route.challenges.map((c) => <li>{c}</li>)}</ul>
+      {related.length > 0 && <p class="small">Cross-cutting: {related.map((c, i) => <>{i > 0 && ' · '}<a href={url(`challenges/#${c.id}`)}>{c.title}</a></>)}</p>}
+
+      <h2 id="track">Quarterly track</h2>
+      {QUARTERS.map((q) => {
+        const items = evidenceFor(q, route.id), holds = holdsFor(q, route.id), leads = shownCandidates(q, route.id);
+        const qd = quarterData(q), cd = candidateData(q);
+        return (
+          <section>
+            <h3 id={`q-${q}`}>{q} <span class="small muted">· {quarterLabel(q)}</span></h3>
+            {!qd && !cd && <p class="muted small">Not yet scanned.</p>}
+            {items.map((it) => <Evidence item={it} sources={qd!.sources} showRoutes={false} />)}
+            {holds.map((h) => <div class="notice" style="border-color:var(--hold);background:var(--hold-soft)"><span class="badge hold">hold</span> <strong>{h.title}</strong> <span class="small muted">({fmtDate(h.date)}, <a href={`https://doi.org/${h.doi}`}>doi:{h.doi}</a>)</span><br /><span class="small">{h.reason}</span></div>)}
+            {cd && <details class="box" open={items.length === 0 && leads.length > 0 && leads.length <= 6}><summary>Machine-triaged leads ({leads.length})</summary><Leads leads={leads} showRoute={false} /></details>}
+          </section>
+        );
+      })}
+
+      <h2 id="literature">Key literature</h2>
+      <ol class="refs small">{refs.map((r) => <li>{r!.authors} ({r!.year}). {r!.title}. <em>{r!.journal}</em>. <a href={refLink(r!)}>{r!.doi ? `doi:${r!.doi}` : 'source'}</a> <span class="badge">{r!.kind}</span></li>)}</ol>
+      <p class="small"><a href={url('references/')}>Full literature list →</a></p>
+    </div>
+  </div>
+</Base>

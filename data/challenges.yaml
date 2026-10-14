@@ -1,0 +1,67 @@
+# Cross-cutting technical challenges. `routes` lists where each is most acute.
+- id: water
+  title: Water and moisture resistance
+  summary: Most bio-binders are rich in hydroxyl, amine and carboxyl groups that absorb water. Dry strength is easy to reach; wet, cyclic and boil tests are where candidates fail.
+  detail:
+    - Report dry and wet results separately and name the pretreatment (for example EN 314-1 bonding-quality pretreatments, or soaking and boiling cycles).
+    - The service class matters. A binder that suits interior furniture board can still be unsuitable for humid or exterior use.
+  ask: Which standard and pretreatment was used, and does the product class require it?
+  routes: [proteins, carbohydrates, carboxylic-acids, crosslinkers]
+- id: press
+  title: Press time, temperature and line throughput
+  summary: Panel lines are tuned to fast-curing UF and pMDI. Slower cure or higher press temperature lowers output and raises energy use, which can cancel out a cheaper feedstock.
+  detail:
+    - Express press time per mm of board thickness at a stated press temperature and compare it with the incumbent on the same line.
+    - High-moisture binders can cause steam blows. Account for the moisture content of resinated particles or veneer.
+  ask: What press factor (s/mm) and temperature did the test use, and how does it compare with UF on the same line?
+  routes: [lignin, tannins, carboxylic-acids, nipu, crosslinkers]
+- id: rheology
+  title: Viscosity, solids content and pot life
+  summary: Protein and tannin solutions become very viscous at the solids content needed for low water input. Spraying or roller application, and storage stability, limit what can be used.
+  detail:
+    - Report viscosity together with solids content, temperature and age. One viscosity figure on its own cannot be compared.
+  ask: What were the solids content, viscosity and pot life under plant conditions?
+  routes: [proteins, tannins, carbohydrates]
+- id: emissions
+  title: Formaldehyde and VOC emissions
+  summary: From 6 August 2026, REACH Annex XVII entry 77 limits formaldehyde release from furniture and wood-based articles placed on the EU market to 0.062 mg/m³ under its test conditions. "Formaldehyde-free" claims need emission data, not only a recipe.
+  detail:
+    - Hardeners such as hexamine, and some crosslinkers, release formaldehyde. Natural wood also emits small amounts.
+    - Formaldehyde, other VOCs and climate impact are separate questions. A low-carbon binder can still emit VOCs.
+  ask: Was emission measured with a chamber method on finished boards, and against which limit?
+  routes: [tannins, lignin, crosslinkers, proteins]
+- id: renewability
+  title: Renewable-content accounting
+  summary: A bio-based binder can be crosslinked with a fossil crosslinker, and a mass-balance claim is not the same as measured bio-based carbon. The basis must be stated.
+  detail:
+    - Distinguish binder-level from whole-formulation renewable content, including crosslinkers, catalysts, extenders and additives.
+    - Measured bio-based carbon (for example by radiocarbon methods) and mass-balance attribution answer different questions.
+  ask: What share of the whole formulation, on a dry basis, is renewable, and how was it determined?
+  routes: [crosslinkers, acrylics, nipu, lignin]
+- id: variability
+  title: Feedstock variability and supply
+  summary: Lignin, tannin and protein side streams vary with source, season and process. Panel producers need consistent specifications in large volumes.
+  detail:
+    - A single laboratory batch does not show supply. Look for specifications, multiple lots and contracted volume.
+  ask: How many lots were tested, and what volume can be supplied to specification?
+  routes: [lignin, tannins, proteins]
+- id: durability
+  title: Biological durability and ageing
+  summary: Protein and carbohydrate bond lines can support mould growth and lose strength over time. Accelerated ageing data are rarely reported.
+  ask: Were mould resistance or ageing tested, and was a biocide needed?
+  routes: [proteins, carbohydrates]
+- id: economics
+  title: Cost per qualified bond
+  summary: Price per tonne of binder is misleading. Compare total bonding cost for the same qualified product, covering dosage, solids, additives, press time, energy, rejects and capital changes.
+  ask: What is the cost per m³ of qualified board compared with the incumbent on the same line?
+  routes: [lignin, proteins, tannins, carbohydrates, carboxylic-acids, crosslinkers, nipu, acrylics]
+- id: lca
+  title: Comparable life-cycle evidence
+  summary: Claims of carbon benefit need a functional unit (for example 1 m³ of a defined board class), a system boundary and an equivalent incumbent product. Feedstock origin on its own does not prove a benefit.
+  ask: What functional unit, boundary and comparator does the LCA use, and was it reviewed?
+  routes: [lignin, proteins, tannins, carbohydrates, carboxylic-acids, crosslinkers, nipu, acrylics]
+- id: recyclability
+  title: End of life and recyclability
+  summary: Debondable or reversible binders could enable panel recycling. Laboratory joint recovery is far from panel-scale recycling economics.
+  ask: Was recovery shown on panels, with solvent and energy use accounted for?
+  routes: [lignin, proteins]

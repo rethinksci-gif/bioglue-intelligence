@@ -1,0 +1,41 @@
+---
+import { fmtDate, routeById, url, type Item, type Source } from '../lib/data';
+interface Props { item: Item; sources: Source[]; showRoutes?: boolean }
+const { item, sources, showRoutes = true } = Astro.props;
+const src = (id: string) => sources.find((s) => s.id === id);
+const typeBadge: Record<string, string> = { 'peer-reviewed': 'ok', supplier: 'warn', announcement: 'warn' };
+const ctxKeys = ['unit', 'conditions', 'basis', 'method', 'comparator', 'status', 'product'];
+---
+<article class="evidence" id={item.id}>
+  <div class="meta">
+    <span class={`badge ${typeBadge[item.evidence_type] ?? ''}`}>{item.evidence_type}</span>
+    <span class="badge">confidence: {item.confidence}</span>
+    <span>{fmtDate(item.date)}</span><span>·</span><span>{item.organization}</span>
+    {showRoutes && item.routes.map((r) => <a class="chip" href={url(`routes/${r}/`)}>{routeById(r)?.name}</a>)}
+  </div>
+  <h3>{item.headline}</h3>
+  <p>{item.what_changed.replace(/\s*\[[^\]]+\]/g, '')}</p>
+  <p class="muted">{item.why_it_matters}</p>
+  <p><strong>Limitation:</strong> {item.limitation}</p>
+  {item.route_note && <p class="small muted">{item.route_note}</p>}
+  <details class="box">
+    <summary>Sourced facts ({item.facts.length}) and gaps</summary>
+    <dl class="facts">
+      {item.facts.map((f) => {
+        const s = src(f.source);
+        const ctx = ctxKeys.filter((k) => f[k]).map((k) => `${k}: ${f[k]}`).join('; ');
+        return (
+          <>
+            <dt>{f.label}</dt>
+            <dd>
+              <strong>{f.value}</strong>{ctx && <span class="muted"> — {ctx}</span>}<br />
+              <q>{f.quote}</q> <span class="small muted">({f.locator}{s && <>, <a href={s.doi ? `https://doi.org/${s.doi}` : s.url}>{s.kind}</a></>})</span>
+            </dd>
+          </>
+        );
+      })}
+      <dt>Not assessed</dt><dd class="muted">{item.not_assessed.join(', ') || '—'}</dd>
+    </dl>
+  </details>
+  <p class="small"><strong>Next evidence to seek:</strong> {item.next}</p>
+</article>
