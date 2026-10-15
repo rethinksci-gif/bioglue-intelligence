@@ -24,5 +24,10 @@ import { newsletters, routeById, url, fmtDate } from '../../lib/data';
       <ul class="small">{n.watch.map((w) => <li><span class="badge">{w.label}</span> {w.text}</li>)}</ul>
     </article>
   ))}
-  <style>@media (max-width: 640px) { .nl-grid { grid-template-columns: 1fr !important; } }</style>
+  <style>
+    .nl-grid > * { min-width: 0; }
+    .nl-grid .badge { white-space: normal; }
+    article { overflow-wrap: anywhere; }
+    @media (max-width: 640px) { .nl-grid { grid-template-columns: minmax(0, 1fr) !important; } }
+  </style>
 </Base>

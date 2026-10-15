@@ -1,6 +1,7 @@
 ---
 import Base from '../layouts/Base.astro';
 import Leads from '../components/Leads.astro';
+import '../styles/home.css';
 import { routes, challenges, references, quarterData, candidateData, shownCandidates, evidenceFor, QUARTERS, quarterLabel, url } from '../lib/data';
 const q3 = quarterData('2026-Q3');
 const q4 = candidateData('2026-Q4');
@@ -8,53 +9,72 @@ const leadsQ4 = shownCandidates('2026-Q4');
 const totalLeads = QUARTERS.reduce((n, q) => n + shownCandidates(q).length, 0);
 ---
 <Base>
-  <section class="hero">
-    <div class="kicker">Open knowledge base · Quarterly tracker</div>
-    <h1>Bio-based adhesives for wood products</h1>
-    <p class="lede">What replaces urea-, melamine- and phenol-formaldehyde in particleboard, MDF, plywood and assembly glues? We cover each technology route: its chemistry, its maturity and what holds it back. Every quarter we record what changed, with each fact quoted from its source.</p>
-    <div class="cta">
-      <a class="btn primary" href={url('routes/')}>Explore technology routes</a>
-      <a class="btn" href={url('tracker/')}>Quarterly tracker</a>
-      <a class="btn" href={url('newsletter/')}>Latest newsletter</a>
-      <a class="btn" href={url('chemistry/')}>Chemical structures</a>
+<div class="home">
+  <section class="research-hero" aria-labelledby="hero-title">
+    <div class="hero-copy">
+      <div class="eyebrow"><span class="status-dot" aria-hidden="true"></span> OPEN KNOWLEDGE · MATERIALS RESEARCH</div>
+      <h1 id="hero-title">Better bonds.<br /><em>Built on evidence.</em></h1>
+      <p class="hero-subtitle">Bio-based adhesives for wood products.</p>
+      <p class="hero-description">Explore the chemistry, evidence and practical limits of the next generation of wood binders. From a promising molecule to a qualified panel.</p>
+      <div class="cta"><a class="btn primary" href="#technology-routes">Explore the routes <span aria-hidden="true">↗</span></a><a class="hero-link" href={url('tracker/')}>Follow the evidence <span aria-hidden="true">→</span></a></div>
+      <p class="hero-footnote">Particleboard <span>·</span> MDF <span>·</span> Plywood <span>·</span> Assembly</p>
     </div>
+    <figure class="bond-figure">
+      <div class="figure-heading"><span>INSIDE THE BOND</span><span>FIG. 01</span></div>
+      <svg viewBox="0 0 440 330" role="img" aria-labelledby="bond-title bond-desc">
+        <title id="bond-title">Wood layers joined by an adhesive interface</title>
+        <desc id="bond-desc">An exploded conceptual diagram separates the wood layers and binder network. It illustrates the interface, not a specific chemical structure.</desc>
+        <defs><pattern id="wood-grain" width="42" height="22" patternUnits="userSpaceOnUse" patternTransform="rotate(-12)"><path d="M0 4 Q21 -2 42 4 M0 14 Q21 8 42 14" fill="none" stroke="#796348" stroke-width="1" opacity=".4"/></pattern></defs>
+        <path d="M65 207 233 151 378 216 211 277Z" fill="#b69263" stroke="#826947"/><path d="M65 207 211 277 378 216 378 234 211 295 65 225Z" fill="#9b784f" stroke="#826947"/><path d="M65 207 233 151 378 216 211 277Z" fill="url(#wood-grain)"/>
+        <path d="M65 153 233 97 378 162 211 223Z" fill="#95be96" fill-opacity=".2" stroke="#a9ceac" stroke-dasharray="4 5"/>
+        <g fill="none" stroke="#bee2b5" stroke-width="2"><path d="m108 158 40-15 34 17 40-14 37 17 39-13 34 16M148 143l4-20 37-12 33 15 37-11 40 17M182 160l-3 24 34 16 42-15 4-22M222 146v-20M298 150l1-18M255 185l40-14 3-21"/></g>
+        <g fill="#e3f1cc">{[[108,158],[148,143],[182,160],[222,146],[259,163],[298,150],[332,166],[152,123],[189,111],[222,126],[259,115],[299,132],[179,184],[213,200],[255,185],[295,171]].map(([cx,cy])=><circle cx={cx} cy={cy} r="4" />)}</g>
+        <path d="M65 83 233 27 378 92 211 153Z" fill="#d7bd96" stroke="#a68a63"/><path d="M65 83 211 153 378 92 378 109 211 170 65 100Z" fill="#b89566" stroke="#a68a63"/><path d="M65 83 233 27 378 92 211 153Z" fill="url(#wood-grain)"/>
+        <g stroke="#a9c4af" stroke-width="1" fill="none"><path d="M76 88H25V55"/><path d="M337 162h76v-29"/><path d="M214 284v30h85"/></g>
+        <g fill="#dfe9de" font-family="system-ui,sans-serif" font-size="11"><text x="18" y="46">WOOD</text><text x="328" y="123">BINDER NETWORK</text><text x="305" y="318">INTERFACE</text></g>
+      </svg>
+      <figcaption><span>Chemistry → performance → evidence</span><span>Conceptual illustration</span></figcaption>
+    </figure>
   </section>
 
-  <div class="stats">
-    <div class="stat"><b>{routes.length}</b><span>technology routes</span></div>
-    <div class="stat"><b>{q3?.items.length ?? 0}</b><span>evidence-checked developments, 2026-Q3</span></div>
-    <div class="stat"><b>{totalLeads}</b><span>machine-triaged leads, 2026 Q1–Q4</span></div>
-    <div class="stat"><b>{references.length}</b><span>verified references</span></div>
+  <div class="research-stats" aria-label="Knowledge base coverage">
+    <a href={url('routes/')}><strong>{routes.length.toString().padStart(2, '0')}</strong><span>Technology routes<small>From lignin to renewable crosslinkers</small></span></a>
+    <a href={url('tracker/2026-Q3/')}><strong>{q3?.items.length ?? 0}</strong><span>Checked developments<small>2026-Q3 · source-linked evidence</small></span></a>
+    <a href={url('tracker/')}><strong>{totalLeads}</strong><span>Research leads<small>2026 Q1–Q4 · machine-triaged</small></span></a>
+    <a href={url('references/')}><strong>{references.length}</strong><span>Verified references<small>Explore the literature</small></span></a>
   </div>
 
-  <h2>Why now</h2>
-  <div class="grid two">
+  <section class="home-section" id="technology-routes" aria-labelledby="routes-title">
+    <div class="section-heading"><div><span class="eyebrow">01 / THE TECHNOLOGY LANDSCAPE</span><h2 id="routes-title">Many routes. One demanding bond.</h2><p>Understand the chemistry. Compare the constraints.</p></div><a class="text-link" href={url('routes/')}>Compare all routes <span aria-hidden="true">↗</span></a></div>
+    <div class="route-grid">
+      {routes.map((r, i) => {
+        const n = evidenceFor('2026-Q3', r.id).length;
+        const m = shownCandidates('2026-Q4', r.id).length;
+        return <a class="route-card" href={url(`routes/${r.id}/`)}>
+          <div class="route-top"><span class="route-number">{String(i + 1).padStart(2, '0')}</span><span class="route-arrow" aria-hidden="true">↗</span></div>
+          <div class="family">{r.family}</div><h3>{r.name}</h3><p>{r.tagline}</p>
+          <div class="route-bottom"><span><i class="evidence-dot" aria-hidden="true"></i>{n} checked <small>Q3</small></span><span>{m} leads <small>Q4</small></span></div>
+        </a>;
+      })}
+    </div>
+    <p class="section-note">Checked developments and machine-triaged leads are separate evidence categories. <a href={url('methods/')}>How we verify →</a></p>
+  </section>
+
+  <section class="home-section context-section" aria-labelledby="context-title"><div class="section-heading"><div><span class="eyebrow">02 / THE ENGINEERING QUESTION</span><h2 id="context-title">Renewable is only the beginning.</h2><p>A useful binder must work on the production line, too.</p></div></div>
+  <div class="why-grid">
     <div class="card"><h3>Regulation</h3><p class="small">From <strong>6 August 2026</strong>, REACH Annex XVII entry 77 limits formaldehyde release from furniture and wood-based articles on the EU market to <strong>0.062 mg/m³</strong> under its test conditions (<a href="https://publications.europa.eu/resource/celex/32023R1464">Regulation (EU) 2023/1464</a>). Similar limits apply in North America through CARB and TSCA Title VI.</p></div>
     <div class="card"><h3>Carbon and circularity</h3><p class="small">Binders are a small share of a panel's mass but a large share of its fossil content and embodied emissions. Debondable binders could also make panels recyclable. Any carbon claim still needs a defined functional unit and a comparison with the incumbent.</p></div>
     <div class="card"><h3>The gap</h3><p class="small">Many bio-adhesives match UF in dry laboratory tests. Few match it on wet strength, press time, cost per qualified board and supply at the same time. This site tracks progress on those constraints rather than headline claims.</p></div>
   </div>
 
-  <h2>Technology routes</h2>
-  <div class="grid">
-    {routes.map((r) => {
-      const n = evidenceFor('2026-Q3', r.id).length;
-      const m = shownCandidates('2026-Q4', r.id).length;
-      return (
-        <a class="card" href={url(`routes/${r.id}/`)}>
-          <div class="family">{r.family}</div>
-          <h3>{r.name}</h3>
-          <p class="small muted" style="margin:0 0 8px">{r.tagline}</p>
-          <div class="meta"><span class="badge ok">Q3: {n} checked</span><span class="badge warn">Q4: {m} leads</span></div>
-        </a>
-      );
-    })}
-  </div>
+    <div class="challenge-strip"><span>Explore the constraints</span><div class="chips">{challenges.map((c) => <a class="chip" href={url(`challenges/#${c.id}`)}>{c.title} <span aria-hidden="true">↗</span></a>)}</div></div>
+  </section>
 
-  <h2>Latest leads · 2026-Q4 <span class="small muted">({quarterLabel('2026-Q4')}, scanned through {q4?.scanned_through})</span></h2>
-  <div class="notice">Leads are discovery records screened by DeepSeek flash. Their quotes are checked by code against the title or abstract, but they are not verified evidence.</div>
-  <div class="card"><Leads leads={leadsQ4} limit={8} /></div>
-  <p><a href={url('tracker/2026-Q4/')}>All 2026-Q4 leads →</a></p>
+  <section class="home-section" aria-labelledby="leads-title">
+    <div class="section-heading"><div><span class="eyebrow">03 / ON THE RESEARCH RADAR</span><h2 id="leads-title">New signals. Open questions.</h2><p>2026-Q4 · {quarterLabel('2026-Q4')}{q4?.scanned_through && ` · Scanned through ${q4.scanned_through}`}</p></div><a class="text-link" href={url('tracker/2026-Q4/')}>All quarterly leads <span aria-hidden="true">↗</span></a></div>
+    <div class="radar-layout"><aside class="radar-note"><span class="badge warn">Discovery, not verified evidence</span><h3>A starting point for investigation.</h3><p>These records are machine-triaged. Quotes are checked against the source title or abstract; the underlying findings still need review.</p><a class="text-link" href={url('methods/')}>Read our method →</a></aside><div class="radar-feed"><Leads leads={leadsQ4} limit={4} /></div></div>
+  </section>
 
-  <h2>Cross-cutting challenges</h2>
-  <div class="chips">{challenges.map((c) => <a class="chip" href={url(`challenges/#${c.id}`)}>{c.title}</a>)}</div>
+  <section class="explore-band" aria-labelledby="explore-title"><div><span class="eyebrow">KEEP EXPLORING</span><h2 id="explore-title">Go from the route to the molecule.</h2><p>Explore representative structures, read the quarterly newsletter, or follow new research leads.</p></div><div class="explore-links"><a href={url('chemistry/')}>Chemical structures <span aria-hidden="true">↗</span></a><a href={url('newsletter/')}>Quarterly newsletter <span aria-hidden="true">↗</span></a><a href={url('rss.xml')}>Subscribe via RSS <span aria-hidden="true">↗</span></a></div></section>
+</div>
 </Base>
