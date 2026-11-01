@@ -4,13 +4,13 @@
     "2026-09-01",
     "2026-11-30"
   ],
-  "scanned_through": "2026-10-14",
-  "updated": "2026-10-14T20:10:00+00:00",
+  "scanned_through": "2026-11-01",
+  "updated": "2026-11-01T12:20:16+00:00",
   "model": "deepseek-flash",
-  "llm_calls": 0,
+  "llm_calls": 17,
   "usage": {
-    "prompt_tokens": 0,
-    "completion_tokens": 0
+    "prompt_tokens": 33705,
+    "completion_tokens": 34670
   },
   "note": "Machine-triaged discovery leads (DeepSeek flash). Not verified evidence: each needs primary-source review before it enters a quarterly issue.",
   "candidates": [
@@ -545,6 +545,90 @@
       "shown": true
     },
     {
+      "id": "doi:10.1021/acsapm.6c03728",
+      "kind": "literature",
+      "title": "A Mxene-Reinforced Chitosan-Gelatin Adhesive “Brick-and-Mud” System Inspired by Nacre for Fire-Resistant High-Performance Wood Composites",
+      "venue": "ACS Applied Polymer Materials",
+      "publisher": "American Chemical Society (ACS)",
+      "authors": "Ren, Kan, Guo et al.",
+      "date": "2026-10-19",
+      "date_precision": "day",
+      "url": "https://doi.org/10.1021/acsapm.6c03728",
+      "query": "lignin wood adhesive",
+      "seed_routes": [
+        "lignin",
+        "proteins",
+        "tannins",
+        "carbohydrates",
+        "crosslinkers",
+        "nipu"
+      ],
+      "route": "proteins",
+      "relevance": 0.9,
+      "signal": "research",
+      "application": "plywood",
+      "summary": "A nacre-inspired chitosan-gelatin adhesive reinforced with 0.8 wt% MXene was prepared and used to bond plywood with improved shear strength and flame retardancy.",
+      "quote": "providing insights for developing formaldehyde-free, inherently flame-retardant, eco-friendly wood adhesives",
+      "flags": [],
+      "shown": true
+    },
+    {
+      "id": "doi:10.1016/j.ijbiomac.2026.154415",
+      "kind": "literature",
+      "title": "Preparation and performance of rapid water activation lignin-based wood adhesive films",
+      "venue": "International Journal of Biological Macromolecules",
+      "publisher": "Elsevier BV",
+      "authors": "Zhang, Xi, Lei et al.",
+      "date": "2026-11-01",
+      "date_precision": "month",
+      "url": "https://doi.org/10.1016/j.ijbiomac.2026.154415",
+      "query": "lignin wood adhesive",
+      "seed_routes": [
+        "lignin",
+        "proteins",
+        "tannins",
+        "carbohydrates",
+        "crosslinkers",
+        "nipu"
+      ],
+      "route": "lignin",
+      "relevance": 0.9,
+      "signal": "research",
+      "application": "not stated",
+      "summary": "Reports preparation and performance of lignin-based wood adhesive films that are rapidly activated by water.",
+      "quote": "rapid water activation lignin-based wood adhesive films",
+      "flags": [
+        "title-only"
+      ],
+      "shown": true
+    },
+    {
+      "id": "doi:10.1016/j.ijbiomac.2026.154455",
+      "kind": "literature",
+      "title": "Effective strategy for preparing low-curing-temperature lignin-based non-isocyanate polyurethane wood adhesives",
+      "venue": "International Journal of Biological Macromolecules",
+      "publisher": "Elsevier BV",
+      "authors": "Aladejana, Olazabal, Eceiza et al.",
+      "date": "2026-11-01",
+      "date_precision": "month",
+      "url": "https://doi.org/10.1016/j.ijbiomac.2026.154455",
+      "query": "lignin wood adhesive",
+      "seed_routes": [
+        "lignin",
+        "nipu"
+      ],
+      "route": "nipu",
+      "relevance": 0.9,
+      "signal": "research",
+      "application": "not stated",
+      "summary": "Presents a strategy for preparing lignin-based non-isocyanate polyurethane wood adhesives with low curing temperature.",
+      "quote": "low-curing-temperature lignin-based non-isocyanate polyurethane wood adhesives",
+      "flags": [
+        "title-only"
+      ],
+      "shown": true
+    },
+    {
       "id": "doi:10.1021/acsami.6c13991",
       "kind": "literature",
       "title": "A Supramolecular Adhesive with Hierarchical Energy Dissipation for Plywood Applications",
@@ -595,6 +679,156 @@
       "shown": true
     },
     {
+      "id": "doi:10.1021/acssuschemeng.6c06289",
+      "kind": "literature",
+      "title": "Robust and Sustainable Starch Adhesive Inspired by the Feline Meniscus",
+      "venue": "ACS Sustainable Chemistry & Engineering",
+      "publisher": "American Chemical Society (ACS)",
+      "authors": "Wang, Wang, Luo et al.",
+      "date": "2026-10-19",
+      "date_precision": "day",
+      "url": "https://doi.org/10.1021/acssuschemeng.6c06289",
+      "query": "starch wood adhesive",
+      "seed_routes": [
+        "carbohydrates"
+      ],
+      "route": "carbohydrates",
+      "relevance": 0.85,
+      "signal": "research",
+      "application": "not stated",
+      "summary": "Citric acid crosslinked starch with hyperbranched polyurea as a buffer layer, forming a formaldehyde-free bio-based adhesive with increased pre-pressing and shear strengths.",
+      "quote": "citric acid was used as a cross-linking agent to react with active groups on starch",
+      "flags": [],
+      "shown": true
+    },
+    {
+      "id": "doi:10.1007/s00107-026-02507-0",
+      "kind": "literature",
+      "title": "Bio-based adhesives from distillers’ dried grains and soybean for wood composites:review on performance and sustainability",
+      "venue": "European Journal of Wood and Wood Products",
+      "publisher": "Springer Science and Business Media LLC",
+      "authors": "Teke, Aksoy, Diaz-Acosta et al.",
+      "date": "2026-10-23",
+      "date_precision": "day",
+      "url": "https://doi.org/10.1007/s00107-026-02507-0",
+      "query": "sugar based wood binder",
+      "seed_routes": [
+        "carbohydrates"
+      ],
+      "route": "proteins",
+      "relevance": 0.85,
+      "signal": "research",
+      "application": "wood composites",
+      "summary": "Review of bio-based adhesives from distillers' dried grains and soybean for wood composites, covering chemical and enzymatic modifications and benchmarking against phenol-formaldehyde and pMDI.",
+      "quote": "bio-based adhesives derived from agricultural byproducts",
+      "flags": [],
+      "shown": true
+    },
+    {
+      "id": "doi:10.1007/s00226-026-01812-4",
+      "kind": "literature",
+      "title": "Comparative screening of natural resins, gums and waxes as bio-based binders for lignocellulosic paper composites",
+      "venue": "Wood Science and Technology",
+      "publisher": "Springer Science and Business Media LLC",
+      "authors": "Pfaff, Sachtleben, Zollfrank",
+      "date": "2026-10-26",
+      "date_precision": "day",
+      "url": "https://doi.org/10.1007/s00226-026-01812-4",
+      "query": "sugar based wood binder",
+      "seed_routes": [
+        "carbohydrates"
+      ],
+      "route": "carbohydrates",
+      "relevance": 0.85,
+      "signal": "research",
+      "application": "wood fiber composites",
+      "summary": "Screening of natural waxes, resins and gums as bio-based binders for wood fiber paper composites found polysaccharide-rich gums gave strongest reinforcement and waxes best water repellency.",
+      "quote": "evaluated for their potential as bio-based binders for wood fiber composites in form of bound wood paper",
+      "flags": [],
+      "shown": true
+    },
+    {
+      "id": "doi:10.1016/j.colsurfa.2026.141096",
+      "kind": "literature",
+      "title": "A bio-based itaconic acid epoxy wood adhesive with excellent water resistance and interfacial bonding strength",
+      "venue": "Colloids and Surfaces A: Physicochemical and Engineering Aspects",
+      "publisher": "Elsevier BV",
+      "authors": "Ou, Qi, Zhang et al.",
+      "date": "2026-11-01",
+      "date_precision": "month",
+      "url": "https://doi.org/10.1016/j.colsurfa.2026.141096",
+      "query": "zein adhesive wood",
+      "seed_routes": [
+        "proteins",
+        "tannins",
+        "carbohydrates",
+        "crosslinkers"
+      ],
+      "route": "crosslinkers",
+      "relevance": 0.85,
+      "signal": "research",
+      "application": "not stated",
+      "summary": "Reports a bio-based itaconic acid epoxy wood adhesive described as having excellent water resistance and interfacial bonding strength.",
+      "quote": "A bio-based itaconic acid epoxy wood adhesive with excellent water resistance and interfacial bonding strength",
+      "flags": [
+        "title-only"
+      ],
+      "shown": true
+    },
+    {
+      "id": "doi:10.1016/j.colsurfa.2026.141368",
+      "kind": "literature",
+      "title": "A walnut meal-based wood adhesive with enhanced water resistance and mildew stability through organic-inorganic hybrid interactions",
+      "venue": "Colloids and Surfaces A: Physicochemical and Engineering Aspects",
+      "publisher": "Elsevier BV",
+      "authors": "Lin, Meng, Wang et al.",
+      "date": "2026-11-01",
+      "date_precision": "month",
+      "url": "https://doi.org/10.1016/j.colsurfa.2026.141368",
+      "query": "zein adhesive wood",
+      "seed_routes": [
+        "proteins",
+        "tannins",
+        "carbohydrates",
+        "crosslinkers"
+      ],
+      "route": "proteins",
+      "relevance": 0.85,
+      "signal": "research",
+      "application": "not stated",
+      "summary": "Describes a walnut meal-based wood adhesive with water resistance and mildew stability enhanced through organic-inorganic hybrid interactions.",
+      "quote": "A walnut meal-based wood adhesive with enhanced water resistance and mildew stability",
+      "flags": [
+        "title-only"
+      ],
+      "shown": true
+    },
+    {
+      "id": "doi:10.1016/j.indcrop.2026.124580",
+      "kind": "literature",
+      "title": "Synergistic reinforcement strategy toward a multifunctional soy protein adhesive with enhanced wet bonding, water resistance, and mold resistance",
+      "venue": "Industrial Crops and Products",
+      "publisher": "Elsevier BV",
+      "authors": "Xiao, Liao, Zhao et al.",
+      "date": "2026-11-01",
+      "date_precision": "month",
+      "url": "https://doi.org/10.1016/j.indcrop.2026.124580",
+      "query": "soy protein wood adhesive",
+      "seed_routes": [
+        "proteins"
+      ],
+      "route": "proteins",
+      "relevance": 0.85,
+      "signal": "research",
+      "application": "not stated",
+      "summary": "A synergistic reinforcement strategy is applied to a multifunctional soy protein adhesive to enhance wet bonding, water resistance and mold resistance.",
+      "quote": "multifunctional soy protein adhesive with enhanced wet bonding, water resistance, and mold resistance",
+      "flags": [
+        "title-only"
+      ],
+      "shown": true
+    },
+    {
       "id": "doi:10.1016/j.rinma.2026.100978",
       "kind": "literature",
       "title": "A study of the effects of cashew nutshell epoxy resin and graphene reinforcement on soy flour-based bio-adhesive performance",
@@ -615,6 +849,31 @@
       "application": "not stated",
       "summary": "The title reports a study of cashew nutshell epoxy resin and graphene reinforcement effects on soy flour-based bio-adhesive performance.",
       "quote": "A study of the effects of cashew nutshell epoxy resin and graphene reinforcement on soy flour-based bio-adhesive performance",
+      "flags": [
+        "title-only"
+      ],
+      "shown": true
+    },
+    {
+      "id": "doi:10.1016/j.indcrop.2026.124630",
+      "kind": "literature",
+      "title": "Preparation of acid-hydrolyzed acetylated starch/acrylate composite latex with balanced strength-ductility and water-resistant wood bonding",
+      "venue": "Industrial Crops and Products",
+      "publisher": "Elsevier BV",
+      "authors": "Li, Zuo, Huang et al.",
+      "date": "2026-11-01",
+      "date_precision": "month",
+      "url": "https://doi.org/10.1016/j.indcrop.2026.124630",
+      "query": "starch wood adhesive",
+      "seed_routes": [
+        "carbohydrates"
+      ],
+      "route": "carbohydrates",
+      "relevance": 0.8,
+      "signal": "research",
+      "application": "not stated",
+      "summary": "An acid-hydrolyzed acetylated starch/acrylate composite latex is prepared with balanced strength-ductility and water-resistant wood bonding.",
+      "quote": "acid-hydrolyzed acetylated starch/acrylate composite latex with balanced strength-ductility and water-resistant wood bonding",
       "flags": [
         "title-only"
       ],
@@ -645,6 +904,32 @@
       "shown": false
     },
     {
+      "id": "doi:10.1016/j.eurpolymj.2026.115118",
+      "kind": "literature",
+      "title": "Effect of organosilane incorporation on the structure and adhesive performance of lignin-based non-isocyanate poly(urea-urethane) networks",
+      "venue": "European Polymer Journal",
+      "publisher": "Elsevier BV",
+      "authors": "Hernández-Ramos, Carvalho, Labidi et al.",
+      "date": "2026-11-01",
+      "date_precision": "month",
+      "url": "https://doi.org/10.1016/j.eurpolymj.2026.115118",
+      "query": "lignin wood adhesive",
+      "seed_routes": [
+        "lignin",
+        "nipu"
+      ],
+      "route": "nipu",
+      "relevance": 0.7,
+      "signal": "research",
+      "application": "not stated",
+      "summary": "Examines how organosilane incorporation affects structure and adhesive performance of lignin-based non-isocyanate poly(urea-urethane) networks.",
+      "quote": "Effect of organosilane incorporation on the structure and adhesive performance of lignin-based non-isocyanate poly(urea-urethane) networks",
+      "flags": [
+        "title-only"
+      ],
+      "shown": true
+    },
+    {
       "id": "doi:10.1016/j.indcrop.2026.124349",
       "kind": "literature",
       "title": "Solvent- and formaldehyde-free phenolic resin derived from salicyl alcohol",
@@ -667,6 +952,29 @@
       "flags": [
         "title-only"
       ],
+      "shown": true
+    },
+    {
+      "id": "news:df350140bcf70bea",
+      "kind": "news",
+      "title": "From idea to validation: Michelin ResiCare brings bio-based resin to French market - Rubber News",
+      "venue": "Rubber News",
+      "publisher": "",
+      "authors": "",
+      "date": "2026-10-16",
+      "date_precision": "day",
+      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOXzRPV2pvNXozWDkwRjdWQjZVbUZxY0FjMHNtWmpXdGo3blc1Z3ZnUGwzTkRLa1JreUMyOXpUVUkxMmhGazlJRmJzLXd5c1FxTTVWWk94REY1U2tnZUVmWkYzalU2Sm9kXzdtX182UDJsS1hYOEZQVWRzYVgwc2FrRGlENjJiTmRDREJsSGZ4aXQzVHNiSEx0RVF4TV9FS0k4eEJvLXdmVQ?oc=5",
+      "query": "5-HMF resin adhesive",
+      "seed_routes": [
+        "crosslinkers"
+      ],
+      "route": "crosslinkers",
+      "relevance": 0.65,
+      "signal": "scale-up",
+      "application": "not stated",
+      "summary": "Michelin ResiCare brings a bio-based resin to the French market, describing the path from idea to validation.",
+      "quote": "Michelin ResiCare brings bio-based resin to French market",
+      "flags": [],
       "shown": true
     },
     {
@@ -766,6 +1074,31 @@
       "shown": false
     },
     {
+      "id": "doi:10.1016/j.cej.2026.180816",
+      "kind": "literature",
+      "title": "Dragonfly-wing-inspired multifunctional starch-based composite adhesive with enhanced interfacial bonding, durability, and flame retardancy",
+      "venue": "Chemical Engineering Journal",
+      "publisher": "Elsevier BV",
+      "authors": "Li, Liu, Guo et al.",
+      "date": "2026-11-01",
+      "date_precision": "month",
+      "url": "https://doi.org/10.1016/j.cej.2026.180816",
+      "query": "starch wood adhesive",
+      "seed_routes": [
+        "carbohydrates"
+      ],
+      "route": "carbohydrates",
+      "relevance": 0.55,
+      "signal": "research",
+      "application": "not stated",
+      "summary": "Reports a dragonfly-wing-inspired starch-based composite adhesive with enhanced interfacial bonding, durability and flame retardancy.",
+      "quote": "multifunctional starch-based composite adhesive with enhanced interfacial bonding, durability, and flame retardancy",
+      "flags": [
+        "title-only"
+      ],
+      "shown": false
+    },
+    {
       "id": "doi:10.1016/j.cej.2026.178499",
       "kind": "literature",
       "title": "Non-isocyanate polyurethanes from bio-based isosorbide with enhanced thermal, mechanical and adhesive properties",
@@ -859,6 +1192,56 @@
       "summary": "Choline chloride/formic acid deep eutectic solvent with Lewis acid catalysts extracted lignin from elm wood, and the isolated lignin structure was characterized quantitatively.",
       "quote": "the lignin extraction yield reached 72.4 %, significantly higher than the lignin without catalyst system (42.5 %)",
       "flags": [],
+      "shown": false
+    },
+    {
+      "id": "doi:10.1016/j.cej.2026.180438",
+      "kind": "literature",
+      "title": "Plant polyphenols modification for crosslinkers: Kinetics studies of lignin- and tannin-model compounds",
+      "venue": "Chemical Engineering Journal",
+      "publisher": "Elsevier BV",
+      "authors": "Ciringer, Tofani, Šala et al.",
+      "date": "2026-11-01",
+      "date_precision": "month",
+      "url": "https://doi.org/10.1016/j.cej.2026.180438",
+      "query": "tannin particleboard",
+      "seed_routes": [
+        "tannins"
+      ],
+      "route": "tannins",
+      "relevance": 0.5,
+      "signal": "research",
+      "application": "not stated",
+      "summary": "Kinetic study of plant polyphenol modification, using lignin- and tannin-model compounds, for crosslinker applications.",
+      "quote": "Plant polyphenols modification for crosslinkers: Kinetics studies of lignin- and tannin-model compounds",
+      "flags": [
+        "title-only"
+      ],
+      "shown": false
+    },
+    {
+      "id": "doi:10.1016/j.cej.2026.181803",
+      "kind": "literature",
+      "title": "High-yield and scalable synthesis of bio-derived acrylic acid from lactic acid or ethyl lactate over silica-supported polyphosphate catalysts",
+      "venue": "Chemical Engineering Journal",
+      "publisher": "Elsevier BV",
+      "authors": "Taniguchi, Li, Narita et al.",
+      "date": "2026-11-01",
+      "date_precision": "month",
+      "url": "https://doi.org/10.1016/j.cej.2026.181803",
+      "query": "bio-based acrylic acid production",
+      "seed_routes": [
+        "acrylics"
+      ],
+      "route": "acrylics",
+      "relevance": 0.5,
+      "signal": "scale-up",
+      "application": "not stated",
+      "summary": "Bio-derived acrylic acid is synthesised at high yield from lactic acid or ethyl lactate over silica-supported polyphosphate catalysts.",
+      "quote": "High-yield and scalable synthesis of bio-derived acrylic acid from lactic acid or ethyl lactate over silica-supported polyphosphate catalysts",
+      "flags": [
+        "title-only"
+      ],
       "shown": false
     },
     {
@@ -956,6 +1339,81 @@
       "summary": "Creep was monitored for fourteen months on TS3-connected CLT panels in flat-wise bending, and residual short-term resistance and stiffness were compared with a reference group.",
       "quote": "creep was monitored for fourteen months on TS3™-connected CLT panels loaded in flat-wise bending under dry service conditions",
       "flags": [],
+      "shown": false
+    },
+    {
+      "id": "doi:10.1007/s10973-026-16114-x",
+      "kind": "literature",
+      "title": "A multifunctional bio-based polyurethane adhesive with integrated flame retardancy and thermal conductivity",
+      "venue": "Journal of Thermal Analysis and Calorimetry",
+      "publisher": "Springer Science and Business Media LLC",
+      "authors": "Hongmei, Xianjun, Chaojian et al.",
+      "date": "2026-10-31",
+      "date_precision": "day",
+      "url": "https://doi.org/10.1007/s10973-026-16114-x",
+      "query": "non-isocyanate polyurethane wood adhesive",
+      "seed_routes": [
+        "nipu"
+      ],
+      "route": "nipu",
+      "relevance": 0.4,
+      "signal": "research",
+      "application": "not stated",
+      "summary": "Title reports a multifunctional bio-based polyurethane adhesive combining flame retardancy with thermal conductivity; no wood product or adhesive application is specified.",
+      "quote": "A multifunctional bio-based polyurethane adhesive with integrated flame retardancy and thermal conductivity",
+      "flags": [
+        "title-only"
+      ],
+      "shown": false
+    },
+    {
+      "id": "doi:10.1016/j.ijbiomac.2026.154384",
+      "kind": "literature",
+      "title": "Synergistic reinforcement of bio-based non-isocyanate polyurethane by nanocellulose and lignin",
+      "venue": "International Journal of Biological Macromolecules",
+      "publisher": "Elsevier BV",
+      "authors": "Lei, Zhang, Li et al.",
+      "date": "2026-11-01",
+      "date_precision": "month",
+      "url": "https://doi.org/10.1016/j.ijbiomac.2026.154384",
+      "query": "non-isocyanate polyurethane wood adhesive",
+      "seed_routes": [
+        "nipu"
+      ],
+      "route": "nipu",
+      "relevance": 0.4,
+      "signal": "research",
+      "application": "not stated",
+      "summary": "Reports synergistic reinforcement of a bio-based non-isocyanate polyurethane using nanocellulose and lignin.",
+      "quote": "Synergistic reinforcement of bio-based non-isocyanate polyurethane by nanocellulose and lignin",
+      "flags": [
+        "title-only"
+      ],
+      "shown": false
+    },
+    {
+      "id": "doi:10.1016/j.ijbiomac.2026.154398",
+      "kind": "literature",
+      "title": "Plasticization and locking through lignin reprogramming for high-strength and dimensionally stable densified wood",
+      "venue": "International Journal of Biological Macromolecules",
+      "publisher": "Elsevier BV",
+      "authors": "Chu, Shi, Lin et al.",
+      "date": "2026-11-01",
+      "date_precision": "month",
+      "url": "https://doi.org/10.1016/j.ijbiomac.2026.154398",
+      "query": "lignin wood adhesive",
+      "seed_routes": [
+        "lignin"
+      ],
+      "route": "lignin",
+      "relevance": 0.4,
+      "signal": "research",
+      "application": "densified wood",
+      "summary": "Describes lignin plasticization and locking via lignin reprogramming to produce high-strength, dimensionally stable densified wood.",
+      "quote": "Plasticization and locking through lignin reprogramming for high-strength and dimensionally stable densified wood",
+      "flags": [
+        "title-only"
+      ],
       "shown": false
     },
     {
@@ -1061,6 +1519,83 @@
       "shown": false
     },
     {
+      "id": "doi:10.1007/s00107-026-02504-3",
+      "kind": "literature",
+      "title": "Date palm wood-based foams with gellan gum binder for enhanced sound and thermal insulation in building applications",
+      "venue": "European Journal of Wood and Wood Products",
+      "publisher": "Springer Science and Business Media LLC",
+      "authors": "Al Abdallah, Tannous, Abu-Jdayil",
+      "date": "2026-10-17",
+      "date_precision": "day",
+      "url": "https://doi.org/10.1007/s00107-026-02504-3",
+      "query": "sugar based wood binder",
+      "seed_routes": [
+        "carbohydrates",
+        "carboxylic-acids"
+      ],
+      "route": "carbohydrates",
+      "relevance": 0.35,
+      "signal": "research",
+      "application": "not stated",
+      "summary": "Date palm wood-based foams using a gellan gum binder were developed for sound and thermal insulation in building applications.",
+      "quote": "Date palm wood-based foams with gellan gum binder for enhanced sound and thermal insulation",
+      "flags": [
+        "title-only"
+      ],
+      "shown": false
+    },
+    {
+      "id": "doi:10.1080/02773813.2026.2747912",
+      "kind": "literature",
+      "title": "Regiopreference of aromatic C6- over C5-carbon in acid condensation of guaiacyl type lignin",
+      "venue": "Journal of Wood Chemistry and Technology",
+      "publisher": "Informa UK Limited",
+      "authors": "Komatsu, Yokoyama",
+      "date": "2026-10-22",
+      "date_precision": "day",
+      "url": "https://doi.org/10.1080/02773813.2026.2747912",
+      "query": "lignin wood adhesive",
+      "seed_routes": [
+        "lignin"
+      ],
+      "route": "lignin",
+      "relevance": 0.35,
+      "signal": "research",
+      "application": "not stated",
+      "summary": "Reports regiopreference for aromatic C6- over C5-carbon substitution in acid condensation of guaiacyl-type lignin.",
+      "quote": "Regiopreference of aromatic C6- over C5-carbon in acid condensation of guaiacyl type lignin",
+      "flags": [
+        "title-only"
+      ],
+      "shown": false
+    },
+    {
+      "id": "doi:10.1016/j.ijbiomac.2026.154602",
+      "kind": "literature",
+      "title": "Bio-adhesive from grape seed protein, tannic acid and chitosan with robust dry/wet adhesion, high switching ratio and full degradability",
+      "venue": "International Journal of Biological Macromolecules",
+      "publisher": "Elsevier BV",
+      "authors": "Li, Jia, Luo",
+      "date": "2026-11-01",
+      "date_precision": "month",
+      "url": "https://doi.org/10.1016/j.ijbiomac.2026.154602",
+      "query": "protein adhesive plywood",
+      "seed_routes": [
+        "proteins",
+        "carbohydrates"
+      ],
+      "route": "proteins",
+      "relevance": 0.35,
+      "signal": "research",
+      "application": "not stated",
+      "summary": "A bio-adhesive is prepared from grape seed protein, tannic acid and chitosan, reported to show dry and wet adhesion, a switching ratio and full degradability.",
+      "quote": "Bio-adhesive from grape seed protein, tannic acid and chitosan with robust dry/wet adhesion",
+      "flags": [
+        "title-only"
+      ],
+      "shown": false
+    },
+    {
       "id": "doi:10.70769/3030-3214.srt.4.3.2026.40",
       "kind": "literature",
       "title": "MAHALLIY XOMASHYOLAR ASOSIDA SELLYULOZA NANOKRISTALLARI SINTEZI VA ULAR ASOSIDA YUQORI SAMARALI ADGEZION KOMPOZITSIYALAR YARATISH ISTIQBOLLARI",
@@ -1129,6 +1664,106 @@
       "summary": "News item headlined on factors driving growth in the wood adhesives market through rising demand.",
       "quote": "Factors Driving Wood Adhesives Growth: Rising Demand",
       "flags": [],
+      "shown": false
+    },
+    {
+      "id": "doi:10.51318/fret.2026.98.3.014",
+      "kind": "literature",
+      "title": "ИССЛЕДОВАНИЕ ВЛИЯНИЯ АЭРОИОНИЗАЦИИ НА ОТВЕРЖДЕНИЕ КЛЕЯ ПРИ СКЛЕИВАНИИМАССИВНОЙ ДРЕВЕСИНЫ",
+      "venue": "Леса России и хозяйство в них",
+      "publisher": "Cifra Ltd – Russian Agency for Digital Standardization (RADS) publishing",
+      "authors": "Носоновских, Газеев, Свиридов et al.",
+      "date": "2026-10-13",
+      "date_precision": "day",
+      "url": "https://doi.org/10.51318/fret.2026.98.3.014",
+      "query": "zein adhesive wood",
+      "seed_routes": [
+        "proteins",
+        "tannins",
+        "carbohydrates",
+        "crosslinkers"
+      ],
+      "route": "none",
+      "relevance": 0.3,
+      "signal": "research",
+      "application": "not stated",
+      "summary": "Aeroionization did not alter PVA adhesive curing chemistry but promoted dehydration and densification of the cured glue layer when bonding solid wood.",
+      "quote": "the influence of aeroionization on the process of gluing solid wood with PVA glue",
+      "flags": [],
+      "shown": false
+    },
+    {
+      "id": "doi:10.1002/mame.70355",
+      "kind": "literature",
+      "title": "Lignosulfonates and 5‐hydroxymethylfurfural (HMF) as Formaldehyde‐Free Adhesion Promoters in Fiber‐Reinforced Elastomer Products",
+      "venue": "Macromolecular Materials and Engineering",
+      "publisher": "Wiley",
+      "authors": "Rausch, Gähr, Buchmeiser",
+      "date": "2026-10-14",
+      "date_precision": "day",
+      "url": "https://doi.org/10.1002/mame.70355",
+      "query": "formaldehyde-free crosslinker wood",
+      "seed_routes": [
+        "crosslinkers"
+      ],
+      "route": "lignin",
+      "relevance": 0.3,
+      "signal": "research",
+      "application": "not stated",
+      "summary": "Lignosulfonate- and HMF-based adhesion promoter systems for cord impregnation were developed and tested on polyester and polyamide fibers as RFL alternatives.",
+      "quote": "Due to the increasing health and regulatory scrutiny of resorcinol",
+      "flags": [],
+      "shown": false
+    },
+    {
+      "id": "doi:10.1016/j.icheatmasstransfer.2026.112890",
+      "kind": "literature",
+      "title": "Prediction of formaldehyde emission from wood-based panel furniture in different indoor environments and human health risk assessment",
+      "venue": "International Communications in Heat and Mass Transfer",
+      "publisher": "Elsevier BV",
+      "authors": "Wang, Guo, Zhang et al.",
+      "date": "2026-11-01",
+      "date_precision": "month",
+      "url": "https://doi.org/10.1016/j.icheatmasstransfer.2026.112890",
+      "query": "tannin adhesive wood panel",
+      "seed_routes": [
+        "tannins",
+        "crosslinkers"
+      ],
+      "route": "none",
+      "relevance": 0.3,
+      "signal": "research",
+      "application": "wood-based panel furniture",
+      "summary": "Predicts formaldehyde emission from wood-based panel furniture in different indoor environments and assesses associated human health risk.",
+      "quote": "Prediction of formaldehyde emission from wood-based panel furniture",
+      "flags": [
+        "title-only"
+      ],
+      "shown": false
+    },
+    {
+      "id": "doi:10.1016/j.porgcoat.2026.110477",
+      "kind": "literature",
+      "title": "Preparation and performance of a novel composite chitosan-based wood flame retardant coating",
+      "venue": "Progress in Organic Coatings",
+      "publisher": "Elsevier BV",
+      "authors": "Du, Li, Wang et al.",
+      "date": "2026-11-01",
+      "date_precision": "month",
+      "url": "https://doi.org/10.1016/j.porgcoat.2026.110477",
+      "query": "chitosan wood adhesive",
+      "seed_routes": [
+        "carbohydrates"
+      ],
+      "route": "carbohydrates",
+      "relevance": 0.3,
+      "signal": "research",
+      "application": "not stated",
+      "summary": "A novel composite chitosan-based coating was prepared and evaluated as a wood flame retardant.",
+      "quote": "Preparation and performance of a novel composite chitosan-based wood flame retardant coating",
+      "flags": [
+        "title-only"
+      ],
       "shown": false
     },
     {
@@ -1204,6 +1839,79 @@
       "summary": "News item stating that the tannin market is expected to grow at a 7.6% CAGR until 2030.",
       "quote": "Tannin Market Expected to Grow at a 7.6% CAGR Until 2030",
       "flags": [],
+      "shown": false
+    },
+    {
+      "id": "doi:10.1021/acsomega.6c04343",
+      "kind": "literature",
+      "title": "Recovery of Citric Acid from Fermentation Broth Using Supported Ionic Liquids",
+      "venue": "ACS Omega",
+      "publisher": "American Chemical Society (ACS)",
+      "authors": "Ferreira, Neves, Coelho et al.",
+      "date": "2026-10-20",
+      "date_precision": "day",
+      "url": "https://doi.org/10.1021/acsomega.6c04343",
+      "query": "citric acid sucrose adhesive",
+      "seed_routes": [
+        "carboxylic-acids"
+      ],
+      "route": "carboxylic-acids",
+      "relevance": 0.25,
+      "signal": "research",
+      "application": "not stated",
+      "summary": "Supported ionic liquids adsorb citric acid from fermentation broth, reaching maximum capacities of 577 and 793 mg per gram and showing desorption and reuse.",
+      "quote": "Maximum adsorption capacities of 577 and 793 mg·g–1 were obtained for [Si][N3222OH]Cl and [Si][C3C1Im]Cl, respectively",
+      "flags": [],
+      "shown": false
+    },
+    {
+      "id": "doi:10.1007/s42765-026-00790-3",
+      "kind": "literature",
+      "title": "Dynamic Interfacial Fusion Enables Scalable Production of Mechanically Robust Self‐Adhesive Cellulose Paper",
+      "venue": "Advanced Fiber Materials",
+      "publisher": "Springer Science and Business Media LLC",
+      "authors": "Wang, Chen, Li et al.",
+      "date": "2026-10-29",
+      "date_precision": "day",
+      "url": "https://doi.org/10.1007/s42765-026-00790-3",
+      "query": "cellulose based wood adhesive",
+      "seed_routes": [
+        "carbohydrates"
+      ],
+      "route": "carbohydrates",
+      "relevance": 0.25,
+      "signal": "research",
+      "application": "not stated",
+      "summary": "Title reports dynamic interfacial fusion enabling scalable production of mechanically robust self-adhesive cellulose paper.",
+      "quote": "Scalable Production of Mechanically Robust Self‐Adhesive Cellulose Paper",
+      "flags": [
+        "title-only"
+      ],
+      "shown": false
+    },
+    {
+      "id": "doi:10.1080/02773813.2026.2752917",
+      "kind": "literature",
+      "title": "Multifunctional reinforcement of bio-based water-borne wood coatings via chitosan/calcium bentonite/linseed oil hybrid system: A response surface optimization approach",
+      "venue": "Journal of Wood Chemistry and Technology",
+      "publisher": "Informa UK Limited",
+      "authors": "İskurt, Acaralı",
+      "date": "2026-10-29",
+      "date_precision": "day",
+      "url": "https://doi.org/10.1080/02773813.2026.2752917",
+      "query": "chitosan wood adhesive",
+      "seed_routes": [
+        "carbohydrates"
+      ],
+      "route": "carbohydrates",
+      "relevance": 0.25,
+      "signal": "research",
+      "application": "not stated",
+      "summary": "Title describes response-surface optimization of a chitosan/calcium bentonite/linseed oil hybrid system for reinforcing bio-based water-borne wood coatings.",
+      "quote": "Multifunctional reinforcement of bio-based water-borne wood coatings via chitosan/calcium bentonite/linseed oil hybrid system",
+      "flags": [
+        "title-only"
+      ],
       "shown": false
     },
     {
@@ -1456,6 +2164,56 @@
       "shown": false
     },
     {
+      "id": "doi:10.1016/j.lwt.2026.120199",
+      "kind": "literature",
+      "title": "Structural and selected functional changes in soy protein isolate extracted from postharvest stored soybeans: Associations with oxidation and aggregation",
+      "venue": "LWT",
+      "publisher": "Elsevier BV",
+      "authors": "Zhu, Zhu, Wang",
+      "date": "2026-10-01",
+      "date_precision": "month",
+      "url": "https://doi.org/10.1016/j.lwt.2026.120199",
+      "query": "soy protein wood adhesive",
+      "seed_routes": [
+        "proteins"
+      ],
+      "route": "proteins",
+      "relevance": 0.2,
+      "signal": "research",
+      "application": "not stated",
+      "summary": "Structural and functional changes in soy protein isolate from postharvest stored soybeans are linked to oxidation and aggregation.",
+      "quote": "Structural and selected functional changes in soy protein isolate",
+      "flags": [
+        "title-only"
+      ],
+      "shown": false
+    },
+    {
+      "id": "doi:10.1016/j.tlj.2026.10.001",
+      "kind": "literature",
+      "title": "Convenient preparation of monolignol early-lignification mixtures to facilitate NMR analysis of lignins",
+      "venue": "The Lignin Journal",
+      "publisher": "Elsevier BV",
+      "authors": "Ralph, Erikson, Ralph",
+      "date": "2026-10-01",
+      "date_precision": "month",
+      "url": "https://doi.org/10.1016/j.tlj.2026.10.001",
+      "query": "lignin plywood resin",
+      "seed_routes": [
+        "lignin"
+      ],
+      "route": "lignin",
+      "relevance": 0.2,
+      "signal": "research",
+      "application": "not stated",
+      "summary": "Monolignol early-lignification mixtures are prepared conveniently to facilitate NMR analysis of lignins.",
+      "quote": "Convenient preparation of monolignol early-lignification mixtures to facilitate NMR analysis of lignins",
+      "flags": [
+        "title-only"
+      ],
+      "shown": false
+    },
+    {
       "id": "doi:10.3390/molecules31203650",
       "kind": "literature",
       "title": "Effect of Fatty Acid Saturation and Side-Chain Length on the Thermal Behavior and Morphology of Plant Oil-Based Acrylic Polymers",
@@ -1503,6 +2261,174 @@
       "shown": false
     },
     {
+      "id": "doi:10.3390/polym18202530",
+      "kind": "literature",
+      "title": "Lignin Derivatives in Beech, Eucalyptus and Oak Wood Hydrochar: Mild Solvolysis and Characterization",
+      "venue": "Polymers",
+      "publisher": "MDPI AG",
+      "authors": "Pierpaoli, Grilc, Tofani et al.",
+      "date": "2026-10-15",
+      "date_precision": "day",
+      "url": "https://doi.org/10.3390/polym18202530",
+      "query": "lignin wood adhesive",
+      "seed_routes": [
+        "lignin"
+      ],
+      "route": "lignin",
+      "relevance": 0.2,
+      "signal": "research",
+      "application": "not stated",
+      "summary": "Lignin-derived fractions were recovered from beech, eucalyptus and oak hydrochars by hydrothermal carbonization and mild acidolysis, then characterized by FTIR, HP-SEC, 2D NMR and TGA.",
+      "quote": "hydrothermal carbonization followed by mild solvolysis produces lignin-derivative fractions",
+      "flags": [],
+      "shown": false
+    },
+    {
+      "id": "doi:10.1002/appl.70233",
+      "kind": "literature",
+      "title": "Lignin‐Polylactic Acid Biopolymer Blends for Advanced Applications – Effects of Microwave‐Assisted Acetylation of Lignin",
+      "venue": "Applied Research",
+      "publisher": "Wiley",
+      "authors": "Johansson, Skrifvars, Kadi et al.",
+      "date": "2026-10-21",
+      "date_precision": "day",
+      "url": "https://doi.org/10.1002/appl.70233",
+      "query": "lignin plywood resin",
+      "seed_routes": [
+        "lignin"
+      ],
+      "route": "lignin",
+      "relevance": 0.2,
+      "signal": "research",
+      "application": "not stated",
+      "summary": "Acetylates lignin under microwave irradiation without catalyst and blends it with PLA and an impact modifier, reporting improved impact strength, ductility and thermal stability.",
+      "quote": "Acetylation was selected to reduce the hydrophilicity of lignin and improve its compatibility and dispersion within the hydrophobic PLA matrix",
+      "flags": [],
+      "shown": false
+    },
+    {
+      "id": "doi:10.3390/su182110730",
+      "kind": "literature",
+      "title": "Tannin-Based Insulation Foams: The Effect of the Substitution of Formalin with Glutaraldehyde",
+      "venue": "Sustainability",
+      "publisher": "MDPI AG",
+      "authors": "Ranesi, Faria, Santos Silva et al.",
+      "date": "2026-10-22",
+      "date_precision": "day",
+      "url": "https://doi.org/10.3390/su182110730",
+      "query": "tannin particleboard",
+      "seed_routes": [
+        "tannins"
+      ],
+      "route": "tannins",
+      "relevance": 0.2,
+      "signal": "research",
+      "application": "not stated",
+      "summary": "Tannin-based insulation foams were produced with formalin partly or fully replaced by glutaraldehyde, and mechanical, moisture, thermal and fire properties were compared with polystyrene.",
+      "quote": "This study investigates the potential of tannin-based foams as sustainable thermal insulations",
+      "flags": [],
+      "shown": false
+    },
+    {
+      "id": "doi:10.1007/s00107-026-02510-5",
+      "kind": "literature",
+      "title": "Time-dependent reversal of water-absorption performance in citric acid–xylitol–modified Scots pine across processing pathways",
+      "venue": "European Journal of Wood and Wood Products",
+      "publisher": "Springer Science and Business Media LLC",
+      "authors": "Aydogan, Özkan",
+      "date": "2026-10-23",
+      "date_precision": "day",
+      "url": "https://doi.org/10.1007/s00107-026-02510-5",
+      "query": "citric acid wood binder particleboard",
+      "seed_routes": [
+        "carboxylic-acids"
+      ],
+      "route": "carboxylic-acids",
+      "relevance": 0.2,
+      "signal": "research",
+      "application": "not stated",
+      "summary": "Study examines the time-dependent reversal of water-absorption performance in citric acid-xylitol-modified Scots pine across processing pathways.",
+      "quote": "Time-dependent reversal of water-absorption performance",
+      "flags": [
+        "title-only"
+      ],
+      "shown": false
+    },
+    {
+      "id": "doi:10.1002/cepa.70976",
+      "kind": "literature",
+      "title": "Protein‐Based Insulation Foams from Soy Protein Isolate: Influence of CaCl 2 Addition on Foam Formation and Thermal Performance",
+      "venue": "ce/papers",
+      "publisher": "Wiley",
+      "authors": "Schrögel, Honke",
+      "date": "2026-10-27",
+      "date_precision": "day",
+      "url": "https://doi.org/10.1002/cepa.70976",
+      "query": "soy protein wood adhesive",
+      "seed_routes": [
+        "proteins"
+      ],
+      "route": "proteins",
+      "relevance": 0.2,
+      "signal": "research",
+      "application": "not stated",
+      "summary": "Duck-feather-reinforced soy protein isolate foams with controlled CaCl2 dosage reached thermal conductivities of about 52-53 mW/(m·K) at apparent densities of 210-220 kg/m3.",
+      "quote": "soy protein isolate (SPI) foams were produced from aqueous dispersions",
+      "flags": [],
+      "shown": false
+    },
+    {
+      "id": "doi:10.55373/mjchem.v28i5.190",
+      "kind": "literature",
+      "title": "Green Synthesis and Characterization of Glycerol-Plasticized and Citric Acid-crosslinked PVA/CMC Bioplastics Reinforced with Coconut Fiber-Derived Cellulose",
+      "venue": "MALAYSIAN JOURNAL OF CHEMISTRY",
+      "publisher": "Malaysian Institute of Chemistry",
+      "authors": "",
+      "date": "2026-10-31",
+      "date_precision": "day",
+      "url": "https://doi.org/10.55373/mjchem.v28i5.190",
+      "query": "citric acid sucrose adhesive",
+      "seed_routes": [
+        "carboxylic-acids",
+        "acrylics"
+      ],
+      "route": "carboxylic-acids",
+      "relevance": 0.2,
+      "signal": "research",
+      "application": "not stated",
+      "summary": "Study synthesizes and characterizes glycerol-plasticized, citric acid-crosslinked PVA/CMC bioplastics reinforced with cellulose derived from coconut fiber.",
+      "quote": "Glycerol-Plasticized and Citric Acid-crosslinked PVA/CMC Bioplastics",
+      "flags": [
+        "title-only"
+      ],
+      "shown": false
+    },
+    {
+      "id": "doi:10.1016/j.polymer.2026.130901",
+      "kind": "literature",
+      "title": "Facile butylation of lignin: Toward high-performance PBAT/lignin composites",
+      "venue": "Polymer",
+      "publisher": "Elsevier BV",
+      "authors": "Zheng, Ma, Huang et al.",
+      "date": "2026-11-01",
+      "date_precision": "month",
+      "url": "https://doi.org/10.1016/j.polymer.2026.130901",
+      "query": "lignin plywood resin",
+      "seed_routes": [
+        "lignin"
+      ],
+      "route": "lignin",
+      "relevance": 0.2,
+      "signal": "research",
+      "application": "not stated",
+      "summary": "The study reports butylation of lignin aimed at high-performance PBAT/lignin composites.",
+      "quote": "Facile butylation of lignin: Toward high-performance PBAT/lignin composites",
+      "flags": [
+        "title-only"
+      ],
+      "shown": false
+    },
+    {
       "id": "doi:10.3390/polym18182244",
       "kind": "literature",
       "title": "Polyvinyl Alcohol/Lignin Composite Films Crosslinked with Citric Acid: Physicochemical Properties and Anti-Adhesive Activity Against Staphylococcus aureus",
@@ -1523,6 +2449,29 @@
       "application": "not stated",
       "summary": "PVA-lignin films crosslinked with citric acid were prepared and characterised; films with more lignin and citric acid reduced Staphylococcus aureus adhesion.",
       "quote": "crosslinked with citric acid (CA) to obtain PVA-LG/CA gels/films",
+      "flags": [],
+      "shown": false
+    },
+    {
+      "id": "news:5a37ad7f7c0a2b7f",
+      "kind": "news",
+      "title": "Acrylic Acid Procurement Guide for Professionals - ChemAnalyst",
+      "venue": "ChemAnalyst",
+      "publisher": "",
+      "authors": "",
+      "date": "2026-09-21",
+      "date_precision": "day",
+      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxONTdNTHA2NnFYZTBzR1F4ZVBhbmhzckx4MFNDdlZVNmQwYUVJU01kRXI2M013am9nemJiWUNUR1J5azdpeE5fd0NLSVZZczBKZGNvMU41dEQ4LXI2TVQyV3FRcFdzWURZcHEzaGJUQ18zM3FMLUFucDVPcGFaZV9sSzJiWmI2cGRwcUpVNDBDLVRnQVhOX1VrdkRUWTZ6dw?oc=5",
+      "query": "bio-based acrylic acid plant",
+      "seed_routes": [
+        "acrylics"
+      ],
+      "route": "acrylics",
+      "relevance": 0.15,
+      "signal": "supply",
+      "application": "not stated",
+      "summary": "Procurement guide covering acrylic acid sourcing information for industry professionals.",
+      "quote": "Acrylic Acid Procurement Guide for Professionals",
       "flags": [],
       "shown": false
     },
@@ -1702,6 +2651,31 @@
       "shown": false
     },
     {
+      "id": "doi:10.1016/j.ijbiomac.2026.155026",
+      "kind": "literature",
+      "title": "Highly porous adsorbents based on citric acid-crosslinked chitosan",
+      "venue": "International Journal of Biological Macromolecules",
+      "publisher": "Elsevier BV",
+      "authors": "Kloster, Marcovich, Mosiewicki",
+      "date": "2026-10-01",
+      "date_precision": "month",
+      "url": "https://doi.org/10.1016/j.ijbiomac.2026.155026",
+      "query": "citric acid sucrose adhesive",
+      "seed_routes": [
+        "carboxylic-acids"
+      ],
+      "route": "carboxylic-acids",
+      "relevance": 0.15,
+      "signal": "research",
+      "application": "not stated",
+      "summary": "Highly porous adsorbents are prepared using citric acid as a crosslinker for chitosan.",
+      "quote": "Highly porous adsorbents based on citric acid-crosslinked chitosan",
+      "flags": [
+        "title-only"
+      ],
+      "shown": false
+    },
+    {
       "id": "doi:10.1007/s00226-026-01813-3",
       "kind": "literature",
       "title": "Explainable deep learning for predicting lignin removal efficiency in deep eutectic solvent-based biomass fractionation",
@@ -1722,6 +2696,225 @@
       "application": "not stated",
       "summary": "The title reports explainable deep learning used to predict lignin removal efficiency during deep eutectic solvent-based biomass fractionation.",
       "quote": "Explainable deep learning for predicting lignin removal efficiency in deep eutectic solvent-based biomass fractionation",
+      "flags": [
+        "title-only"
+      ],
+      "shown": false
+    },
+    {
+      "id": "doi:10.1007/s10668-026-08215-2",
+      "kind": "literature",
+      "title": "Analyzing energy use and carbon footprint of ultra-strong particleboard manufacturing in China: a case study",
+      "venue": "Environment, Development and Sustainability",
+      "publisher": "Springer Science and Business Media LLC",
+      "authors": "Chen, Li, Wen et al.",
+      "date": "2026-10-16",
+      "date_precision": "day",
+      "url": "https://doi.org/10.1007/s10668-026-08215-2",
+      "query": "tannin particleboard",
+      "seed_routes": [
+        "tannins"
+      ],
+      "route": "none",
+      "relevance": 0.15,
+      "signal": "research",
+      "application": "particleboard",
+      "summary": "Case study analyzing energy use and carbon footprint of ultra-strong particleboard manufacturing in China.",
+      "quote": "Analyzing energy use and carbon footprint of ultra-strong particleboard manufacturing in China",
+      "flags": [
+        "title-only"
+      ],
+      "shown": false
+    },
+    {
+      "id": "doi:10.1007/s10570-026-07265-z",
+      "kind": "literature",
+      "title": "Comparative effects of amino-silane coupling agents on the interfacial, mechanical, and environmental performance of cellulose-, sawdust-, and wood/epoxy composites",
+      "venue": "Cellulose",
+      "publisher": "Springer Science and Business Media LLC",
+      "authors": "Kim, Cho, Bae",
+      "date": "2026-10-21",
+      "date_precision": "day",
+      "url": "https://doi.org/10.1007/s10570-026-07265-z",
+      "query": "cellulose based wood adhesive",
+      "seed_routes": [
+        "carbohydrates"
+      ],
+      "route": "none",
+      "relevance": 0.15,
+      "signal": "research",
+      "application": "not stated",
+      "summary": "Compares amino-silane coupling agents and their effects on interfacial, mechanical and environmental performance of cellulose-, sawdust- and wood/epoxy composites.",
+      "quote": "Comparative effects of amino-silane coupling agents on the interfacial, mechanical, and environmental performance",
+      "flags": [
+        "title-only"
+      ],
+      "shown": false
+    },
+    {
+      "id": "doi:10.3390/molecules31213864",
+      "kind": "literature",
+      "title": "Influencing Mechanisms and Additive-Mediated Modulation of Aggregation Behavior in Papain-Catalyzed Soy Protein Hydrolysis",
+      "venue": "Molecules",
+      "publisher": "MDPI AG",
+      "authors": "Pan, Wang, Chu et al.",
+      "date": "2026-10-26",
+      "date_precision": "day",
+      "url": "https://doi.org/10.3390/molecules31213864",
+      "query": "soy protein wood adhesive",
+      "seed_routes": [
+        "proteins"
+      ],
+      "route": "proteins",
+      "relevance": 0.15,
+      "signal": "research",
+      "application": "not stated",
+      "summary": "Papain hydrolysis of soy protein isolate and 7S/11S globulins shows hydrophobic interactions dominate aggregation, with disulfide bonds auxiliary in 11S; SDS and cysteine raised supernatant yield.",
+      "quote": "papain was employed to hydrolyze soy protein isolate (SPI)",
+      "flags": [],
+      "shown": false
+    },
+    {
+      "id": "doi:10.25259/ajc_585_2026",
+      "kind": "literature",
+      "title": "Construction of composite hydrophobic coating with insulation and anti-corrosion functions using non-isocyanate polyurethane and silica aerogel",
+      "venue": "Arabian Journal of Chemistry",
+      "publisher": "Scientific Scholar",
+      "authors": "Xu, Chen, Wang et al.",
+      "date": "2026-10-30",
+      "date_precision": "day",
+      "url": "https://doi.org/10.25259/ajc_585_2026",
+      "query": "non-isocyanate polyurethane wood adhesive",
+      "seed_routes": [
+        "nipu"
+      ],
+      "route": "nipu",
+      "relevance": 0.15,
+      "signal": "research",
+      "application": "not stated",
+      "summary": "Study fabricates a non-isocyanate polyurethane composite hydrophobic coating with silica aerogel and titanium dioxide for thermal insulation and anticorrosion on industrial equipment.",
+      "quote": "a carbamate diol (CD10) was synthesized via the reaction of bio-sourced decanediamine with propylene carbonate",
+      "flags": [],
+      "shown": false
+    },
+    {
+      "id": "news:3f74d72d960c5c17",
+      "kind": "news",
+      "title": "Methyl Methacrylate Market Forecast to 2035: Construction and Automotive Demand Drive Growth - News and Statistics - IndexBox",
+      "venue": "IndexBox",
+      "publisher": "",
+      "authors": "",
+      "date": "2026-10-31",
+      "date_precision": "day",
+      "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQWGJuVVdra0dDSlZ5MEY5NFlxazZ4WDg5cFRWOUpCWXlidHBPcG1KeHV1Ty1lLTZUX3pORm02WV90T3hMdmZkeGVWa3Vkd2kxQksyOFFmSG1GSExTNlFKOXptOE9VcXN3cFhCNFZjY09BcXdrZVdvaTRyaTROQjdwSnhDNFBEeDVlazFjOVJOU1RxVXQ5NkVTenoxb3VneTZYQXVLLWpHSlBvUmxacmV3eXgzcW1mNXpmZG9ZWEtkaGU?oc=5",
+      "query": "bio-based acrylic acid plant",
+      "seed_routes": [
+        "acrylics"
+      ],
+      "route": "acrylics",
+      "relevance": 0.15,
+      "signal": "market",
+      "application": "not stated",
+      "summary": "Market report forecasts methyl methacrylate demand growth to 2035 driven by construction and automotive demand.",
+      "quote": "Methyl Methacrylate Market Forecast to 2035",
+      "flags": [],
+      "shown": false
+    },
+    {
+      "id": "doi:10.1016/j.cej.2026.181586",
+      "kind": "literature",
+      "title": "Polyampholytic charge patterning of mussel adhesive protein modulates phase separation for coacervation and interfacial adhesion in ionic underwater environments",
+      "venue": "Chemical Engineering Journal",
+      "publisher": "Elsevier BV",
+      "authors": "Yoon, Shin, Park et al.",
+      "date": "2026-11-01",
+      "date_precision": "month",
+      "url": "https://doi.org/10.1016/j.cej.2026.181586",
+      "query": "protein adhesive plywood",
+      "seed_routes": [
+        "proteins"
+      ],
+      "route": "proteins",
+      "relevance": 0.15,
+      "signal": "research",
+      "application": "not stated",
+      "summary": "Charge patterning of mussel adhesive protein is examined for phase separation, coacervation and interfacial adhesion in ionic underwater environments.",
+      "quote": "Polyampholytic charge patterning of mussel adhesive protein modulates phase separation",
+      "flags": [
+        "title-only"
+      ],
+      "shown": false
+    },
+    {
+      "id": "doi:10.1016/j.indcrop.2026.124712",
+      "kind": "literature",
+      "title": "Room-temperature foaming of carbonated soybean oil into biobased non-isocyanate polyurethane foams via a substrate-decoupled cascade exotherm",
+      "venue": "Industrial Crops and Products",
+      "publisher": "Elsevier BV",
+      "authors": "Zhang, Gu, Yuan et al.",
+      "date": "2026-11-01",
+      "date_precision": "month",
+      "url": "https://doi.org/10.1016/j.indcrop.2026.124712",
+      "query": "non-isocyanate polyurethane wood adhesive",
+      "seed_routes": [
+        "nipu"
+      ],
+      "route": "nipu",
+      "relevance": 0.15,
+      "signal": "research",
+      "application": "not stated",
+      "summary": "Carbonated soybean oil is foamed at room temperature into bio-based non-isocyanate polyurethane foams using a substrate-decoupled cascade exotherm.",
+      "quote": "biobased non-isocyanate polyurethane foams via a substrate-decoupled cascade exotherm",
+      "flags": [
+        "title-only"
+      ],
+      "shown": false
+    },
+    {
+      "id": "doi:10.1016/j.porgcoat.2026.110405",
+      "kind": "literature",
+      "title": "Fabrication of a bio-inspired high-adhesion self-healing acrylic coating based on dual dynamic mechanisms and its application in the protection of cement-based materials",
+      "venue": "Progress in Organic Coatings",
+      "publisher": "Elsevier BV",
+      "authors": "Tian, Song, Wang et al.",
+      "date": "2026-11-01",
+      "date_precision": "month",
+      "url": "https://doi.org/10.1016/j.porgcoat.2026.110405",
+      "query": "bio-based acrylic acid production",
+      "seed_routes": [
+        "acrylics"
+      ],
+      "route": "acrylics",
+      "relevance": 0.15,
+      "signal": "research",
+      "application": "not stated",
+      "summary": "A bio-inspired self-healing acrylic coating with dual dynamic mechanisms was fabricated for protecting cement-based materials.",
+      "quote": "Fabrication of a bio-inspired high-adhesion self-healing acrylic coating based on dual dynamic mechanisms",
+      "flags": [
+        "title-only"
+      ],
+      "shown": false
+    },
+    {
+      "id": "doi:10.1186/s42825-026-00266-5",
+      "kind": "literature",
+      "title": "A novel bio-inspired leather material engineered from bacterial cellulose–collagen and epoxidized soybean oil–citric acid adhesive",
+      "venue": "Collagen and Leather",
+      "publisher": "Springer Science and Business Media LLC",
+      "authors": "Yu, Ji, Tan et al.",
+      "date": "2026-11-01",
+      "date_precision": "day",
+      "url": "https://doi.org/10.1186/s42825-026-00266-5",
+      "query": "citric acid sucrose adhesive",
+      "seed_routes": [
+        "carboxylic-acids"
+      ],
+      "route": "carboxylic-acids",
+      "relevance": 0.15,
+      "signal": "research",
+      "application": "not stated",
+      "summary": "Engineers a bio-inspired leather material from bacterial cellulose–collagen bonded with an epoxidized soybean oil–citric acid adhesive.",
+      "quote": "epoxidized soybean oil–citric acid adhesive",
       "flags": [
         "title-only"
       ],
@@ -2222,6 +3415,29 @@
       "shown": false
     },
     {
+      "id": "news:eac84d221ba71e46",
+      "kind": "news",
+      "title": "Particleboard Market Size & Forecast [2035] - Market Growth Reports",
+      "venue": "Market Growth Reports",
+      "publisher": "",
+      "authors": "",
+      "date": "2026-09-17",
+      "date_precision": "day",
+      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQRnFnRHhLd205WE1JUGNCa0tMWEpDZHpyOWVjR3dhWGNKaVZSRkNZa2tTY2xLYmd3YnduTHhEVXdkalhsVGpDaG9EU2wwRTQ1a3lheFh3dF9pNFNHNGZXMS1zWUdSd3h5ZXZZVGtwb3hQUFVqdWhUMXpITjNwSVJ5R3gwaTA?oc=5",
+      "query": "formaldehyde-free resin wood panel",
+      "seed_routes": [
+        "crosslinkers"
+      ],
+      "route": "none",
+      "relevance": 0.1,
+      "signal": "market",
+      "application": "particleboard",
+      "summary": "Market growth report presenting particleboard market size figures and a forecast to 2035.",
+      "quote": "Particleboard Market Size & Forecast [2035]",
+      "flags": [],
+      "shown": false
+    },
+    {
       "id": "doi:10.1002/star.70300",
       "kind": "literature",
       "title": "Probiotic Encapsulation in Porous Starch: A Mini Review",
@@ -2265,6 +3481,33 @@
       "summary": "Field trials in Egypt evaluated frankincense-resin sticky traps as bio-adhesive alternatives to commercial insect traps in cowpea, finding comparable pest capture and lower cost.",
       "quote": "Luban-based adhesive was prepared using frankincense resin, starch, sugar, yeast, beeswax, molasses, and essential oils.",
       "flags": [],
+      "shown": false
+    },
+    {
+      "id": "doi:10.62441/actainnovations.v63i.2530",
+      "kind": "literature",
+      "title": "A FERMATEAN FUZZY DEMATEL–ISM FRAMEWORK FOR LIFE-CYCLE INTELLIGENCE AND CIRCULAR VALUE RETENTION IN THE PLYWOOD INDUSTRY",
+      "venue": "Acta Innovations",
+      "publisher": "Rotherham Press",
+      "authors": "",
+      "date": "2026-09-23",
+      "date_precision": "day",
+      "url": "https://doi.org/10.62441/actainnovations.v63i.2530",
+      "query": "lignin plywood resin",
+      "seed_routes": [
+        "lignin",
+        "proteins",
+        "tannins"
+      ],
+      "route": "none",
+      "relevance": 0.1,
+      "signal": "research",
+      "application": "plywood",
+      "summary": "Applies a Fermatean fuzzy DEMATEL–ISM framework to life-cycle intelligence and circular value retention in the plywood industry.",
+      "quote": "LIFE-CYCLE INTELLIGENCE AND CIRCULAR VALUE RETENTION IN THE PLYWOOD INDUSTRY",
+      "flags": [
+        "title-only"
+      ],
       "shown": false
     },
     {
@@ -2729,6 +3972,56 @@
       "shown": false
     },
     {
+      "id": "doi:10.1016/j.greenca.2026.09.001",
+      "kind": "literature",
+      "title": "Modular cell-free construction of a CO2-to-formaldehyde pathway coupled to engineered C1–to–C3 assimilation",
+      "venue": "Green Carbon",
+      "publisher": "Elsevier BV",
+      "authors": "Tian, Zhou, Long et al.",
+      "date": "2026-10-01",
+      "date_precision": "month",
+      "url": "https://doi.org/10.1016/j.greenca.2026.09.001",
+      "query": "formaldehyde-free crosslinker wood",
+      "seed_routes": [
+        "crosslinkers"
+      ],
+      "route": "none",
+      "relevance": 0.1,
+      "signal": "research",
+      "application": "not stated",
+      "summary": "Cell-free modular construction of a CO2-to-formaldehyde pathway coupled to engineered C1-to-C3 assimilation is reported.",
+      "quote": "Modular cell-free construction of a CO2-to-formaldehyde pathway",
+      "flags": [
+        "title-only"
+      ],
+      "shown": false
+    },
+    {
+      "id": "doi:10.1016/j.tlj.2026.10.002",
+      "kind": "literature",
+      "title": "A Novel Wet Floral Foam by Using Lignin-based Polyurethane Derived from Small-Diameter Bamboo",
+      "venue": "The Lignin Journal",
+      "publisher": "Elsevier BV",
+      "authors": "Wu, Wang, Ji et al.",
+      "date": "2026-10-01",
+      "date_precision": "month",
+      "url": "https://doi.org/10.1016/j.tlj.2026.10.002",
+      "query": "lignin plywood resin",
+      "seed_routes": [
+        "lignin"
+      ],
+      "route": "none",
+      "relevance": 0.1,
+      "signal": "research",
+      "application": "not stated",
+      "summary": "Lignin-based polyurethane derived from small-diameter bamboo was used to prepare a novel wet floral foam.",
+      "quote": "A Novel Wet Floral Foam by Using Lignin-based Polyurethane Derived from Small-Diameter Bamboo",
+      "flags": [
+        "title-only"
+      ],
+      "shown": false
+    },
+    {
       "id": "doi:10.3390/foods15193529",
       "kind": "literature",
       "title": "Zein Protein Nanoparticles: Fabrication and Rheology of Their Dispersions in Polysaccharides",
@@ -2892,6 +4185,29 @@
       "shown": false
     },
     {
+      "id": "news:2938cd1fec214c13",
+      "kind": "news",
+      "title": "Europe Acrylate Based Monomers Market Size, Share [2034] - Fortune Business Insights",
+      "venue": "Fortune Business Insights",
+      "publisher": "",
+      "authors": "",
+      "date": "2026-10-05",
+      "date_precision": "day",
+      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQLXRrZ2RXSFh1bEg4cnhOdzVmdkpnQjV6dEtrRk9zdENRVm9UM1ZTSnlka2k2UGtSdDBpU2cxS0pVMVNWMkxVVmNldFppc2hRcV9FZW1DLV9jWHNFcG40eU8zcmZiNndMV245SVlMUTBIOUtBME5mekxlYjVqSHVHR25DTVBzQWx4c0NXYw?oc=5",
+      "query": "bio-based acrylic acid plant",
+      "seed_routes": [
+        "acrylics"
+      ],
+      "route": "acrylics",
+      "relevance": 0.1,
+      "signal": "market",
+      "application": "not stated",
+      "summary": "Market report covering the size and share of the Europe acrylate-based monomers market through 2034.",
+      "quote": "Europe Acrylate Based Monomers Market Size, Share [2034]",
+      "flags": [],
+      "shown": false
+    },
+    {
       "id": "doi:10.1111/arcm.70234",
       "kind": "literature",
       "title": "Characterization of a Magdalenian Composite Adhesive Lump From the Ćmielów 95 Site, Poland: Implications for Late Pleistocene Resin‐Curing Technology",
@@ -3003,6 +4319,290 @@
       "application": "not stated",
       "summary": "The title reports blue-emissive glyoxal monohydrates prepared by selenium–nitric acid oxidation of methyl ketones.",
       "quote": "Blue-emissive glyoxal monohydrates via selenium–nitric acid oxidation of methyl ketones",
+      "flags": [
+        "title-only"
+      ],
+      "shown": false
+    },
+    {
+      "id": "doi:10.1021/acsabm.6c01758",
+      "kind": "literature",
+      "title": "Adhesive, Chemically Resistant and Antibacterial Protein Films by Coacervating Mineralization of Noble Metal-Binding Elastin-Like Polypeptides",
+      "venue": "ACS Applied Bio Materials",
+      "publisher": "American Chemical Society (ACS)",
+      "authors": "Muthukumar, Naser, Lin et al.",
+      "date": "2026-10-20",
+      "date_precision": "day",
+      "url": "https://doi.org/10.1021/acsabm.6c01758",
+      "query": "protein adhesive plywood",
+      "seed_routes": [
+        "proteins"
+      ],
+      "route": "proteins",
+      "relevance": 0.1,
+      "signal": "research",
+      "application": "not stated",
+      "summary": "Elastin-like polypeptide fusion proteins form adhesive, chemically resistant films via coacervating mineralisation of gold and silver nanoparticles, bonding to glass and polystyrene.",
+      "quote": "These PFs withstand prolonged exposure to ethanol, toluene and nitric acid",
+      "flags": [],
+      "shown": false
+    },
+    {
+      "id": "doi:10.54254/2753-8818/2026.37805",
+      "kind": "literature",
+      "title": "Synthetic Biology-Enabled Green Biomanufacturing of Bio-based Platform Chemicals: A Review of Lactic Acid, Succinic Acid, 3-Hydroxypropionic Acid, and Adipic Acid",
+      "venue": "Theoretical and Natural Science",
+      "publisher": "EWA Publishing",
+      "authors": "Wu",
+      "date": "2026-10-20",
+      "date_precision": "day",
+      "url": "https://doi.org/10.54254/2753-8818/2026.37805",
+      "query": "bio-based acrylic acid production",
+      "seed_routes": [
+        "acrylics"
+      ],
+      "route": "none",
+      "relevance": 0.1,
+      "signal": "research",
+      "application": "not stated",
+      "summary": "Reviews synthetic-biology strategies for producing lactic, succinic, 3-hydroxypropionic and adipic acids as bio-based platform chemicals, driven largely by biodegradable plastics demand.",
+      "quote": "four representative organic acids, namely lactic acid, succinic acid, 3-hydroxypropionic acid, and adipic acid",
+      "flags": [],
+      "shown": false
+    },
+    {
+      "id": "news:1e68de83b160b010",
+      "kind": "news",
+      "title": "Ethyl Acrylate Procurement Guide - ChemAnalyst",
+      "venue": "ChemAnalyst",
+      "publisher": "",
+      "authors": "",
+      "date": "2026-10-22",
+      "date_precision": "day",
+      "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxQc2lFaVBPQXoxQXhoTWZBanJUQ21uNVUwSFM4WVlIQXdPcUN4VThPQmRJeG9oQlRmQ0lyLW1BY29Uc1pPVDNtdDFObXF2ME9QWjhnRHVXcXVydXh6LXppclhtenZ4bFlnZHVNZFFVVXZvMWo4SUl1TFRQUWJXd3VvZXNQY21xYVV5cUE?oc=5",
+      "query": "bio-based acrylic acid plant",
+      "seed_routes": [
+        "acrylics"
+      ],
+      "route": "acrylics",
+      "relevance": 0.1,
+      "signal": "market",
+      "application": "not stated",
+      "summary": "ChemAnalyst published a procurement guide for ethyl acrylate.",
+      "quote": "Ethyl Acrylate Procurement Guide",
+      "flags": [],
+      "shown": false
+    },
+    {
+      "id": "doi:10.1002/smll.76414",
+      "kind": "literature",
+      "title": "Interfacial Ruthenium Activation of Nickel Hydroxide Enabling Industrial‐Level Bio‐Plastic Monomer, 2,5‐Furandicarboxylic Acid, Production",
+      "venue": "Small",
+      "publisher": "Wiley",
+      "authors": "Chen, Wang, Gong et al.",
+      "date": "2026-10-23",
+      "date_precision": "day",
+      "url": "https://doi.org/10.1002/smll.76414",
+      "query": "bio-based acrylic acid production",
+      "seed_routes": [
+        "acrylics"
+      ],
+      "route": "crosslinkers",
+      "relevance": 0.1,
+      "signal": "research",
+      "application": "not stated",
+      "summary": "A Ru-modified Ni(OH)2 electrocatalyst converts HMF to 2,5-furandicarboxylic acid at industrial current densities with over 99% selectivity.",
+      "quote": "maintaining over 99% FDCA selectivity and HMF conversion",
+      "flags": [],
+      "shown": false
+    },
+    {
+      "id": "doi:10.3390/su182110762",
+      "kind": "literature",
+      "title": "Newly Developed Environmentally Friendly Sustainable Derivatives Based on Chitosan Extracted from Shrimp Shells Grafted with Acrylic Acid and/or Recycled Polyethylene Terephthalate Wastes: Preparation and Characterization",
+      "venue": "Sustainability",
+      "publisher": "MDPI AG",
+      "authors": "Eskander, Tawfik",
+      "date": "2026-10-23",
+      "date_precision": "day",
+      "url": "https://doi.org/10.3390/su182110762",
+      "query": "bio-based acrylic acid production",
+      "seed_routes": [
+        "acrylics"
+      ],
+      "route": "carbohydrates",
+      "relevance": 0.1,
+      "signal": "research",
+      "application": "not stated",
+      "summary": "Chitosan from shrimp shells was reacted with BHET from recycled PET and grafted with acrylic acid, giving solid derivatives proposed for wastewater and radioactive-effluent biosorption.",
+      "quote": "Chitosan was obtained from shrimp shell wastes through alkaline deacetylation of its precursor chitin.",
+      "flags": [],
+      "shown": false
+    },
+    {
+      "id": "news:9d2876e3dd65453f",
+      "kind": "news",
+      "title": "Antioxidant for Wood Resins Market in Japan: Size, Trends and Forecast to 2035 - IndexBox",
+      "venue": "IndexBox",
+      "publisher": "",
+      "authors": "",
+      "date": "2026-10-25",
+      "date_precision": "day",
+      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOcjdSa3l6LUJwZjFlVjRIOTdXNGFyVlNROXR6ckttbXhsek8wMVNEWTV4TnBzdDdMU3JCZEtUM0t3Q3Z1S3NyMTE5MFJHRnJNOTViOGVGZDhLTlJRWk1jZHFpVDJTbUhxZ0VxcGowb0hLWF90UGMtcGF4Yk16TUlDMkVRMGFscFFRSS1rY2Foc201S3NHcnd6UTdmUWI5TVJmU01tT0tXLXpsUWVYdmx5MFBUQks?oc=5",
+      "query": "formaldehyde-free resin wood panel",
+      "seed_routes": [
+        "crosslinkers"
+      ],
+      "route": "none",
+      "relevance": 0.1,
+      "signal": "market",
+      "application": "not stated",
+      "summary": "IndexBox report covers market size, trends and forecast to 2035 for antioxidants used in wood resins in Japan.",
+      "quote": "Antioxidant for Wood Resins Market in Japan: Size, Trends and Forecast to 2035",
+      "flags": [],
+      "shown": false
+    },
+    {
+      "id": "doi:10.1007/s11224-026-02936-w",
+      "kind": "literature",
+      "title": "ZnCl₂ and SnCl₄ as molecular electron density modulators: MEDT insights into the lewis acid-promoted regioselective Diels–Alder reaction of isoprene with acrylic acid",
+      "venue": "Structural Chemistry",
+      "publisher": "Springer Science and Business Media LLC",
+      "authors": "Boutadghart, Ghailane",
+      "date": "2026-10-27",
+      "date_precision": "day",
+      "url": "https://doi.org/10.1007/s11224-026-02936-w",
+      "query": "bio-based acrylic acid production",
+      "seed_routes": [
+        "acrylics"
+      ],
+      "route": "acrylics",
+      "relevance": 0.1,
+      "signal": "research",
+      "application": "not stated",
+      "summary": "Molecular electron density theory study examines ZnCl2- and SnCl4-modulated regioselectivity in the Lewis acid-promoted Diels-Alder reaction of isoprene with acrylic acid.",
+      "quote": "reaction of isoprene with acrylic acid",
+      "flags": [
+        "title-only"
+      ],
+      "shown": false
+    },
+    {
+      "id": "doi:10.1021/acscatal.6c06800",
+      "kind": "literature",
+      "title": "Carboxylation of Bio-Based 2-Furoic Acid with CO2 to 2,5-Furandicarboxylic Acid over CuAlO x Catalysts",
+      "venue": "ACS Catalysis",
+      "publisher": "American Chemical Society (ACS)",
+      "authors": "Wu, Chen, Yang et al.",
+      "date": "2026-10-27",
+      "date_precision": "day",
+      "url": "https://doi.org/10.1021/acscatal.6c06800",
+      "query": "bio-based acrylic acid production",
+      "seed_routes": [
+        "acrylics"
+      ],
+      "route": "crosslinkers",
+      "relevance": 0.1,
+      "signal": "research",
+      "application": "not stated",
+      "summary": "CuAlOx-Cs2CO3 catalysis raises the yield of 2,5-furandicarboxylic acid from 2-furoic acid and CO2, a monomer for polyethylene furanoate.",
+      "quote": "a key bio-based monomer for polyethylene furanoate (PEF)",
+      "flags": [],
+      "shown": false
+    },
+    {
+      "id": "news:be0efe0011f76511",
+      "kind": "news",
+      "title": "Turnkey OSB Production Line Project Engineering: How Suzhou CMT Links Design, Equipment, and Commissioning - WBOC TV",
+      "venue": "WBOC TV",
+      "publisher": "",
+      "authors": "",
+      "date": "2026-10-29",
+      "date_precision": "day",
+      "url": "https://news.google.com/rss/articles/CBMirgJBVV95cUxQZnhPWUZUXzdHMElkMzRmeGZIbkpEUU16bDFocFlrekpXeE9zRmxrdG9pZ2Y2SGpKblJTUzltQXdzbXZ1LVNIUEw0dFJwS0FuTVhaNEgxMm16a1FJaXk3a2cwQ0V2NnhRcTBneWxSOVhEbEdPYURCOVRQb3ZMRGcyU2o4a2t5TmlDU3drM2JkMmsxQm85VVhyekdKT3hPXzllMDZuRmE4TTNCYWh3dElpU2lFZF9ReDJ0aWZ3NDVYVEU5MXdCRldBanhDclc4QTJPMjZoTHNOc011VzNUMmUtM1VqdHRBX0RMdjdpNWFXT0N5cFBNc3NoNGR4ZzlKSm1DMTBVbTZ0VG5EZUhhYkdFWXdPUmo1aHFhU3U1Z3d6eDBVRjdzVlRubmpiRzBjZw?oc=5",
+      "query": "formaldehyde-free resin wood panel",
+      "seed_routes": [
+        "crosslinkers"
+      ],
+      "route": "none",
+      "relevance": 0.1,
+      "signal": "other",
+      "application": "OSB",
+      "summary": "Report describes Suzhou CMT's turnkey OSB production line project engineering linking design, equipment and commissioning, without addressing adhesive chemistry.",
+      "quote": "Turnkey OSB Production Line Project Engineering",
+      "flags": [],
+      "shown": false
+    },
+    {
+      "id": "doi:10.1016/j.dental.2026.05.011",
+      "kind": "literature",
+      "title": "CO2-derived non-isocyanate urethane bearing carboxyls as a self-etch adhesive monomer",
+      "venue": "Dental Materials",
+      "publisher": "Elsevier BV",
+      "authors": "Vivanco, Haider, Hernández et al.",
+      "date": "2026-11-01",
+      "date_precision": "month",
+      "url": "https://doi.org/10.1016/j.dental.2026.05.011",
+      "query": "non-isocyanate polyurethane wood adhesive",
+      "seed_routes": [
+        "nipu"
+      ],
+      "route": "nipu",
+      "relevance": 0.1,
+      "signal": "research",
+      "application": "not stated",
+      "summary": "Evaluates a CO2-derived non-isocyanate urethane bearing carboxyl groups as a self-etch dental adhesive monomer.",
+      "quote": "CO2-derived non-isocyanate urethane bearing carboxyls as a self-etch adhesive monomer",
+      "flags": [
+        "title-only"
+      ],
+      "shown": false
+    },
+    {
+      "id": "doi:10.1016/j.matchemphys.2026.133075",
+      "kind": "literature",
+      "title": "Bio-based non-isocyanate polyurethane-epoxy hybrid coatings on Al 6061 under ambient curing conditions for corrosion protection",
+      "venue": "Materials Chemistry and Physics",
+      "publisher": "Elsevier BV",
+      "authors": "Srikanth, Gadde, Acharyya",
+      "date": "2026-11-01",
+      "date_precision": "month",
+      "url": "https://doi.org/10.1016/j.matchemphys.2026.133075",
+      "query": "non-isocyanate polyurethane wood adhesive",
+      "seed_routes": [
+        "nipu"
+      ],
+      "route": "nipu",
+      "relevance": 0.1,
+      "signal": "research",
+      "application": "not stated",
+      "summary": "Bio-based non-isocyanate polyurethane-epoxy hybrid coatings are cured at ambient conditions on Al 6061 for corrosion protection.",
+      "quote": "Bio-based non-isocyanate polyurethane-epoxy hybrid coatings on Al 6061 under ambient curing conditions",
+      "flags": [
+        "title-only"
+      ],
+      "shown": false
+    },
+    {
+      "id": "doi:10.1016/j.spc.2026.08.015",
+      "kind": "literature",
+      "title": "A probabilistic ex-ante life cycle assessment framework for emerging bio-based building materials",
+      "venue": "Sustainable Production and Consumption",
+      "publisher": "Elsevier BV",
+      "authors": "Hu, Carley, Nouri et al.",
+      "date": "2026-11-01",
+      "date_precision": "month",
+      "url": "https://doi.org/10.1016/j.spc.2026.08.015",
+      "query": "bio-based acrylic acid production",
+      "seed_routes": [
+        "acrylics"
+      ],
+      "route": "none",
+      "relevance": 0.1,
+      "signal": "research",
+      "application": "not stated",
+      "summary": "Proposes a probabilistic ex-ante life cycle assessment framework for emerging bio-based building materials.",
+      "quote": "probabilistic ex-ante life cycle assessment framework for emerging bio-based building materials",
       "flags": [
         "title-only"
       ],
@@ -3661,6 +5261,29 @@
       "shown": false
     },
     {
+      "id": "news:adb8d95b0810fb15",
+      "kind": "news",
+      "title": "Wood-based phase-change composites regulate indoor temperature - European Coatings",
+      "venue": "European Coatings",
+      "publisher": "",
+      "authors": "",
+      "date": "2026-09-18",
+      "date_precision": "day",
+      "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPT2ZhMG9rTlVVeXRLNjFQVUF2YzhGSVpoME9pVjl3cGVBRWR0aXgteEVheF94RjR3c3JxelVWSDc2bHUzNkRZUEI0c2RyQkttYlE2UXN1bER2c3VLX2xvbGRTM3ZXTkktQ21nTUxWWTQ3M0o3VC1UUC1LT2t1Z0oxS0JoN0lHMTZUd1J2WkpaYXk3dTB0WFBIeS1XS2lGTThHOWxpdzdnRlNXdVRGQWZhQ25uZHY4aXdoSnotWU41eWJJZw?oc=5",
+      "query": "protein-based wood adhesive",
+      "seed_routes": [
+        "proteins"
+      ],
+      "route": "none",
+      "relevance": 0.05,
+      "signal": "research",
+      "application": "not stated",
+      "summary": "News item on wood-based phase-change composites that regulate indoor temperature.",
+      "quote": "Wood-based phase-change composites regulate indoor temperature",
+      "flags": [],
+      "shown": false
+    },
+    {
       "id": "doi:10.1002/star.70302",
       "kind": "literature",
       "title": "Recent Advances in Barley Starch: Structural Insights, Functional Properties, Modification Strategies, and Food Applications: A Review",
@@ -4073,6 +5696,31 @@
       "shown": false
     },
     {
+      "id": "doi:10.1016/j.optmat.2026.118619",
+      "kind": "literature",
+      "title": "Corrigendum to “Photoluminescent transparent composites based on natural lignin removal templates and epoxy resin/rare-earth-doped silicate for long afterglow” [Opt. Mater. 181, (2027), 118570]",
+      "venue": "Optical Materials",
+      "publisher": "Elsevier BV",
+      "authors": "Zhang, Li",
+      "date": "2026-10-01",
+      "date_precision": "month",
+      "url": "https://doi.org/10.1016/j.optmat.2026.118619",
+      "query": "lignin plywood resin",
+      "seed_routes": [
+        "lignin"
+      ],
+      "route": "none",
+      "relevance": 0.05,
+      "signal": "other",
+      "application": "not stated",
+      "summary": "Corrigendum to a paper on photoluminescent transparent composites using natural lignin removal templates with epoxy resin and rare-earth-doped silicate.",
+      "quote": "Photoluminescent transparent composites based on natural lignin removal templates",
+      "flags": [
+        "title-only"
+      ],
+      "shown": false
+    },
+    {
       "id": "doi:10.1021/acssuschemeng.6c02652",
       "kind": "literature",
       "title": "In Situ Cellulose Removal from Wood: A Novel Strategy for Preparing Simulated 80,000-Year-Old Waterlogged Archaeological Wood",
@@ -4165,6 +5813,490 @@
       "summary": "Review of 72 ruminant and 40 monogastric studies on tannin extracts added to concentrate and conserved feeds, reporting effects on performance, health and methane.",
       "quote": "incorporating polyphenols, such as tannins, extracted from natural plant by-products",
       "flags": [],
+      "shown": false
+    },
+    {
+      "id": "news:6a88d87775148890",
+      "kind": "news",
+      "title": "Polyacrylic Acid Market Size, forecast Report to 2035 - Spherical Insights",
+      "venue": "Spherical Insights",
+      "publisher": "",
+      "authors": "",
+      "date": "2026-10-15",
+      "date_precision": "day",
+      "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE80WGlPcHJaZVBiVEJma0EyQ0lfUWVGOUJKWkpYTFNsYUc5OWgtb3dnNHkycWxPSjVSeWdwY1BRU1RQNXdENjR5U3BCNVBwdkxEbGZMMEFfYTVYc3dneXd3a1YyczdQWlNtclNHR19SMllLeUE?oc=5",
+      "query": "bio-based acrylic acid plant",
+      "seed_routes": [
+        "acrylics"
+      ],
+      "route": "none",
+      "relevance": 0.05,
+      "signal": "market",
+      "application": "not stated",
+      "summary": "Market size forecast report on polyacrylic acid through 2035.",
+      "quote": "Polyacrylic Acid Market Size, forecast Report to 2035",
+      "flags": [],
+      "shown": false
+    },
+    {
+      "id": "doi:10.1007/s42452-026-09741-4",
+      "kind": "literature",
+      "title": "Synthesis of an α-lipoic acid/poly (acrylic acid) based self-healing polymer for potential medical surface-protection applications",
+      "venue": "Discover Applied Sciences",
+      "publisher": "Springer Science and Business Media LLC",
+      "authors": "Khorakiwala, Rane",
+      "date": "2026-10-16",
+      "date_precision": "day",
+      "url": "https://doi.org/10.1007/s42452-026-09741-4",
+      "query": "bio-based acrylic acid production",
+      "seed_routes": [
+        "acrylics"
+      ],
+      "route": "none",
+      "relevance": 0.05,
+      "signal": "research",
+      "application": "not stated",
+      "summary": "Synthesis of an α-lipoic acid/poly(acrylic acid) self-healing polymer for potential medical surface-protection applications.",
+      "quote": "self-healing polymer for potential medical surface-protection applications",
+      "flags": [
+        "title-only"
+      ],
+      "shown": false
+    },
+    {
+      "id": "doi:10.1002/batt.70513",
+      "kind": "literature",
+      "title": "Crosslinker‐Free Stabilization of Poly(vinyl Alcohol)‐Poly(acrylic Acid) Gel Polymer Electrolytes Using Multifunctional Additives for Rechargeable Zinc–Air Batteries",
+      "venue": "Batteries & Supercaps",
+      "publisher": "Wiley",
+      "authors": "Arredondo‐Espínola, Ramos‐Castillo, España‐Sánchez et al.",
+      "date": "2026-10-18",
+      "date_precision": "day",
+      "url": "https://doi.org/10.1002/batt.70513",
+      "query": "formaldehyde-free crosslinker wood",
+      "seed_routes": [
+        "crosslinkers"
+      ],
+      "route": "none",
+      "relevance": 0.05,
+      "signal": "research",
+      "application": "not stated",
+      "summary": "Glycerol and ethylene glycol additives stabilize poly(vinyl alcohol)–poly(acrylic acid) gel polymer electrolytes without crosslinkers or thermal curing for rechargeable zinc–air batteries.",
+      "quote": "are commonly stabilized through chemical crosslinking or thermal treatments",
+      "flags": [],
+      "shown": false
+    },
+    {
+      "id": "doi:10.3390/cryst16100676",
+      "kind": "literature",
+      "title": "Supramolecular Cellulose Crystalline Organisation and Its Relationship with Density, Thermal Stability, and Micromechanical Behaviour in Native Wood",
+      "venue": "Crystals",
+      "publisher": "MDPI AG",
+      "authors": "Şirin",
+      "date": "2026-10-20",
+      "date_precision": "day",
+      "url": "https://doi.org/10.3390/cryst16100676",
+      "query": "cellulose based wood adhesive",
+      "seed_routes": [
+        "carbohydrates"
+      ],
+      "route": "none",
+      "relevance": 0.05,
+      "signal": "research",
+      "application": "not stated",
+      "summary": "Compares cellulose crystallinity, density, thermal degradation and microhardness across six wood species, finding these nanoscale and macroscopic properties interconnected but not equivalent.",
+      "quote": "cellulose crystalline organisation, thermal degradation, density, and micromechanical behaviour are interconnected yet non-equivalent properties",
+      "flags": [],
+      "shown": false
+    },
+    {
+      "id": "doi:10.3390/fermentation12100488",
+      "kind": "literature",
+      "title": "Anaerobic Digestion of Dairy Manure Treated with a Tannin-Based Coagulant–Flocculant",
+      "venue": "Fermentation",
+      "publisher": "MDPI AG",
+      "authors": "López-Coronado, Li, Jacobs et al.",
+      "date": "2026-10-20",
+      "date_precision": "day",
+      "url": "https://doi.org/10.3390/fermentation12100488",
+      "query": "tannin particleboard",
+      "seed_routes": [
+        "tannins"
+      ],
+      "route": "none",
+      "relevance": 0.05,
+      "signal": "research",
+      "application": "not stated",
+      "summary": "Tests a tannin-based coagulant–flocculant for concentrating dairy manure solids before anaerobic digestion, reporting reduced biogas and methane yields under semi-continuous feeding.",
+      "quote": "the tannin-based coagulant–flocculant Tanfloc SG®",
+      "flags": [],
+      "shown": false
+    },
+    {
+      "id": "news:6ccaeba68c306a46",
+      "kind": "news",
+      "title": "Bio-Based Plant-Derived Resin Market To 2035: Photopolymer Demand Drives 14% CAGR - News and Statistics - IndexBox",
+      "venue": "IndexBox",
+      "publisher": "",
+      "authors": "",
+      "date": "2026-10-22",
+      "date_precision": "day",
+      "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNQjF5czFiLVh1dmZQVGlRSVhyN0dyVjBuMzVaU3FrcUU4YkpYY251N1h4YmNJQ0JzU0NSd3o1dkxQem1mRzdmdmE0Y2J5MkJrZTU3VkpvNTZneklxWkUxcDhZRkpKREp3OTZFY1RDY1U1bjN1VjV0eVlhWFhuWV9MUm40WlNhNWt3Qm1SWTloZzRWNFZTRHA2TXVKZUpCd1BwYk10XzNnMF9JZXVlREZkeE41ajd6N1o2a2c?oc=5",
+      "query": "starch-based wood adhesive",
+      "seed_routes": [
+        "carbohydrates"
+      ],
+      "route": "none",
+      "relevance": 0.05,
+      "signal": "market",
+      "application": "not stated",
+      "summary": "IndexBox report forecasts the bio-based plant-derived resin market to 2035, citing photopolymer demand and a 14% CAGR.",
+      "quote": "Photopolymer Demand Drives 14% CAGR",
+      "flags": [],
+      "shown": false
+    },
+    {
+      "id": "doi:10.1515/hf-2026-0092",
+      "kind": "literature",
+      "title": "Enhanced lignin-dominated relaxation strength under water-swollen conditions revealed by archived DMS data from naturally aged hinoki wood",
+      "venue": "Holzforschung",
+      "publisher": "Walter de Gruyter GmbH",
+      "authors": "Yokoyama, Furuta",
+      "date": "2026-10-27",
+      "date_precision": "day",
+      "url": "https://doi.org/10.1515/hf-2026-0092",
+      "query": "lignin wood adhesive",
+      "seed_routes": [
+        "lignin"
+      ],
+      "route": "lignin",
+      "relevance": 0.05,
+      "signal": "research",
+      "application": "not stated",
+      "summary": "Reanalysis of archived DMS data from naturally aged hinoki wood shows a larger lignin-dominated relaxation peak than in a modern reference specimen.",
+      "quote": "the lignin-dominated loss feature was larger than in the modern reference",
+      "flags": [],
+      "shown": false
+    },
+    {
+      "id": "doi:10.1186/s10086-026-02314-4",
+      "kind": "literature",
+      "title": "Effects of lignin structural characteristics on absorptivity in alkaline solutions of the thioglycolic acid lignin",
+      "venue": "Journal of Wood Science",
+      "publisher": "Springer Science and Business Media LLC",
+      "authors": "Nagamori, Nishimoto, Matsushita et al.",
+      "date": "2026-10-28",
+      "date_precision": "day",
+      "url": "https://doi.org/10.1186/s10086-026-02314-4",
+      "query": "lignin wood adhesive",
+      "seed_routes": [
+        "lignin"
+      ],
+      "route": "lignin",
+      "relevance": 0.05,
+      "signal": "research",
+      "application": "not stated",
+      "summary": "Across two softwood and nine hardwood species, the absorbance coefficient of the thioglycolic acid lignin calibration curve correlated positively with the syringyl/guaiacyl ratio.",
+      "quote": "The absorbance coefficient of the TGAL calibration curve showed a positive correlation with the S/G ratio",
+      "flags": [],
+      "shown": false
+    },
+    {
+      "id": "doi:10.3390/polym18212683",
+      "kind": "literature",
+      "title": "Response Surface Optimization of a Citric Acid Mechanochemical Alginate Extraction from Laminaria digitata for Fiber Production",
+      "venue": "Polymers",
+      "publisher": "MDPI AG",
+      "authors": "Belcher, Tebben, Möller et al.",
+      "date": "2026-10-29",
+      "date_precision": "day",
+      "url": "https://doi.org/10.3390/polym18212683",
+      "query": "citric acid sucrose adhesive",
+      "seed_routes": [
+        "carboxylic-acids"
+      ],
+      "route": "carbohydrates",
+      "relevance": 0.05,
+      "signal": "research",
+      "application": "not stated",
+      "summary": "A Box–Behnken design optimized citric acid mechanochemical extraction of alginate from Laminaria digitata, which was wet spun into continuous fibers.",
+      "quote": "the results show that a 10 min citric acid blade-based pretreatment can produce calcium alginate fibers from brown macroalgae",
+      "flags": [],
+      "shown": false
+    },
+    {
+      "id": "doi:10.1186/s12870-026-10214-4",
+      "kind": "literature",
+      "title": "Interactive effects of salicylic acid and sodium nitroprusside on mucilage, tannin and phenolic contents in Borago officinalis L. under varying irrigation levels",
+      "venue": "BMC Plant Biology",
+      "publisher": "Springer Science and Business Media LLC",
+      "authors": "Nikram, Amooaghaie",
+      "date": "2026-10-30",
+      "date_precision": "day",
+      "url": "https://doi.org/10.1186/s12870-026-10214-4",
+      "query": "tannin particleboard",
+      "seed_routes": [
+        "tannins"
+      ],
+      "route": "none",
+      "relevance": 0.05,
+      "signal": "research",
+      "application": "not stated",
+      "summary": "Plant study examines interactive effects of salicylic acid and sodium nitroprusside on mucilage, tannin and phenolic contents in Borago officinalis under varying irrigation levels.",
+      "quote": "mucilage, tannin and phenolic contents in Borago officinalis L.",
+      "flags": [
+        "title-only"
+      ],
+      "shown": false
+    },
+    {
+      "id": "doi:10.1016/j.eurpolymj.2026.115125",
+      "kind": "literature",
+      "title": "Preparation of bio-based high heat-resistant copolyesters based on furan dicarboxylic acid and fluorene monomers",
+      "venue": "European Polymer Journal",
+      "publisher": "Elsevier BV",
+      "authors": "Gan, Feng, Zhu et al.",
+      "date": "2026-11-01",
+      "date_precision": "month",
+      "url": "https://doi.org/10.1016/j.eurpolymj.2026.115125",
+      "query": "bio-based acrylic acid production",
+      "seed_routes": [
+        "acrylics"
+      ],
+      "route": "none",
+      "relevance": 0.05,
+      "signal": "research",
+      "application": "not stated",
+      "summary": "Prepares bio-based high heat-resistant copolyesters from furan dicarboxylic acid and fluorene monomers.",
+      "quote": "Preparation of bio-based high heat-resistant copolyesters based on furan dicarboxylic acid and fluorene monomers",
+      "flags": [
+        "title-only"
+      ],
+      "shown": false
+    },
+    {
+      "id": "doi:10.1016/j.heliyon.2026.e45607",
+      "kind": "literature",
+      "title": "Citric-, tartaric- and sucrose-based retarders in clay–gypsum and air lime–gypsum mortars: effects on setting kinetics and long-term mechanical performance",
+      "venue": "Heliyon",
+      "publisher": "Elsevier BV",
+      "authors": "Rocha, Faria, Lucas",
+      "date": "2026-11-01",
+      "date_precision": "month",
+      "url": "https://doi.org/10.1016/j.heliyon.2026.e45607",
+      "query": "citric acid sucrose adhesive",
+      "seed_routes": [
+        "carboxylic-acids"
+      ],
+      "route": "none",
+      "relevance": 0.05,
+      "signal": "research",
+      "application": "not stated",
+      "summary": "Studies citric acid, tartaric acid and sucrose as retarders in clay–gypsum and air lime–gypsum mortars, reporting setting kinetics and long-term mechanical performance.",
+      "quote": "Citric-, tartaric- and sucrose-based retarders in clay–gypsum and air lime–gypsum mortars",
+      "flags": [
+        "title-only"
+      ],
+      "shown": false
+    },
+    {
+      "id": "doi:10.1016/j.ijbiomac.2026.154315",
+      "kind": "literature",
+      "title": "Lignin-based hydrogels for multifunctional wound healing applications: Roles of bulk lignin and lignin nanoparticles",
+      "venue": "International Journal of Biological Macromolecules",
+      "publisher": "Elsevier BV",
+      "authors": "Bora, Abhang, Jadhav",
+      "date": "2026-11-01",
+      "date_precision": "month",
+      "url": "https://doi.org/10.1016/j.ijbiomac.2026.154315",
+      "query": "lignin plywood resin",
+      "seed_routes": [
+        "lignin"
+      ],
+      "route": "lignin",
+      "relevance": 0.05,
+      "signal": "research",
+      "application": "not stated",
+      "summary": "Reviews lignin-based hydrogels for wound healing, comparing bulk lignin and lignin nanoparticles.",
+      "quote": "Lignin-based hydrogels for multifunctional wound healing applications",
+      "flags": [
+        "title-only"
+      ],
+      "shown": false
+    },
+    {
+      "id": "doi:10.1016/j.ijbiomac.2026.154572",
+      "kind": "literature",
+      "title": "High-performance adhesive eutectogel based on polyacrylate-carboxylated cellulose nanofibers double networks for efficient transdermal drug delivery",
+      "venue": "International Journal of Biological Macromolecules",
+      "publisher": "Elsevier BV",
+      "authors": "Xie, Zhang, Zhang et al.",
+      "date": "2026-11-01",
+      "date_precision": "month",
+      "url": "https://doi.org/10.1016/j.ijbiomac.2026.154572",
+      "query": "cellulose based wood adhesive",
+      "seed_routes": [
+        "carbohydrates"
+      ],
+      "route": "none",
+      "relevance": 0.05,
+      "signal": "research",
+      "application": "not stated",
+      "summary": "Describes a polyacrylate–carboxylated cellulose nanofiber double-network adhesive eutectogel for transdermal drug delivery.",
+      "quote": "High-performance adhesive eutectogel based on polyacrylate-carboxylated cellulose nanofibers double networks",
+      "flags": [
+        "title-only"
+      ],
+      "shown": false
+    },
+    {
+      "id": "doi:10.1016/j.ijbiomac.2026.154963",
+      "kind": "literature",
+      "title": "Natural polymer carboxymethyl cellulose based strong adhesive, self-healing, and flexible conductive organohydrogel for wearable strain sensing application",
+      "venue": "International Journal of Biological Macromolecules",
+      "publisher": "Elsevier BV",
+      "authors": "wahab, Khan, Ye et al.",
+      "date": "2026-11-01",
+      "date_precision": "month",
+      "url": "https://doi.org/10.1016/j.ijbiomac.2026.154963",
+      "query": "cellulose based wood adhesive",
+      "seed_routes": [
+        "carbohydrates"
+      ],
+      "route": "none",
+      "relevance": 0.05,
+      "signal": "other",
+      "application": "not stated",
+      "summary": "A carboxymethyl cellulose-based conductive organohydrogel with self-healing and flexibility is described for wearable strain sensing.",
+      "quote": "flexible conductive organohydrogel for wearable strain sensing application",
+      "flags": [
+        "title-only"
+      ],
+      "shown": false
+    },
+    {
+      "id": "doi:10.1016/j.jics.2026.103139",
+      "kind": "literature",
+      "title": "Physicochemical characterization and bioactive compounds extraction of citric acid monohydrate-malic acid-ethylene glycol-based deep eutectic solvents",
+      "venue": "Journal of the Indian Chemical Society",
+      "publisher": "Elsevier BV",
+      "authors": "A.Hamid, Miskam, Shafie",
+      "date": "2026-11-01",
+      "date_precision": "month",
+      "url": "https://doi.org/10.1016/j.jics.2026.103139",
+      "query": "citric acid sucrose adhesive",
+      "seed_routes": [
+        "carboxylic-acids"
+      ],
+      "route": "none",
+      "relevance": 0.05,
+      "signal": "other",
+      "application": "not stated",
+      "summary": "Citric acid monohydrate-malic acid-ethylene glycol deep eutectic solvents are physicochemically characterized and extracted for bioactive compounds.",
+      "quote": "citric acid monohydrate-malic acid-ethylene glycol-based deep eutectic solvents",
+      "flags": [
+        "title-only"
+      ],
+      "shown": false
+    },
+    {
+      "id": "doi:10.1016/j.polymer.2026.130943",
+      "kind": "literature",
+      "title": "Acid-etched TiO2 nanoparticles for catalytic synthesis of high-quality bio-based PECF copolyesters",
+      "venue": "Polymer",
+      "publisher": "Elsevier BV",
+      "authors": "Ning, Gan, Cai et al.",
+      "date": "2026-11-01",
+      "date_precision": "month",
+      "url": "https://doi.org/10.1016/j.polymer.2026.130943",
+      "query": "bio-based acrylic acid production",
+      "seed_routes": [
+        "acrylics"
+      ],
+      "route": "none",
+      "relevance": 0.05,
+      "signal": "research",
+      "application": "not stated",
+      "summary": "Acid-etched TiO2 nanoparticles were used to catalyze synthesis of bio-based PECF copolyesters.",
+      "quote": "Acid-etched TiO2 nanoparticles for catalytic synthesis of high-quality bio-based PECF copolyesters",
+      "flags": [
+        "title-only"
+      ],
+      "shown": false
+    },
+    {
+      "id": "doi:10.1016/j.rsurfi.2026.100955",
+      "kind": "literature",
+      "title": "On the correlation between surface chemistry and amine adsorption to interfacial bonding mechanisms, strength and durability in steel-epoxy adhesive bonds",
+      "venue": "Results in Surfaces and Interfaces",
+      "publisher": "Elsevier BV",
+      "authors": "van Dam, Abrahami, Mousavi et al.",
+      "date": "2026-11-01",
+      "date_precision": "month",
+      "url": "https://doi.org/10.1016/j.rsurfi.2026.100955",
+      "query": "cyclic carbonate amine wood adhesive",
+      "seed_routes": [
+        "nipu"
+      ],
+      "route": "none",
+      "relevance": 0.05,
+      "signal": "research",
+      "application": "not stated",
+      "summary": "The paper correlates surface chemistry with amine adsorption and interfacial bonding, strength and durability in steel-epoxy adhesive bonds.",
+      "quote": "amine adsorption to interfacial bonding mechanisms, strength and durability in steel-epoxy adhesive bonds",
+      "flags": [
+        "title-only"
+      ],
+      "shown": false
+    },
+    {
+      "id": "doi:10.1007/s00226-026-01817-z",
+      "kind": "literature",
+      "title": "Solar-driven photothermal-evaporation coupling: antibacterial-evaporation integrated wood-based photothermal materials for seawater desalination",
+      "venue": "Wood Science and Technology",
+      "publisher": "Springer Science and Business Media LLC",
+      "authors": "Zhu, Jiao, Zhang et al.",
+      "date": "2026-10-21",
+      "date_precision": "day",
+      "url": "https://doi.org/10.1007/s00226-026-01817-z",
+      "query": "sugar based wood binder",
+      "seed_routes": [
+        "carbohydrates"
+      ],
+      "route": "none",
+      "relevance": 0.02,
+      "signal": "research",
+      "application": "not stated",
+      "summary": "Describes wood-based photothermal materials integrating antibacterial and evaporation functions for solar-driven seawater desalination.",
+      "quote": "antibacterial-evaporation integrated wood-based photothermal materials for seawater desalination",
+      "flags": [
+        "title-only"
+      ],
+      "shown": false
+    },
+    {
+      "id": "doi:10.1016/j.jpowsour.2026.241107",
+      "kind": "literature",
+      "title": "Scalable decoration of carbonized wood with nickel-iron phosphate-oxyhydroxide as binder-free electrocatalysts for efficient alkaline oxygen evolution reaction",
+      "venue": "Journal of Power Sources",
+      "publisher": "Elsevier BV",
+      "authors": "Lahrichi, El Issmaeli, Pollet",
+      "date": "2026-11-01",
+      "date_precision": "month",
+      "url": "https://doi.org/10.1016/j.jpowsour.2026.241107",
+      "query": "sugar based wood binder",
+      "seed_routes": [
+        "carbohydrates"
+      ],
+      "route": "none",
+      "relevance": 0.02,
+      "signal": "other",
+      "application": "not stated",
+      "summary": "Carbonized wood is decorated with nickel-iron phosphate-oxyhydroxide as a binder-free electrocatalyst for alkaline oxygen evolution.",
+      "quote": "binder-free electrocatalysts for efficient alkaline oxygen evolution reaction",
+      "flags": [
+        "title-only"
+      ],
       "shown": false
     },
     {
@@ -5858,6 +7990,29 @@
       "shown": false
     },
     {
+      "id": "doi:10.62638/zasmat1583",
+      "kind": "literature",
+      "title": "Influence of aggregate–binder and water–binder ratios on pervious concrete properties: An RSM approach",
+      "venue": "Zastita Materijala",
+      "publisher": "Engineering Society of Corrosion",
+      "authors": "Elango, Sridhar, Deivasigamani et al.",
+      "date": "2026-09-15",
+      "date_precision": "day",
+      "url": "https://doi.org/10.62638/zasmat1583",
+      "query": "lignin particleboard binder",
+      "seed_routes": [
+        "lignin"
+      ],
+      "route": "none",
+      "relevance": 0.0,
+      "signal": "research",
+      "application": "not stated",
+      "summary": "Response surface study of how aggregate–binder and water–binder ratios affect mechanical performance, permeability and porosity of pervious concrete mixes with OPC and PPC binders.",
+      "quote": "Influence of aggregate–binder and water–binder ratios on pervious concrete properties",
+      "flags": [],
+      "shown": false
+    },
+    {
       "id": "doi:10.1021/acsestengg.6c00503",
       "kind": "literature",
       "title": "Enhanced Rare Earth Element Recovery from NaOH-Roasted Coal Fly Ash by Citric Acid Leaching",
@@ -6789,6 +8944,29 @@
       "shown": false
     },
     {
+      "id": "news:b965f0d3bf86fde6",
+      "kind": "news",
+      "title": "Chemistry of adaptive polymer-based protective coatings for harsh environments: chemical aging, anticorrosion, antifouling, and self-healing design - Frontiers",
+      "venue": "Frontiers",
+      "publisher": "",
+      "authors": "",
+      "date": "2026-09-29",
+      "date_precision": "day",
+      "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxOelAtczM3WlFpb2R0dy1iNkVNZWFDemxlem9wS2JiMmg0LTlnVHo1SGJ1OGJ5VTA2U3VYUXJLa20xeV8zYThnWWQ0UjUyTW55VXVTQUl6OER1dk1iRUhsWVQtQkFLVVltZUtxMXEtZWxidlI4M19wb1Y1anZfaWpMNk1RM0ZhOHgxbmhJYUlzYjk?oc=5",
+      "query": "bio-based acrylic acid plant",
+      "seed_routes": [
+        "acrylics"
+      ],
+      "route": "none",
+      "relevance": 0.0,
+      "signal": "research",
+      "application": "not stated",
+      "summary": "Review of adaptive polymer-based protective coatings addressing chemical aging, anticorrosion, antifouling and self-healing design for harsh environments.",
+      "quote": "Chemistry of adaptive polymer-based protective coatings for harsh environments",
+      "flags": [],
+      "shown": false
+    },
+    {
       "id": "doi:10.4103/jispcd.jispcd_24_26",
       "kind": "literature",
       "title": "Teaching Sugar in Schools: A Scoping Review of School-Based Sugar Interventions and Their Relevance to Oral Health",
@@ -6856,6 +9034,29 @@
       "application": "not stated",
       "summary": "A retail listing describes unscented bamboo pads with a natural bamboo core, double wings and a compostable wrapper.",
       "quote": "Sleep leak-free all night, natural bamboo core, double wings, compostable wrapper, free from BPA and dyes",
+      "flags": [],
+      "shown": false
+    },
+    {
+      "id": "news:f38a3daf4de8d4a7",
+      "kind": "news",
+      "title": "Viv for Your V Bamboo Overnight Pads - Unscented, Super Absorbency, 12 Pack | Sleep leak-free all night, natural bamboo core, double wings, compostable wrapper, free from BPA and dyes - Whole Foods Market",
+      "venue": "Whole Foods Market",
+      "publisher": "",
+      "authors": "",
+      "date": "2026-09-30",
+      "date_precision": "day",
+      "url": "https://news.google.com/rss/articles/CBMi5wJBVV95cUxPZVpobU5QZk5JQ2NfSWtXUTdmaHMwWEF3Z0I3S09tQXFvQkNvbTZyRWVVTHJOODdBM01Kck1SRDhFcWxHOFdOREJmclh0Q0JjX2VEbWY3SUlsSGpaY2otTTZfY3M2LW5VMkdsMGJZRG42SG1qRHFhOFZkSk1jYWNweGRGT1pVNV9fNEtVbnhCNnd1VXhhZC1TV0dIWXU2UE96dlNyTFlOWVJ4Q2p4LXpreUxPaVJhZXNOc0FsMlBRV0U5SVNNRmRycmZGWUUyYTFXX0hWNW5Gb0VUOHc1SllJRDFKZkloalNRckhiNHNMcUdzcDdNZTh1R0FCeDdyZFNwNURITkZVNllYZFFOd3VXc3RCRTVWXy1pbkdGSF8xZFJyZGRkVFl2MlYzUnE1cDhjOUZMVmlCYjlqVDQ5Vmo1cXhqcVN0a1F5b3lQbGZFSVNTa3NsVG10QThyWTQ5elh5YnFBWldkOA?oc=5",
+      "query": "starch-based wood adhesive",
+      "seed_routes": [
+        "carbohydrates"
+      ],
+      "route": "none",
+      "relevance": 0.0,
+      "signal": "other",
+      "application": "not stated",
+      "summary": "Retail listing for unscented bamboo overnight sanitary pads with a natural bamboo core and compostable wrapper.",
+      "quote": "Viv for Your V Bamboo Overnight Pads",
       "flags": [],
       "shown": false
     },
@@ -8082,6 +10283,175 @@
       "shown": false
     },
     {
+      "id": "doi:10.1016/j.ceramint.2026.10.311",
+      "kind": "literature",
+      "title": "Structural, vibrational, morphological, optical, photoluminescence, dielectric, electrical, and magnetic properties of Magnesium Ferrite nanostructures: an impact of citric acid concentrations",
+      "venue": "Ceramics International",
+      "publisher": "Elsevier BV",
+      "authors": "Al Sdran, Shkir",
+      "date": "2026-10-01",
+      "date_precision": "month",
+      "url": "https://doi.org/10.1016/j.ceramint.2026.10.311",
+      "query": "citric acid sucrose adhesive",
+      "seed_routes": [
+        "carboxylic-acids"
+      ],
+      "route": "none",
+      "relevance": 0.0,
+      "signal": "research",
+      "application": "not stated",
+      "summary": "Examines how citric acid concentration affects structural, vibrational, optical, photoluminescence, dielectric, electrical and magnetic properties of magnesium ferrite nanostructures.",
+      "quote": "an impact of citric acid concentrations",
+      "flags": [
+        "title-only"
+      ],
+      "shown": false
+    },
+    {
+      "id": "doi:10.1016/j.dental.2026.10.010",
+      "kind": "literature",
+      "title": "Erratum to “Relocation and reinforcement of the adhesive/composite interface with spontaneous amine-peroxide interfacial polymerization” [Dental Materials 37 (2021) 1865–1872]",
+      "venue": "Dental Materials",
+      "publisher": "Elsevier BV",
+      "authors": "Kim, Mascarenas, Musgrave et al.",
+      "date": "2026-10-01",
+      "date_precision": "month",
+      "url": "https://doi.org/10.1016/j.dental.2026.10.010",
+      "query": "cyclic carbonate amine wood adhesive",
+      "seed_routes": [
+        "nipu"
+      ],
+      "route": "none",
+      "relevance": 0.0,
+      "signal": "other",
+      "application": "not stated",
+      "summary": "Erratum correcting a Dental Materials paper on amine-peroxide interfacial polymerization at the dental adhesive/composite interface.",
+      "quote": "Relocation and reinforcement of the adhesive/composite interface",
+      "flags": [
+        "title-only"
+      ],
+      "shown": false
+    },
+    {
+      "id": "doi:10.1016/j.foodhyd.2026.113546",
+      "kind": "literature",
+      "title": "From binary to quaternary systems: Role of protein, fiber, and tannin interactions in modulating starch-based networks and their properties",
+      "abstract": "",
+      "venue": "Food Hydrocolloids",
+      "publisher": "Elsevier BV",
+      "authors": "Kaur, Tian, Zheng et al.",
+      "date": "2026-10-01",
+      "date_precision": "month",
+      "url": "https://doi.org/10.1016/j.foodhyd.2026.113546",
+      "query": "tannin particleboard",
+      "seed_routes": [
+        "tannins"
+      ],
+      "route": "untriaged",
+      "shown": false,
+      "flags": [
+        "missing-judgement"
+      ]
+    },
+    {
+      "id": "doi:10.1016/j.ijfoodmicro.2026.112131",
+      "kind": "literature",
+      "title": "Aspergillus neoniger HY-1 inhibits postharvest fungi in fruits through endogenous metabolites as oxalic acid and citric acid",
+      "venue": "International Journal of Food Microbiology",
+      "publisher": "Elsevier BV",
+      "authors": "Cheng, Bai, Xu et al.",
+      "date": "2026-10-01",
+      "date_precision": "month",
+      "url": "https://doi.org/10.1016/j.ijfoodmicro.2026.112131",
+      "query": "citric acid sucrose adhesive",
+      "seed_routes": [
+        "carboxylic-acids"
+      ],
+      "route": "none",
+      "relevance": 0.0,
+      "signal": "research",
+      "application": "not stated",
+      "summary": "Aspergillus neoniger HY-1 inhibits postharvest fungi in fruits via endogenous metabolites including oxalic acid and citric acid.",
+      "quote": "inhibits postharvest fungi in fruits through endogenous metabolites as oxalic acid and citric acid",
+      "flags": [
+        "title-only"
+      ],
+      "shown": false
+    },
+    {
+      "id": "doi:10.21608/edj.2026.507398.3938",
+      "kind": "literature",
+      "title": "Effect of a Bioactive Glass–Containing Universal Adhesive on Micro shear Bond Strength of Resin Composite to Dentin: An In Vitro Study",
+      "venue": "Egyptian Dental Journal",
+      "publisher": "Egyptian Knowledge Bank",
+      "authors": "elzeqred, Elawsya, Hamama et al.",
+      "date": "2026-10-01",
+      "date_precision": "day",
+      "url": "https://doi.org/10.21608/edj.2026.507398.3938",
+      "query": "5-hydroxymethylfurfural resin adhesive",
+      "seed_routes": [
+        "crosslinkers"
+      ],
+      "route": "none",
+      "relevance": 0.0,
+      "signal": "research",
+      "application": "not stated",
+      "summary": "In vitro study of a bioactive glass-containing universal dental adhesive and micro-shear bond strength of resin composite to dentin.",
+      "quote": "Effect of a Bioactive Glass–Containing Universal Adhesive on Micro shear Bond Strength of Resin Composite to Dentin",
+      "flags": [
+        "title-only"
+      ],
+      "shown": false
+    },
+    {
+      "id": "doi:10.21608/edj.2026.516831.3982",
+      "kind": "literature",
+      "title": "Assessment of Adding Chitosan Nanoparticles to Adhesive Material on Retention of Maxillary Complete Denture",
+      "venue": "Egyptian Dental Journal",
+      "publisher": "Egyptian Knowledge Bank",
+      "authors": "Mostafa, Elgohary, Mansour",
+      "date": "2026-10-01",
+      "date_precision": "day",
+      "url": "https://doi.org/10.21608/edj.2026.516831.3982",
+      "query": "chitosan wood adhesive",
+      "seed_routes": [
+        "carbohydrates"
+      ],
+      "route": "none",
+      "relevance": 0.0,
+      "signal": "research",
+      "application": "not stated",
+      "summary": "Study assesses whether adding chitosan nanoparticles to denture adhesive material affects retention of maxillary complete dentures.",
+      "quote": "Assessment of Adding Chitosan Nanoparticles to Adhesive Material on Retention of Maxillary Complete Denture",
+      "flags": [
+        "title-only"
+      ],
+      "shown": false
+    },
+    {
+      "id": "news:839d5c871b6d71c5",
+      "kind": "news",
+      "title": "NdFeB Magnet Manufacturing Plant Setup in India - IMARC Group",
+      "venue": "IMARC Group",
+      "publisher": "",
+      "authors": "",
+      "date": "2026-10-01",
+      "date_precision": "day",
+      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPVnNKNGNFM0NlQUQydmRnenpjaC1LUWNxWURZYTBOUGpETFFZbkR6NUxVY0NDNTV6SllYaDlmWjJSMlNHQ2N6YjEtSmRNVmZXdTVvRXRHQkY5NmJnUXNzdTlKR29FaTBmdVFMUWViV2tnUGlYb3NHd1c3SjJULUhsZHlMWXUyZHRpRXdyZA?oc=5",
+      "query": "bio-based acrylic acid plant",
+      "seed_routes": [
+        "acrylics"
+      ],
+      "route": "none",
+      "relevance": 0.0,
+      "signal": "other",
+      "application": "not stated",
+      "summary": "News item on setting up an NdFeB magnet manufacturing plant in India.",
+      "quote": "NdFeB Magnet Manufacturing Plant Setup in India",
+      "flags": [],
+      "shown": false
+    },
+    {
       "id": "doi:10.1021/acsapm.6c02349",
       "kind": "literature",
       "title": "Crosslinker-Free Polyacrylamide Hydrogels Exhibit High Strength, Fracture Resistance, and Reprocessability",
@@ -8344,6 +10714,29 @@
       "flags": [
         "title-only"
       ],
+      "shown": false
+    },
+    {
+      "id": "doi:10.1922/comdem.v3i5s.18758",
+      "kind": "literature",
+      "title": "Artificial Intelligence and Consumer Protection: Legal Challenges, Liability, and Regulatory Responses",
+      "venue": "Computer and Decision Making: An International Journal",
+      "publisher": "Riset Publishing Services L.L.C.",
+      "authors": "Sarah Zein, Tala Zein, Mahmoud Skafi",
+      "date": "2026-10-05",
+      "date_precision": "day",
+      "url": "https://doi.org/10.1922/comdem.v3i5s.18758",
+      "query": "zein adhesive wood",
+      "seed_routes": [
+        "proteins"
+      ],
+      "route": "none",
+      "relevance": 0.0,
+      "signal": "other",
+      "application": "not stated",
+      "summary": "Article analyses legal and governance challenges of AI-driven consumer decision making, covering transparency, liability allocation and consumer protection.",
+      "quote": "Artificial intelligence (AI) is increasingly embedded in consumer facing decision environments",
+      "flags": [],
       "shown": false
     },
     {
@@ -8750,6 +11143,893 @@
       "summary": "Develops cellulose/lignin–tannin membranes from waste cellulose and epoxy-modified kraft lignin for adsorbing metal ions, difenoconazole and bisphenol A from water.",
       "quote": "bio-based cellulose/lignin–tannin membrane adsorbents for the removal of representative inorganic and organic water pollutants",
       "flags": [],
+      "shown": false
+    },
+    {
+      "id": "doi:10.1038/s40494-026-03058-6",
+      "kind": "literature",
+      "title": "Synergistic reductive decolorization of waterlogged archaeological wood via a thiourea dioxide–amine borane system",
+      "venue": "npj Heritage Science",
+      "publisher": "Springer Science and Business Media LLC",
+      "authors": "Wu, Liu, Song et al.",
+      "date": "2026-10-19",
+      "date_precision": "day",
+      "url": "https://doi.org/10.1038/s40494-026-03058-6",
+      "query": "cyclic carbonate amine wood adhesive",
+      "seed_routes": [
+        "nipu"
+      ],
+      "route": "none",
+      "relevance": 0.0,
+      "signal": "other",
+      "application": "not stated",
+      "summary": "",
+      "quote": "",
+      "flags": [
+        "title-only"
+      ],
+      "shown": false
+    },
+    {
+      "id": "doi:10.1080/17480272.2026.2746428",
+      "kind": "literature",
+      "title": "Particleboard surface defect recognition using shared-weight feature learning",
+      "venue": "Wood Material Science & Engineering",
+      "publisher": "Informa UK Limited",
+      "authors": "Chen, Zhou, Xia et al.",
+      "date": "2026-10-19",
+      "date_precision": "day",
+      "url": "https://doi.org/10.1080/17480272.2026.2746428",
+      "query": "lignin particleboard binder",
+      "seed_routes": [
+        "lignin",
+        "tannins",
+        "carboxylic-acids"
+      ],
+      "route": "none",
+      "relevance": 0.0,
+      "signal": "other",
+      "application": "particleboard",
+      "summary": "Paper on particleboard surface defect recognition using shared-weight feature learning.",
+      "quote": "Particleboard surface defect recognition using shared-weight feature learning",
+      "flags": [
+        "title-only"
+      ],
+      "shown": false
+    },
+    {
+      "id": "doi:10.15407/polymerj.48.03.099",
+      "kind": "literature",
+      "title": "Ion-conducting membranes comprising poly(ethylene oxide) and poly(acrylic acid)",
+      "venue": "Polymer journal",
+      "publisher": "National Academy of Sciences of Ukraine (Co. LTD Ukrinformnauka) (Publications)",
+      "authors": "Kunytska, Permyakova, Nesin et al.",
+      "date": "2026-10-19",
+      "date_precision": "day",
+      "url": "https://doi.org/10.15407/polymerj.48.03.099",
+      "query": "renewable acrylic acid glycerol",
+      "seed_routes": [
+        "acrylics"
+      ],
+      "route": "none",
+      "relevance": 0.0,
+      "signal": "other",
+      "application": "not stated",
+      "summary": "PEO and poly(acrylic acid) di- and triblock copolymer membranes characterised for ionic conductivity, including effects of lithium hexafluorophosphate and humidity.",
+      "quote": "Ion-conducting membranes based on di- and triblock copolymers of poly(ethylene oxide) (PEO) and poly(acrylic acid) (PAA)",
+      "flags": [],
+      "shown": false
+    },
+    {
+      "id": "doi:10.34218/ijpet_05_02_002",
+      "kind": "literature",
+      "title": "AMINE SWEETENING PLANT DESIGN, SIMULATION, AND INFRASTRUCTURE SELECTION FOR CO₂ SUPPLY IN CYCLIC INJECTION PROGRAMS FOR INDEPENDENT GAS-CONDENSATE OPERATORS",
+      "venue": "INTERNATIONAL JOURNAL OF PETROCHEMICAL ENGINEERING AND TECHNOLOGY",
+      "publisher": "IAEME Publication",
+      "authors": "Bohorquez",
+      "date": "2026-10-19",
+      "date_precision": "day",
+      "url": "https://doi.org/10.34218/ijpet_05_02_002",
+      "query": "cyclic carbonate amine wood adhesive",
+      "seed_routes": [
+        "nipu"
+      ],
+      "route": "none",
+      "relevance": 0.0,
+      "signal": "other",
+      "application": "not stated",
+      "summary": "Paper on design, simulation and infrastructure selection for amine sweetening plants supplying CO2 to cyclic injection programmes.",
+      "quote": "AMINE SWEETENING PLANT DESIGN, SIMULATION, AND INFRASTRUCTURE SELECTION",
+      "flags": [
+        "title-only"
+      ],
+      "shown": false
+    },
+    {
+      "id": "doi:10.1108/rpj-04-2026-0227",
+      "kind": "literature",
+      "title": "Development of a low-temperature curable sodium silicate-based inorganic binder for binder jetting with enhanced jetting performance and bonding strength",
+      "venue": "Rapid Prototyping Journal",
+      "publisher": "Emerald",
+      "authors": "Bae, Kim, Baek",
+      "date": "2026-10-20",
+      "date_precision": "day",
+      "url": "https://doi.org/10.1108/rpj-04-2026-0227",
+      "query": "lignin particleboard binder",
+      "seed_routes": [
+        "lignin",
+        "carbohydrates"
+      ],
+      "route": "none",
+      "relevance": 0.0,
+      "signal": "research",
+      "application": "not stated",
+      "summary": "Sodium silicate-based inorganic binder modified with silica sol and a phosphate curing agent for binder jetting with sand, improving low-temperature flexural strength.",
+      "quote": "the strength increased markedly from 1.42 MPa to 6.80 MPa at 120 °C",
+      "flags": [],
+      "shown": false
+    },
+    {
+      "id": "doi:10.3390/ph19111670",
+      "kind": "literature",
+      "title": "Phytochemical Investigation of Juncus hybridus: Truxinic Acid Sucrose Diesters and α-Glucosidase Inhibitory Activity",
+      "venue": "Pharmaceuticals",
+      "publisher": "MDPI AG",
+      "authors": "Barta, Girst, Hohmann et al.",
+      "date": "2026-10-22",
+      "date_precision": "day",
+      "url": "https://doi.org/10.3390/ph19111670",
+      "query": "citric acid sucrose adhesive",
+      "seed_routes": [
+        "carboxylic-acids"
+      ],
+      "route": "none",
+      "relevance": 0.0,
+      "signal": "research",
+      "application": "not stated",
+      "summary": "Isolates fifteen compounds including two new truxinic acid sucrose diesters from Juncus hybridus and evaluates selected compounds for α-glucosidase inhibition.",
+      "quote": "Two compounds, junhybridins A and B, were identified as new truxinic acid sucrose diesters",
+      "flags": [],
+      "shown": false
+    },
+    {
+      "id": "doi:10.2341/25-196-l",
+      "kind": "literature",
+      "title": "Adhesive Bond Durability of Resin-Matrix CAD/CAM Materials Following Different Artificial Aging Protocols",
+      "venue": "Operative Dentistry",
+      "publisher": "Operative Dentistry",
+      "authors": "Caglayan, Ekici, Egilmez et al.",
+      "date": "2026-10-23",
+      "date_precision": "day",
+      "url": "https://doi.org/10.2341/25-196-l",
+      "query": "5-hydroxymethylfurfural resin adhesive",
+      "seed_routes": [
+        "crosslinkers"
+      ],
+      "route": "none",
+      "relevance": 0.0,
+      "signal": "other",
+      "application": "not stated",
+      "summary": "Dental study tests adhesive bond durability of resin-matrix CAD/CAM materials to resin cements after six artificial aging protocols.",
+      "quote": "Adhesive Bond Durability of Resin-Matrix CAD/CAM Materials",
+      "flags": [],
+      "shown": false
+    },
+    {
+      "id": "doi:10.2514/1.j067239",
+      "kind": "literature",
+      "title": "Fast-Responding Cryogenic Pressure-Sensitive Paint with Porous PTMSP-Based Binder",
+      "venue": "AIAA Journal",
+      "publisher": "American Institute of Aeronautics and Astronautics (AIAA)",
+      "authors": "Egami, Nagao",
+      "date": "2026-10-25",
+      "date_precision": "day",
+      "url": "https://doi.org/10.2514/1.j067239",
+      "query": "sugar based wood binder",
+      "seed_routes": [
+        "carbohydrates"
+      ],
+      "route": "none",
+      "relevance": 0.0,
+      "signal": "research",
+      "application": "not stated",
+      "summary": "Porous PTMSP binder with hydrophobically treated colloidal silica gives fast-responding cryogenic pressure-sensitive paint, with model-estimated cutoff frequency of 2833 Hz at 150 K.",
+      "quote": "fast-responding cryoPSP based on a porous poly[1-(trimethylsilyl)-1-propyne] (PTMSP) binder",
+      "flags": [],
+      "shown": false
+    },
+    {
+      "id": "doi:10.56338/mppki.v9i10.11352",
+      "kind": "literature",
+      "title": "Subjective Hearing Complaints as Early Indicators of Hearing Health Risk Among Indonesian Plywood Workers",
+      "venue": "Media Publikasi Promosi Kesehatan Indonesia",
+      "publisher": "Universitas Muhammadiyah Palu",
+      "authors": "Tandilangi, Denny, Setiani et al.",
+      "date": "2026-10-25",
+      "date_precision": "day",
+      "url": "https://doi.org/10.56338/mppki.v9i10.11352",
+      "query": "protein adhesive plywood",
+      "seed_routes": [
+        "proteins"
+      ],
+      "route": "none",
+      "relevance": 0.0,
+      "signal": "research",
+      "application": "plywood",
+      "summary": "Cross-sectional study of 54 Indonesian plywood production workers reports subjective hearing complaints despite normal clinic-assigned hearing classifications.",
+      "quote": "Subjective Hearing Complaints as Early Indicators of Hearing Health Risk",
+      "flags": [],
+      "shown": false
+    },
+    {
+      "id": "doi:10.1002/smll.76383",
+      "kind": "literature",
+      "title": "Hydrogen‐Bond‐Assisted Secondary Amine‐Phosphonate Tandem Sites on Mesoporous Nano‐Silica for Uranyl Carbonate Capture From Alkaline Wastewater",
+      "venue": "Small",
+      "publisher": "Wiley",
+      "authors": "Li, Zhou, Hua et al.",
+      "date": "2026-10-26",
+      "date_precision": "day",
+      "url": "https://doi.org/10.1002/smll.76383",
+      "query": "cyclic carbonate amine wood adhesive",
+      "seed_routes": [
+        "nipu"
+      ],
+      "route": "none",
+      "relevance": 0.0,
+      "signal": "research",
+      "application": "not stated",
+      "summary": "Secondary amine-phosphonate tandem sites on mesoporous nano-silica adsorb uranyl carbonate from alkaline wastewater with 348.8 mg/g capacity.",
+      "quote": "selective capture of uranium from alkaline radioactive wastewater",
+      "flags": [],
+      "shown": false
+    },
+    {
+      "id": "doi:10.1002/star.70321",
+      "kind": "literature",
+      "title": "Issue Information: Starch ‐ Stärke 11/2026",
+      "venue": "Starch - Stärke",
+      "publisher": "Wiley",
+      "authors": "",
+      "date": "2026-10-28",
+      "date_precision": "day",
+      "url": "https://doi.org/10.1002/star.70321",
+      "query": "starch wood adhesive",
+      "seed_routes": [
+        "carbohydrates"
+      ],
+      "route": "none",
+      "relevance": 0.0,
+      "signal": "other",
+      "application": "not stated",
+      "summary": "",
+      "quote": "",
+      "flags": [
+        "title-only"
+      ],
+      "shown": false
+    },
+    {
+      "id": "doi:10.1063/5.0355700",
+      "kind": "literature",
+      "title": "Signatures of auxeticity in microgels at low and ultralow crosslinker concentration",
+      "venue": "The Journal of Chemical Physics",
+      "publisher": "AIP Publishing",
+      "authors": "Marín-Aguilar, Rank, Zaccarelli",
+      "date": "2026-10-29",
+      "date_precision": "day",
+      "url": "https://doi.org/10.1063/5.0355700",
+      "query": "formaldehyde-free crosslinker wood",
+      "seed_routes": [
+        "crosslinkers"
+      ],
+      "route": "none",
+      "relevance": 0.0,
+      "signal": "research",
+      "application": "not stated",
+      "summary": "Simulations examine auxetic behavior and Poisson's ratio in thermoresponsive microgels at low and ultralow crosslinker concentrations.",
+      "quote": "signatures of the onset of auxetic behavior near the volume phase transition",
+      "flags": [],
+      "shown": false
+    },
+    {
+      "id": "doi:10.3390/jfb17110557",
+      "kind": "literature",
+      "title": "Self-Adhesive Flowable-Resin Composites: From Chemistry to Clinical Evidence—A Critical Review",
+      "venue": "Journal of Functional Biomaterials",
+      "publisher": "MDPI AG",
+      "authors": "Bukhari, Yadav, Maher et al.",
+      "date": "2026-10-30",
+      "date_precision": "day",
+      "url": "https://doi.org/10.3390/jfb17110557",
+      "query": "5-hydroxymethylfurfural resin adhesive",
+      "seed_routes": [
+        "crosslinkers"
+      ],
+      "route": "none",
+      "relevance": 0.0,
+      "signal": "research",
+      "application": "not stated",
+      "summary": "Review relates the composition of eleven dental self-adhesive flowable resin composites to laboratory properties and clinical outcomes.",
+      "quote": "Self-adhesive flowable-resin composites (SAFRCs) incorporate acidic functional monomers",
+      "flags": [],
+      "shown": false
+    },
+    {
+      "id": "doi:10.1186/s12903-026-10235-3",
+      "kind": "literature",
+      "title": "Bond strength between resin cements and glass-ceramic: influence of silane incorporation into the adhesive system — an in vitro study",
+      "venue": "BMC Oral Health",
+      "publisher": "Springer Science and Business Media LLC",
+      "authors": "da Silva, Kunz, da Silva et al.",
+      "date": "2026-10-31",
+      "date_precision": "day",
+      "url": "https://doi.org/10.1186/s12903-026-10235-3",
+      "query": "5-hydroxymethylfurfural resin adhesive",
+      "seed_routes": [
+        "crosslinkers"
+      ],
+      "route": "none",
+      "relevance": 0.0,
+      "signal": "research",
+      "application": "not stated",
+      "summary": "In vitro study evaluates microtensile bond strength between resin cements and glass-ceramic when silane is incorporated into the dental adhesive system.",
+      "quote": "Bond strength between resin cements and glass-ceramic",
+      "flags": [],
+      "shown": false
+    },
+    {
+      "id": "doi:10.1016/j.biomaterials.2026.124253",
+      "kind": "literature",
+      "title": "Adhesive adjuvant protein for long-lasting immune response in vaccination",
+      "venue": "Biomaterials",
+      "publisher": "Elsevier BV",
+      "authors": "Jung, Woo, Oh et al.",
+      "date": "2026-11-01",
+      "date_precision": "month",
+      "url": "https://doi.org/10.1016/j.biomaterials.2026.124253",
+      "query": "protein adhesive plywood",
+      "seed_routes": [
+        "proteins"
+      ],
+      "route": "none",
+      "relevance": 0.0,
+      "signal": "other",
+      "application": "not stated",
+      "summary": "Describes an adhesive adjuvant protein intended to prolong immune response in vaccination; not related to wood adhesives.",
+      "quote": "Adhesive adjuvant protein for long-lasting immune response in vaccination",
+      "flags": [
+        "title-only"
+      ],
+      "shown": false
+    },
+    {
+      "id": "doi:10.1016/j.biortech.2026.135362",
+      "kind": "literature",
+      "title": "gcvP contributes to acetic acid production efficiency in Acetobacter tropicalis under citric acid stress via ammonia homeostasis",
+      "venue": "Bioresource Technology",
+      "publisher": "Elsevier BV",
+      "authors": "Yang, Li, Guo et al.",
+      "date": "2026-11-01",
+      "date_precision": "month",
+      "url": "https://doi.org/10.1016/j.biortech.2026.135362",
+      "query": "citric acid sucrose adhesive",
+      "seed_routes": [
+        "carboxylic-acids"
+      ],
+      "route": "none",
+      "relevance": 0.0,
+      "signal": "other",
+      "application": "not stated",
+      "summary": "Study of gcvP and ammonia homeostasis affecting acetic acid production in Acetobacter tropicalis under citric acid stress.",
+      "quote": "gcvP contributes to acetic acid production efficiency in Acetobacter tropicalis under citric acid stress",
+      "flags": [
+        "title-only"
+      ],
+      "shown": false
+    },
+    {
+      "id": "doi:10.1016/j.biortech.2026.135400",
+      "kind": "literature",
+      "title": "Integrated techno-economic and life cycle assessment of 3-hydroxypropionic acid bioproduction from a glycerol-molasses blend",
+      "venue": "Bioresource Technology",
+      "publisher": "Elsevier BV",
+      "authors": "Okoli, Dubey, Mba Wright",
+      "date": "2026-11-01",
+      "date_precision": "month",
+      "url": "https://doi.org/10.1016/j.biortech.2026.135400",
+      "query": "renewable acrylic acid glycerol",
+      "seed_routes": [
+        "acrylics"
+      ],
+      "route": "none",
+      "relevance": 0.0,
+      "signal": "other",
+      "application": "not stated",
+      "summary": "Techno-economic and life cycle assessment of 3-hydroxypropionic acid bioproduction from a glycerol-molasses blend.",
+      "quote": "Integrated techno-economic and life cycle assessment of 3-hydroxypropionic acid bioproduction from a glycerol-molasses blend",
+      "flags": [
+        "title-only"
+      ],
+      "shown": false
+    },
+    {
+      "id": "doi:10.1016/j.cej.2026.181454",
+      "kind": "literature",
+      "title": "Crosslinker-free PVA/CS-ag@PDA hydrogel with controlled silver ion release and NIR-enhanced antibacterial activity for MRSA-infected diabetic wound repair",
+      "venue": "Chemical Engineering Journal",
+      "publisher": "Elsevier BV",
+      "authors": "Guan, Wei, Wang et al.",
+      "date": "2026-11-01",
+      "date_precision": "month",
+      "url": "https://doi.org/10.1016/j.cej.2026.181454",
+      "query": "formaldehyde-free crosslinker wood",
+      "seed_routes": [
+        "crosslinkers"
+      ],
+      "route": "none",
+      "relevance": 0.0,
+      "signal": "other",
+      "application": "not stated",
+      "summary": "Crosslinker-free PVA/chitosan hydrogel with silver ion release for treating MRSA-infected diabetic wounds; not a wood adhesive.",
+      "quote": "Crosslinker-free PVA/CS-ag@PDA hydrogel with controlled silver ion release",
+      "flags": [
+        "title-only"
+      ],
+      "shown": false
+    },
+    {
+      "id": "doi:10.1016/j.colsurfa.2026.141006",
+      "kind": "literature",
+      "title": "Self-healing, self-adhesive, injectable biomedical hydrogel based on dopamine-grafted oxidized hyaluronic acid and hydroxypropyl chitosan encapsulating epigallocatechin gallate",
+      "venue": "Colloids and Surfaces A: Physicochemical and Engineering Aspects",
+      "publisher": "Elsevier BV",
+      "authors": "Guo, Gong, Li et al.",
+      "date": "2026-11-01",
+      "date_precision": "month",
+      "url": "https://doi.org/10.1016/j.colsurfa.2026.141006",
+      "query": "chitosan wood adhesive",
+      "seed_routes": [
+        "carbohydrates"
+      ],
+      "route": "none",
+      "relevance": 0.0,
+      "signal": "research",
+      "application": "not stated",
+      "summary": "Describes a self-healing, injectable biomedical hydrogel of dopamine-grafted oxidized hyaluronic acid and hydroxypropyl chitosan encapsulating epigallocatechin gallate.",
+      "quote": "Self-healing, self-adhesive, injectable biomedical hydrogel based on dopamine-grafted oxidized hyaluronic acid",
+      "flags": [
+        "title-only"
+      ],
+      "shown": false
+    },
+    {
+      "id": "doi:10.1016/j.dental.2026.05.009",
+      "kind": "literature",
+      "title": "Color stability and degree of conversion of conventional, amine-free, and self-adhesive resin cements polymerized under different conditions",
+      "venue": "Dental Materials",
+      "publisher": "Elsevier BV",
+      "authors": "Lee, Shimada, Han et al.",
+      "date": "2026-11-01",
+      "date_precision": "month",
+      "url": "https://doi.org/10.1016/j.dental.2026.05.009",
+      "query": "5-hydroxymethylfurfural resin adhesive",
+      "seed_routes": [
+        "crosslinkers",
+        "nipu"
+      ],
+      "route": "none",
+      "relevance": 0.0,
+      "signal": "research",
+      "application": "not stated",
+      "summary": "Compares color stability and degree of conversion of conventional, amine-free and self-adhesive resin cements polymerized under different conditions.",
+      "quote": "Color stability and degree of conversion of conventional, amine-free, and self-adhesive resin cements",
+      "flags": [
+        "title-only"
+      ],
+      "shown": false
+    },
+    {
+      "id": "doi:10.1016/j.engstruct.2026.123594",
+      "kind": "literature",
+      "title": "Structural behavior of steel-timber composite beams with mass plywood panels and self-tapping screw shear connections",
+      "venue": "Engineering Structures",
+      "publisher": "Elsevier BV",
+      "authors": "Deeves, Woods",
+      "date": "2026-11-01",
+      "date_precision": "month",
+      "url": "https://doi.org/10.1016/j.engstruct.2026.123594",
+      "query": "lignin plywood resin",
+      "seed_routes": [
+        "lignin",
+        "proteins",
+        "tannins"
+      ],
+      "route": "none",
+      "relevance": 0.0,
+      "signal": "research",
+      "application": "plywood",
+      "summary": "Analyzes structural behavior of steel-timber composite beams using mass plywood panels and self-tapping screw shear connections.",
+      "quote": "Structural behavior of steel-timber composite beams with mass plywood panels and self-tapping screw shear connections",
+      "flags": [
+        "title-only"
+      ],
+      "shown": false
+    },
+    {
+      "id": "doi:10.1016/j.fbio.2026.110206",
+      "kind": "literature",
+      "title": "Ginseng polysaccharide modulates interfacial behavior and lipid digestion of soy protein isolate emulsions",
+      "venue": "Food Bioscience",
+      "publisher": "Elsevier BV",
+      "authors": "Li, Bao, Yan et al.",
+      "date": "2026-11-01",
+      "date_precision": "month",
+      "url": "https://doi.org/10.1016/j.fbio.2026.110206",
+      "query": "soy protein wood adhesive",
+      "seed_routes": [
+        "proteins"
+      ],
+      "route": "none",
+      "relevance": 0.0,
+      "signal": "other",
+      "application": "not stated",
+      "summary": "Study examines how ginseng polysaccharide affects interfacial behavior and lipid digestion of soy protein isolate emulsions.",
+      "quote": "Ginseng polysaccharide modulates interfacial behavior and lipid digestion of soy protein isolate emulsions",
+      "flags": [
+        "title-only"
+      ],
+      "shown": false
+    },
+    {
+      "id": "doi:10.1016/j.firesaf.2026.104953",
+      "kind": "literature",
+      "title": "Threshold heat exposure for establishing sustained flames in a particleboard cavity",
+      "venue": "Fire Safety Journal",
+      "publisher": "Elsevier BV",
+      "authors": "Karyaparambil, Erland, Hagen et al.",
+      "date": "2026-11-01",
+      "date_precision": "month",
+      "url": "https://doi.org/10.1016/j.firesaf.2026.104953",
+      "query": "lignin particleboard binder",
+      "seed_routes": [
+        "lignin",
+        "tannins"
+      ],
+      "route": "none",
+      "relevance": 0.0,
+      "signal": "other",
+      "application": "particleboard",
+      "summary": "Study identifies the threshold heat exposure needed to establish sustained flames within a particleboard cavity.",
+      "quote": "Threshold heat exposure for establishing sustained flames in a particleboard cavity",
+      "flags": [
+        "title-only"
+      ],
+      "shown": false
+    },
+    {
+      "id": "doi:10.1016/j.foodchem.2026.151119",
+      "kind": "literature",
+      "title": "Mannoprotein and tannin improve aroma retention in reverse osmosis dealcoholized red wine",
+      "venue": "Food Chemistry",
+      "publisher": "Elsevier BV",
+      "authors": "Sam, Wang, Chen et al.",
+      "date": "2026-11-01",
+      "date_precision": "month",
+      "url": "https://doi.org/10.1016/j.foodchem.2026.151119",
+      "query": "tannin particleboard",
+      "seed_routes": [
+        "tannins"
+      ],
+      "route": "none",
+      "relevance": 0.0,
+      "signal": "other",
+      "application": "not stated",
+      "summary": "Study reports that mannoprotein and tannin improve aroma retention in reverse osmosis dealcoholized red wine.",
+      "quote": "Mannoprotein and tannin improve aroma retention in reverse osmosis dealcoholized red wine",
+      "flags": [
+        "title-only"
+      ],
+      "shown": false
+    },
+    {
+      "id": "doi:10.1016/j.foodhyd.2026.112909",
+      "kind": "literature",
+      "title": "A high proportion of A2 β-casein in β-casein impairs the gel properties of fermented milk by affecting protein aggregation following heat treatment",
+      "venue": "Food Hydrocolloids",
+      "publisher": "Elsevier BV",
+      "authors": "Su, Yang, Wen et al.",
+      "date": "2026-11-01",
+      "date_precision": "month",
+      "url": "https://doi.org/10.1016/j.foodhyd.2026.112909",
+      "query": "casein wood adhesive",
+      "seed_routes": [
+        "proteins"
+      ],
+      "route": "none",
+      "relevance": 0.0,
+      "signal": "other",
+      "application": "not stated",
+      "summary": "High A2 β-casein proportion in β-casein impairs fermented milk gel properties via protein aggregation after heat treatment.",
+      "quote": "A high proportion of A2 β-casein in β-casein impairs the gel properties of fermented milk",
+      "flags": [
+        "title-only"
+      ],
+      "shown": false
+    },
+    {
+      "id": "doi:10.1016/j.foodres.2026.120217",
+      "kind": "literature",
+      "title": "Textural and rheological insights into structuring behavior of high moisture meat analogues from chickpea and soy protein isolates",
+      "venue": "Food Research International",
+      "publisher": "Elsevier BV",
+      "authors": "Aslam, Maqsood",
+      "date": "2026-11-01",
+      "date_precision": "month",
+      "url": "https://doi.org/10.1016/j.foodres.2026.120217",
+      "query": "soy protein wood adhesive",
+      "seed_routes": [
+        "proteins"
+      ],
+      "route": "none",
+      "relevance": 0.0,
+      "signal": "other",
+      "application": "not stated",
+      "summary": "Textural and rheological methods probe structuring behavior of high moisture meat analogues from chickpea and soy protein isolates.",
+      "quote": "Textural and rheological insights into structuring behavior of high moisture meat analogues",
+      "flags": [
+        "title-only"
+      ],
+      "shown": false
+    },
+    {
+      "id": "doi:10.1016/j.foodres.2026.120427",
+      "kind": "literature",
+      "title": "Preparation and application of soy protein isolate-filled sucrose composite particles in sugar-reduced chocolate via protein-mediated morphological modulation",
+      "venue": "Food Research International",
+      "publisher": "Elsevier BV",
+      "authors": "Wang, Dong, Wang et al.",
+      "date": "2026-11-01",
+      "date_precision": "month",
+      "url": "https://doi.org/10.1016/j.foodres.2026.120427",
+      "query": "soy protein wood adhesive",
+      "seed_routes": [
+        "proteins"
+      ],
+      "route": "none",
+      "relevance": 0.0,
+      "signal": "other",
+      "application": "not stated",
+      "summary": "Soy protein isolate-filled sucrose composite particles are prepared and applied in sugar-reduced chocolate via protein-mediated morphological modulation.",
+      "quote": "Preparation and application of soy protein isolate-filled sucrose composite particles in sugar-reduced chocolate",
+      "flags": [
+        "title-only"
+      ],
+      "shown": false
+    },
+    {
+      "id": "doi:10.1016/j.foodres.2026.120519",
+      "kind": "literature",
+      "title": "Structure-resolved tannin interactions in food systems: nutritional effects, digestion, and applications",
+      "venue": "Food Research International",
+      "publisher": "Elsevier BV",
+      "authors": "Ding, Tu, Zheng et al.",
+      "date": "2026-11-01",
+      "date_precision": "month",
+      "url": "https://doi.org/10.1016/j.foodres.2026.120519",
+      "query": "tannin particleboard",
+      "seed_routes": [
+        "tannins"
+      ],
+      "route": "none",
+      "relevance": 0.0,
+      "signal": "other",
+      "application": "not stated",
+      "summary": "Review covers structure-resolved tannin interactions in food systems, including nutritional effects, digestion and applications.",
+      "quote": "Structure-resolved tannin interactions in food systems: nutritional effects, digestion, and applications",
+      "flags": [
+        "title-only"
+      ],
+      "shown": false
+    },
+    {
+      "id": "doi:10.1016/j.heliyon.2026.e45574",
+      "kind": "literature",
+      "title": "A comparative review of actuation methods for Microfluidic systems",
+      "venue": "Heliyon",
+      "publisher": "Elsevier BV",
+      "authors": "Zein, Kelouwani, Hébert",
+      "date": "2026-11-01",
+      "date_precision": "month",
+      "url": "https://doi.org/10.1016/j.heliyon.2026.e45574",
+      "query": "zein adhesive wood",
+      "seed_routes": [
+        "proteins"
+      ],
+      "route": "none",
+      "relevance": 0.0,
+      "signal": "other",
+      "application": "not stated",
+      "summary": "Review compares actuation methods used in microfluidic systems.",
+      "quote": "A comparative review of actuation methods for Microfluidic systems",
+      "flags": [
+        "title-only"
+      ],
+      "shown": false
+    },
+    {
+      "id": "doi:10.1016/j.physb.2026.419144",
+      "kind": "literature",
+      "title": "Bogoliubov mode dynamics and non-adiabatic transitions in time-varying condensed media",
+      "venue": "Physica B: Condensed Matter",
+      "publisher": "Elsevier BV",
+      "authors": "Tishin",
+      "date": "2026-11-01",
+      "date_precision": "month",
+      "url": "https://doi.org/10.1016/j.physb.2026.419144",
+      "query": "condensed tannin plywood",
+      "seed_routes": [
+        "tannins"
+      ],
+      "route": "none",
+      "relevance": 0.0,
+      "signal": "other",
+      "application": "not stated",
+      "summary": "The paper examines Bogoliubov mode dynamics and non-adiabatic transitions in time-varying condensed media.",
+      "quote": "Bogoliubov mode dynamics and non-adiabatic transitions in time-varying condensed media",
+      "flags": [
+        "title-only"
+      ],
+      "shown": false
+    },
+    {
+      "id": "doi:10.1016/j.renene.2026.126331",
+      "kind": "literature",
+      "title": "Quantifying microbial, enzymatic, and acid-driven pathways of lignocellulose degradation and their impact on methane production in Sudangrass silage",
+      "venue": "Renewable Energy",
+      "publisher": "Elsevier BV",
+      "authors": "Liu, Li, Dong et al.",
+      "date": "2026-11-01",
+      "date_precision": "month",
+      "url": "https://doi.org/10.1016/j.renene.2026.126331",
+      "query": "renewable acrylic acid glycerol",
+      "seed_routes": [
+        "acrylics"
+      ],
+      "route": "none",
+      "relevance": 0.0,
+      "signal": "other",
+      "application": "not stated",
+      "summary": "The study quantifies microbial, enzymatic and acid-driven lignocellulose degradation pathways and their effect on methane production in Sudangrass silage.",
+      "quote": "Quantifying microbial, enzymatic, and acid-driven pathways of lignocellulose degradation",
+      "flags": [
+        "title-only"
+      ],
+      "shown": false
+    },
+    {
+      "id": "doi:10.1016/j.renene.2026.126335",
+      "kind": "literature",
+      "title": "Pyrolysis and combustion of crude glycerol-based de-oiled yeast: analyses and kinetic modeling",
+      "venue": "Renewable Energy",
+      "publisher": "Elsevier BV",
+      "authors": "Banerjee, Brillard, Ghosh et al.",
+      "date": "2026-11-01",
+      "date_precision": "month",
+      "url": "https://doi.org/10.1016/j.renene.2026.126335",
+      "query": "renewable acrylic acid glycerol",
+      "seed_routes": [
+        "acrylics"
+      ],
+      "route": "none",
+      "relevance": 0.0,
+      "signal": "other",
+      "application": "not stated",
+      "summary": "Pyrolysis and combustion of crude glycerol-based de-oiled yeast were analyzed with kinetic modeling.",
+      "quote": "Pyrolysis and combustion of crude glycerol-based de-oiled yeast: analyses and kinetic modeling",
+      "flags": [
+        "title-only"
+      ],
+      "shown": false
+    },
+    {
+      "id": "doi:10.1016/j.trgeo.2026.102369",
+      "kind": "literature",
+      "title": "Performance assessment of crushed rock road base stabilised with enzyme-induced carbonate precipitation under cyclic loading",
+      "venue": "Transportation Geotechnics",
+      "publisher": "Elsevier BV",
+      "authors": "Lemboye, Shahin, Abdullah et al.",
+      "date": "2026-11-01",
+      "date_precision": "month",
+      "url": "https://doi.org/10.1016/j.trgeo.2026.102369",
+      "query": "cyclic carbonate amine wood adhesive",
+      "seed_routes": [
+        "nipu"
+      ],
+      "route": "none",
+      "relevance": 0.0,
+      "signal": "research",
+      "application": "not stated",
+      "summary": "Assesses crushed rock road base stabilised by enzyme-induced carbonate precipitation under cyclic loading.",
+      "quote": "crushed rock road base stabilised with enzyme-induced carbonate precipitation",
+      "flags": [
+        "title-only"
+      ],
+      "shown": false
+    },
+    {
+      "id": "doi:10.1016/s0921-4526(26)01172-5",
+      "kind": "literature",
+      "title": "Editorial Board",
+      "venue": "Physica B: Condensed Matter",
+      "publisher": "Elsevier BV",
+      "authors": "",
+      "date": "2026-11-01",
+      "date_precision": "month",
+      "url": "https://doi.org/10.1016/s0921-4526(26)01172-5",
+      "query": "condensed tannin plywood",
+      "seed_routes": [
+        "tannins"
+      ],
+      "route": "none",
+      "relevance": 0.0,
+      "signal": "other",
+      "application": "not stated",
+      "summary": "",
+      "quote": "",
+      "flags": [
+        "title-only"
+      ],
+      "shown": false
+    },
+    {
+      "id": "doi:10.1016/s0921-4526(26)01224-x",
+      "kind": "literature",
+      "title": "Editorial Board",
+      "venue": "Physica B: Condensed Matter",
+      "publisher": "Elsevier BV",
+      "authors": "",
+      "date": "2026-11-01",
+      "date_precision": "month",
+      "url": "https://doi.org/10.1016/s0921-4526(26)01224-x",
+      "query": "condensed tannin plywood",
+      "seed_routes": [
+        "tannins"
+      ],
+      "route": "none",
+      "relevance": 0.0,
+      "signal": "other",
+      "application": "not stated",
+      "summary": "",
+      "quote": "",
+      "flags": [
+        "title-only"
+      ],
+      "shown": false
+    },
+    {
+      "id": "doi:10.3168/jds.2026-28717",
+      "kind": "literature",
+      "title": "Differential apparent morphology, structures, and in vitro digestion properties of casein micelle + β-lactoglobulin thermal aggregates modulated by κ-casein genotypes",
+      "venue": "Journal of Dairy Science",
+      "publisher": "American Dairy Science Association",
+      "authors": "Yuan, Zhu, Chen et al.",
+      "date": "2026-11-01",
+      "date_precision": "month",
+      "url": "https://doi.org/10.3168/jds.2026-28717",
+      "query": "casein wood adhesive",
+      "seed_routes": [
+        "proteins"
+      ],
+      "route": "none",
+      "relevance": 0.0,
+      "signal": "research",
+      "application": "not stated",
+      "summary": "Studies morphology, structure and in vitro digestion of casein micelle plus β-lactoglobulin thermal aggregates across κ-casein genotypes.",
+      "quote": "casein micelle + β-lactoglobulin thermal aggregates",
+      "flags": [
+        "title-only"
+      ],
       "shown": false
     }
   ]
